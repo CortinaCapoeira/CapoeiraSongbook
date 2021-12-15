@@ -38,7 +38,7 @@ jobs:
       - run:
           #deploy all the files inside the _site folder
           name: Deploy docs to the gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Generate Website" --dist _site
+          command: gh-pages --dotfiles --message "[skip ci] Generate Website" --dist -d _site
             
 workflows:
   say-hello-workflow:
