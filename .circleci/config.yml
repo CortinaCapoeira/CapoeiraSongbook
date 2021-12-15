@@ -34,7 +34,7 @@ jobs:
             git config user.name "sambuccid"
       - add_ssh_keys: #try to upload to github using this key
           fingerprints:
-            - "4a:79:bd:a2:95:73:8b:58:4a:e0:ad:2d:04:1b:e2:24"
+            - "93:fe:cf:1c:ff:65:88:35:0e:4b:d4:9c:4e:5a:9c:43"
       - run:
           name: Deploy docs to the gh-pages branch
           command: gh-pages --dotfiles --message "[skip ci] Generate Website" --dist _site #deploy all the files inside the _site folder
