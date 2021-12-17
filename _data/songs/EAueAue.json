@@ -1,0 +1,12 @@
+
+{ "title":"E auê auê",
+"lines": [
+    {"br":"E auê auê, e auê auê","en":"  "},
+    {"br":"E auê auê, e auê auê","en":" ","bold":true},
+    {"br":"Eu vou, eu vou, vou vadiar","en":" I'm going, I'm going, I'm going to play"},
+    {"br":"Eu vou, eu vou, vou vadiar","en":" I'm going, I'm going, I'm going to play","bold":true},
+    {"br":"Ta na hora de jogar","en":" It's time to play"},
+    {"br":"Vamos la vadiar","en":" Let's play"},
+    {"br":"Ta na hora de jogar","en":" It's time to play ","bold":true},
+    {"br":"Vamos la vadiar","en":" Let's play","bold":true}
+]}
