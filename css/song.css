@@ -1,0 +1,29 @@
+div.FortmattingDiv{
+    display: inline;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+div.song{
+    display: table;
+    font-size: 1em;
+    margin: auto;
+    width: 90vw;
+}
+
+div.row{
+    display: table-row;
+    width: auto;
+}
+
+div.cell{
+    display: table-cell;
+    float:left;
+    width: 50%;
+    min-height: 1em;
+    word-wrap: break-word;
+}
+
+div.bold{
+    font-weight: bold;
+}

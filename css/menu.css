@@ -1,0 +1,66 @@
+div.nav{
+    height: 100%; /* 100% Full-height */
+    width: 100px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: -80;
+    background-color: #232642; /* Not Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */ 
+}
+
+div.nav:hover{
+    left: 0;
+    background-color: #B0C4DE;
+    border-style: none solid none none;
+    border-color: #232642;
+}
+
+div.nav:hover>div.menu{
+    left: 0;
+    display: none;
+}
+
+div.nav li a{
+    background-color: #232642;
+    color:#B0C4DE;
+    display: block;
+    min-width: 10vw;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */ 
+}
+
+div.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 10vw;
+}
+
+div.nav:hover li a {
+    display: block;
+    min-width: 10vw;
+    padding: 8px 16px;
+    /*border: 1px solid #fff;*/
+    background: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+}
+
+div.nav li a:hover {
+    background-color: #232642;
+    color: #B0C4DE;
+}
+
+div.menu{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    -webkit-text-orientation: upright;
+    float: right;
+    color: #B0C4DE;
+    border-style: none solid none none;
+    border-color: #232642;
+}

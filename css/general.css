@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 4vw;
+    /*
+    background: rgb(165, 160, 100 ,1);*/
+    background: #B0C4DE;
+    color: #232642;
+}
+
+li a {
+    display: block;
+    min-width: 10vw;
+    padding: 8px 16px;
+    /*border: 1px solid #fff;*/
+    background: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 10vw;
+}
+
+li a:hover {
+    background-color: #232642;
+    color: #B0C4DE;
+}
+
+div.Banner{
+    background-color: #232642;
+    max-width: auto;
+    margin: auto;
+}
+
+div.Banner>img{
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
