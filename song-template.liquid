@@ -1,0 +1,44 @@
+---
+pagination:
+  data: songs
+  size: 1
+
+permalink: "/song/{{ pagination.items[0] | slug }}.html"
+---
+<html>
+  {%- for songidx in pagination.items -%}
+  <head>
+    <title> Capoeira Songbook|{{ songs[songidx].title }}</title>
+    <!--INSERT CSS FILES HERE-->
+    <link rel="stylesheet" href = "../../../song.css">
+    <link rel="stylesheet" href="../../../general.css">
+  </head>  
+<body>
+  <!--INSERT BANNER HTML-->
+<h2>{{ songs[songidx].title }}</h2>
+<!--INSERT MENU HTML-->
+{% include test %}
+<br><br>
+<h3>{{ songidx }}</h3>
+<h5>{{ songs[songidx].title }}</h5>
+<div>
+  {%- for line in songs[songidx].lines -%}
+  <div class = "FortmattingDiv">
+    <div class = "song">
+        <div class = "row">
+          {%- if line.bold -%}<b>{%- endif -%}
+            <div class = "cell">
+                {{line.br}}
+            </div>
+            <div class = "cell">
+                {{line.en}}
+            </div>
+            {%- if line.bold -%}</b>{%- endif -%}  
+        </div>
+    <div>
+    <div>
+  {%- endfor -%}
+</div>
+{%- endfor -%}
+</body>
+</html>

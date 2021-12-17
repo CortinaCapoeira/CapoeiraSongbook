@@ -1,0 +1,36 @@
+div.toTop{
+    position:fixed;
+    bottom: 0;
+    right:5;
+}
+
+div.ButtonToTop{
+    display: block;
+    float: right;
+    min-width: 10vw;
+    padding: 8px 16px;
+    /*border: 1px solid #fff;*/
+    background-color: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+    transition: 0.3s;
+    list-style-type: none;
+}
+
+div.pagination a {
+    color:#232642;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+div.pagination a:hover {
+    color:#B0C4DE;
+    background-color: #232642;
+}
+
+div.pagination{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
