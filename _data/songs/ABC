@@ -1,0 +1,12 @@
+{ "title":"A,B,C",
+"lines": [
+    {"br":"É o A, é o B, É o A, É o B, É o C","en":"  A, B, A, B, C"},
+    {"br":"    {"br":"É o A, é o B, É o A, É o B, É o C","en":" A, B, A, B, C ","bold":true},","en":""},
+    {"br":"A de Atabaque","en":" A for Atabaque"},
+    {"br":"B do Berimbau","en":" B for Berimbau"},
+    {"br":"C da Capoeira","en":" C for Capoeira"},
+    {"br":"","en":" "},
+    {"br":"A de Atabaque","en":" A for Atabaque","bold":true},
+    {"br":"B do Berimbau","en":" B for Berimbau","bold":true},
+    {"br":"C da Capoeira","en":" C for Capoeira","bold":true}
+]}
