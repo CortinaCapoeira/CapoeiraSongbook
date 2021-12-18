@@ -1,5 +1,5 @@
 ---
-title: "Capoeira Songbook"
+title: "Capoeira Songbook|songs[pagination.items[0]].title"
 layout: page-menu-banner.liquid
 pagination:
   data: songs
@@ -8,8 +8,7 @@ pagination:
 permalink: "/song/{{ pagination.items[0] | slug }}.html"
 ---
 {%- for songidx in pagination.items -%}
-  <h3>{{ songidx }}</h3>
-  <h5>{{ songs[songidx].title }}</h5>
+  <h2>{{ songs[songidx].title }}</h2>
   <div>
     {%- for line in songs[songidx].lines -%}
     <div class = "FortmattingDiv">
