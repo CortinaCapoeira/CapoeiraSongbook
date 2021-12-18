@@ -6,29 +6,29 @@ pagination:
 permalink: "/song/{{ pagination.items[0] | slug }}.html"
 
 layout:page-menu-banner.liquid
-title: songs[songidx].title 
+title: songs[pagination.items[0]].title 
 ---
-
-<h3>{{ songidx }}</h3>
-<h5>{{ songs[songidx].title }}</h5>
-<div>
-  {%- for line in songs[songidx].lines -%}
-  <div class = "FortmattingDiv">
-    <div class = "song">
-        <div class = "row">
-          {%- if line.bold -%}<b>{%- endif -%}
-            <div class = "cell">
-                {{line.br}}
-            </div>
-            <div class = "cell">
-                {{line.en}}
-            </div>
-            {%- if line.bold -%}</b>{%- endif -%}  
-        </div>
-    <div>
-    <div>
-  {%- endfor -%}
-</div>
+{%- for songidx in pagination.items -%}
+  <h3>{{ songidx }}</h3>
+  <h5>{{ songs[songidx].title }}</h5>
+  <div>
+    {%- for line in songs[songidx].lines -%}
+    <div class = "FortmattingDiv">
+      <div class = "song">
+          <div class = "row">
+            {%- if line.bold -%}<b>{%- endif -%}
+              <div class = "cell">
+                  {{line.br}}
+              </div>
+              <div class = "cell">
+                  {{line.en}}
+              </div>
+              {%- if line.bold -%}</b>{%- endif -%}  
+          </div>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
 {%- endfor -%}
 
 
