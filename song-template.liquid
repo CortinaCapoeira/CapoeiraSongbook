@@ -1,12 +1,11 @@
 ---
+title: "Capoeira Songbook"
+layout: page-menu-banner.liquid
 pagination:
   data: songs
   size: 1
 
 permalink: "/song/{{ pagination.items[0] | slug }}.html"
-
-layout:page-menu-banner.liquid
-title: "Capoeira Songbook"
 ---
 {%- for songidx in pagination.items -%}
   <h3>{{ songidx }}</h3>
