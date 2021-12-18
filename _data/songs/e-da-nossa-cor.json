@@ -1,0 +1,17 @@
+
+{ "title":"É da nossa cor",
+"lines": [
+    {"br":"Auê auê auê ê","en":" "},
+    {"br":"E lê lê lê lê lê lê lê lê o","en":" "},
+    {"br":"Auê auê auê ê","en":" ","bold":true},
+    {"br":"E lê lê lê lê lê lê lê lê o","en":" ","bold":true},
+    {"br":"Ta na sague da na raça brasileira","en":" It's in the blood of the brazilian people"},
+    {"br":"Capoeira","en":"Capoeira"},
+    {"br":"É da nossa cor","en":" It is our colour","bold":true},
+    {"br":"Berimbau","en":" Berimbau"},
+    {"br":"É da nossa cor","en":" It is our colour","bold":true},
+    {"br":"Atabaque","en":" Atabaque"},
+    {"br":"É da nossa cor","en":" It is our colour","bold":true},
+    {"br":"Mestre Bimba","en":" Mestre Bimba"},
+    {"br":"É da nossa cor","en":" It is our colour","bold":true}
+]}
