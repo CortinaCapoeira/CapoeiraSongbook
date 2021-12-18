@@ -3,9 +3,9 @@
         <title>
             {{ pagetitle }}
         </title>
-        <link rel="stylesheet" href="/css/menu.css">
-        <link rel="stylesheet" href="/css/general.css">
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="{{ '/css/menu.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/general.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
         </head>
     <body>
     
@@ -15,8 +15,8 @@
         
         <div class = "nav">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="song-index">Index</a></li>
+                    <li><a href="{{ '/' | url }}">Home</a></li>
+                    <li><a href="{{ 'song-index' | url }}">Index</a></li>
                     <li><a href="#contact">Capoeira</a></li>
                     <li><a href="#about">Samba</a></li>
                 </ul>
