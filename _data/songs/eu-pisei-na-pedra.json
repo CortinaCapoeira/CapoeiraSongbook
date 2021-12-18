@@ -1,0 +1,15 @@
+{ "title":"Eu pisei na pedra",
+"lines": [
+    {"br":"Eu pisei na pedra","en":"  I stepped on the stone"},
+    {"br":"A pedra gemeu","en":" The stone groaned"},
+    {"br":"A agua tem veneno morena","en":" The water is poisonous"},
+    {"br":"Quem beber morreu","en":" Whoever drinks it dies"},
+    {"br":"","en":""},
+    {"br":"Eu pisei na pedra","en":" I stepped on the stone","bold":true},
+    {"br":"A pedra gemeu","en":" the stone groaned","bold":true},
+    {"br":"A agua tem veneno morena","en":" The water is poisonous ","bold":true},
+    {"br":"Quem beber morreu","en":" Whoever drinks it dies","bold":true},
+    {"br":"","en":""},
+    {"br":"Quero bem, quero bem","en":" I want, I want"},
+    {"br":"Quero bem mas não posso te ama","en":" I want to but I cannot love you","bold":true}
+]}
