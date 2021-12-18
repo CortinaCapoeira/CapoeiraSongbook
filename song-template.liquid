@@ -4,21 +4,11 @@ pagination:
   size: 1
 
 permalink: "/song/{{ pagination.items[0] | slug }}.html"
+
+layout:page-menu-banner.liquid
+title: "Capoeira Songbook|{{songs[songidx].title }}"
 ---
-<html>
-  {%- for songidx in pagination.items -%}
-  <head>
-    <title> Capoeira Songbook|{{ songs[songidx].title }}</title>
-    <!--INSERT CSS FILES HERE-->
-    <link rel="stylesheet" href = "../../../song.css">
-    <link rel="stylesheet" href="../../../general.css">
-  </head>  
-<body>
-  <!--INSERT BANNER HTML-->
-<h2>{{ songs[songidx].title }}</h2>
-<!--INSERT MENU HTML-->
-{% include test %}
-<br><br>
+
 <h3>{{ songidx }}</h3>
 <h5>{{ songs[songidx].title }}</h5>
 <div>
@@ -40,5 +30,5 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   {%- endfor -%}
 </div>
 {%- endfor -%}
-</body>
-</html>
+
+
