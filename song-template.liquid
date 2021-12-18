@@ -6,7 +6,7 @@ pagination:
 permalink: "/song/{{ pagination.items[0] | slug }}.html"
 
 layout:page-menu-banner.liquid
-title: songs[pagination.items[0]].title 
+title: "Capoeira Songbook"
 ---
 {%- for songidx in pagination.items -%}
   <h3>{{ songidx }}</h3>
