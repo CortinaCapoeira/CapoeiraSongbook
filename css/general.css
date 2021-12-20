@@ -33,8 +33,7 @@ li a:hover {
 
 div.Banner{
     background-color: #232642;
-    max-width: auto;
-    margin: auto;
+    width: 100%;
 }
 
 div.Banner>img{
@@ -42,4 +41,8 @@ div.Banner>img{
     max-width: 80%;
     height: auto;
     margin: auto;
+}
+
+div.banner_Container{
+    
 }
