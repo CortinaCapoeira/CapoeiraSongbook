@@ -1,8 +1,10 @@
 div.contributions{
   position: relative;
-  left: 60vw;
-  right: 10vw;
-  border: 3px solid #73AD21;
+  left: 55vw;
+  right: 5vw;
+  border: 3px solid #232642;
   width: 20vw;
-  max-width: 300px;
+  max-width: 500px;
+  min-width: 150px;
+  height: 50vw;
 }  
