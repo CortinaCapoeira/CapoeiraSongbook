@@ -1,1 +1,7 @@
-holder
+div.contributions{
+  position: relative;
+  left: 80vw;
+  border: 3px solid #73AD21;
+  width: 20vw;
+  max-width: 300px;
+}  
