@@ -1,5 +1,9 @@
+div.container{
+ position:relative; 
+}  
+
 div.contributions{
-  position: relative;
+  position: absolute;
   left: 55vw;
   right: 5vw;
   border: 3px solid #232642;
@@ -10,7 +14,7 @@ div.contributions{
 }  
 
 div.month{
-  position: realtive;
+  position: absolute;
   left: 10vw;
   border: 3px solid #232642;
   width: 20vw;
