@@ -19,21 +19,21 @@ div.month{
   left:auto;
   width: 50%;
   border: 3px solid #232642;
-  height: 130px; /*Magic number for now, maybe needs coding/finding a way that is not so dodgy*/
 }  
 
 div.miniheader{
  font-size: 1.5em; 
 }  
 
+div.SOTMmonth{
+ float: left;
+ left:auto;
+ width:50%;
+}
+
 div.SOTMsong{
- position: absolute;
+ float: right;
  left: 55%;
  width: 45%;
 }
 
-div.SOTMmonth{
- position:absolute;
- left:auto;
- width:50%;
-}
