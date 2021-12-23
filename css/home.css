@@ -16,7 +16,8 @@ div.contributions{
 div.month{
   position: absolute;
   left:auto;
-  width: 50%
+  width: 50%;
+  border: 3px solid #232642;
 }  
 
 div.miniheader{
