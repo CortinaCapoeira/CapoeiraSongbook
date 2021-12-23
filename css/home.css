@@ -24,16 +24,22 @@ div.miniheader{
  font-size: 1.5em; 
 }  
 
-div.SOTMmonth{
- float: left;
- left:auto;
- width:50%;
+div.songOfMonths{
+ display: table;
+ width: 100%;
 }
 
-div.SOTMsong{
- float: right;
- left: 55%;
- width: 45%;
+div.songOfMonths>.SOTMmonth{
+ display: table-column;
+}
+div.songOfMonths>.SOTMsong{
+ display: table-column;
 }
 
-
+div.songOfMonths>.SOTMmonth>div{
+ display: table-cell;
+}
+div.songOfMonths>.SOTMsong>div{
+ display: table-cell;
+ text-align: right;
+}
