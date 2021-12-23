@@ -32,14 +32,14 @@ div.songOfMonths{
 div.songOfMonths>div{
  display: table-row;
 }
-div.songOfMonths>.SOTMsong{
+div.songOfMonths>div{
  display: table-row;
 }
 
-div.songOfMonths>div>.SOTMmonth{
+div.songOfMonths>div>.SOTMmonthCell{
  display: table-cell;
 }
-div.songOfMonths>div>.SOTMsong{
+div.songOfMonths>div>.SOTMsongCell{
  display: table-cell;
  text-align: right;
 }
