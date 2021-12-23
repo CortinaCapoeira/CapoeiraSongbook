@@ -19,7 +19,7 @@ div.month{
   left:auto;
   width: 50%;
   border: 3px solid #232642;
-  height: 112px; 
+  height: 130px; /*Magic number for now, maybe needs coding/finding a way that is not so dodgy*/
 }  
 
 div.miniheader{
