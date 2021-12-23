@@ -29,17 +29,17 @@ div.songOfMonths{
  width: 100%;
 }
 
-div.songOfMonths>.SOTMmonth{
- display: table-column;
+div.songOfMonths>div{
+ display: table-row;
 }
 div.songOfMonths>.SOTMsong{
- display: table-column;
+ display: table-row;
 }
 
-div.songOfMonths>.SOTMmonth>div{
+div.songOfMonths>div>.SOTMmonth{
  display: table-cell;
 }
-div.songOfMonths>.SOTMsong>div{
+div.songOfMonths>div>.SOTMsong{
  display: table-cell;
  text-align: right;
 }
