@@ -28,10 +28,11 @@ div.miniheader{
 div.SOTMsong{
  position: absolute;
  left: 55%;
- width: 45%:
+ width: 45%;
 }
 
 div.SOTMmonth{
  position:absolute;
  left:auto;
  width:50%;
+}
