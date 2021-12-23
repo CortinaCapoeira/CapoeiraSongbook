@@ -24,3 +24,13 @@ div.miniheader{
  font-size: 1.5em; 
 }  
 
+div.SOTMsong{
+ position: absolute;
+ left: 55%;
+ width: 45%:
+}
+
+div.SOTMmonth{
+ position:absolute;
+ left:auto;
+ width:50%;
