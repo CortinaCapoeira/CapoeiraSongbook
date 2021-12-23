@@ -1,0 +1,24 @@
+{
+  "name": "CapoeiraSongbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start" : "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CortinaCapoeira/CapoeiraSongbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CortinaCapoeira/CapoeiraSongbook/issues"
+  },
+  "homepage": "https://github.com/CortinaCapoeira/CapoeiraSongbook#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
