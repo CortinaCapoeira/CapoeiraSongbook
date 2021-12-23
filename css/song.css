@@ -27,3 +27,16 @@ div.cell{
 div.bold{
     font-weight: bold;
 }
+
+div.ButtonToIndex{
+    display: block;
+    float: right;
+    min-width: 10vw;
+    padding: 8px 16px;
+    /*border: 1px solid #fff;*/
+    background-color: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+    transition: 0.3s;
+    list-style-type: none;
+}
