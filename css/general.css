@@ -33,7 +33,7 @@ li a:hover {
 
 div.Banner{
     background-color: #232642;
-    width: fit-content;
+    width: auto;
 }
 
 div.Banner>img{
