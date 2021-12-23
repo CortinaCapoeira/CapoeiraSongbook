@@ -32,6 +32,7 @@ div.songOfMonths{
 div.songOfMonths>div{
  display: table-row;
 }
+
 div.songOfMonths>div{
  display: table-row;
 }
@@ -39,6 +40,7 @@ div.songOfMonths>div{
 div.songOfMonths>div>.SOTMmonthCell{
  display: table-cell;
 }
+
 div.songOfMonths>div>.SOTMsongCell{
  display: table-cell;
  text-align: right;
