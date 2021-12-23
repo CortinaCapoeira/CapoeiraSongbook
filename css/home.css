@@ -4,10 +4,10 @@ div.container{
 
 div.contributions{
   position: absolute;
-  left: 55vw;
+  left: 55%;
   right: 5vw;
   border: 3px solid #232642;
-  width: 20vw;
+  width: 45%;
   max-width: 500px;
   min-width: 150px;
   height: 50vw;
@@ -15,11 +15,12 @@ div.contributions{
 
 div.month{
   position: absolute;
-  left: 10vw;
+  left:auto;
   border: 3px solid #232642;
-  width: 20vw;
+  width: 50%
 }  
 
 div.miniheader{
  font-size: 1.5em; 
 }  
+
