@@ -43,3 +43,18 @@ div.songOfMonths>div>.SOTMsongCell{
  display: table-cell;
  text-align: right;
 }
+
+div.songOfMonths a {
+    display: block;
+    min-width: 10vw;
+    padding: 8px 16px;
+    background: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+div.songOfMonths a:hover {
+    background-color: #232642;
+    color: #B0C4DE;
+}
