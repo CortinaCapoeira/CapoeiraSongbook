@@ -33,4 +33,6 @@ div.pagination{
     width: 80vw;
     margin: auto;
     text-align: center;
+    display: flex;  
+    flex-wrap: wrap;
 }
