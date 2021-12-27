@@ -1,6 +1,21 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 150%
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+     font-size: 100%   
+    }
+}
+
+/* All Sizes */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
     margin: 0;
     /*
     background: rgb(165, 160, 100 ,1);*/
