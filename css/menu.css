@@ -1,10 +1,24 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    div.nav{
+     left: -70;   
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    div.nav{
+        left:-80;
+    }
+}
+
+/*All sizes*/
 div.nav{
     height: 100%; /* 100% Full-height */
     width: 100px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    left: -80;
     background-color: #232642; /* Not Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
@@ -33,13 +47,18 @@ div.nav li a{
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */ 
 }
 
+
 div.nav ul {
+    display:none;
+}
+
+div.nav:hover ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     min-width: 10vw;
+    display: block;
 }
-
 div.nav:hover li a {
     display: block;
     min-width: 10vw;
