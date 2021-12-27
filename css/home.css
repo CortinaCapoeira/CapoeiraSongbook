@@ -8,12 +8,14 @@ div.contributions{
   width:auto;
    padding: 1vw;
   display: block;
+  margin-bottom: 5vw;
  }
  
  div.month{
   border: 3px solid #232642;
   display: block;
   width:auto;
+   margin-top: 5vw;
   }
 }
 
