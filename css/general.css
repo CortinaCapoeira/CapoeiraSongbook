@@ -2,12 +2,6 @@
 @media only screen and (max-width: 768px) {
     body{
         font-size: 120%;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        /*
-        background: rgb(165, 160, 100 ,1);*/
-        background: #B0C4DE;
-        color: #232642;
     }
     
     div.wrapper{
