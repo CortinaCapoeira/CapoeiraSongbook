@@ -40,7 +40,6 @@ div.month{
 
 }
 
-}
 
 /* All sizes */
 div.songOfMonths a:hover {
@@ -86,3 +85,4 @@ div.songOfMonths a {
     color: #232642;
     text-decoration: none;
     transition: 0.5s;
+}
