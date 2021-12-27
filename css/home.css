@@ -1,3 +1,12 @@
+Screen size splits
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
 div.container{
  position:relative; 
 }  
@@ -19,6 +28,25 @@ div.month{
   width: 50%;
   border: 3px solid #232642;
 }  
+
+
+div.songOfMonths a {
+    display: block;
+    min-width: 10vw;
+    padding: 8px 16px;
+    background: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+}
+
+/* All sizes */
+div.songOfMonths a:hover {
+    background-color: #232642;
+    color: #B0C4DE;
+}
 
 div.miniheader{
  font-size: 1.5em; 
@@ -46,17 +74,3 @@ div.songOfMonths>div>.SOTMsongCell{
  text-align: right;
 }
 
-div.songOfMonths a {
-    display: block;
-    min-width: 10vw;
-    padding: 8px 16px;
-    background: #B0C4DE;
-    color: #232642;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-div.songOfMonths a:hover {
-    background-color: #232642;
-    color: #B0C4DE;
-}
