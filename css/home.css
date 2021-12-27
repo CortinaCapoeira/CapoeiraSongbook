@@ -3,19 +3,18 @@
 @media only screen and (max-width: 768px) {
 
 div.contributions{
-  position: static;
+
   border: 3px solid #232642;
-  max-width: 500px;
-  min-width: 150px;
-  padding: 1vw;
-  display: inline;
+  width:auto;
+   padding: 1vw;
+  display: block;
  }
  
  div.month{
-  position:static;
   border: 3px solid #232642;
-  display:inline;
- }
+  display: block;
+  width:auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -39,15 +38,6 @@ div.month{
   border: 3px solid #232642;
 }  
 
-
-div.songOfMonths a {
-    display: block;
-    min-width: 10vw;
-    padding: 8px 16px;
-    background: #B0C4DE;
-    color: #232642;
-    text-decoration: none;
-    transition: 0.5s;
 }
 
 }
@@ -87,3 +77,12 @@ div.songOfMonths>div>.SOTMsongCell{
 div.container{
  position:relative; 
 } 
+
+div.songOfMonths a {
+    display: block;
+    min-width: 10vw;
+    padding: 8px 16px;
+    background: #B0C4DE;
+    color: #232642;
+    text-decoration: none;
+    transition: 0.5s;
