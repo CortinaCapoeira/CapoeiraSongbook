@@ -3,6 +3,10 @@
     body{
         font-size: 120%;
     }
+    
+    div.wrapper{
+        margin: 4vw;
+        margin-left: 35;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -10,6 +14,12 @@
     body{
      font-size: 100%; 
     }
+    
+    div.wrapper{
+        margin:4vw;
+    }
+
+    
 }
 
 /* All Sizes */
@@ -23,9 +33,6 @@ body{
     color: #232642;
 }
 
-div.wrapper{
-    margin:4vw;
-}
 
 li a {
     display: block;
