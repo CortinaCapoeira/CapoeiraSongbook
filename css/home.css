@@ -2,14 +2,24 @@
 /* Smaller devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
 
+div.contributions{
+  position: absolute;
+  border: 3px solid #232642;
+  max-width: 500px;
+  min-width: 150px;
+  padding: 1vw;
+  display: inline;
+ }
+ 
+ div.month{
+  position:absolute;
+  border: 3px solid #232642;
+  display:inline;
+ }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-div.container{
- position:relative; 
-}  
 
 div.contributions{
   position: absolute;
@@ -74,3 +84,6 @@ div.songOfMonths>div>.SOTMsongCell{
  text-align: right;
 }
 
+div.container{
+ position:relative; 
+} 
