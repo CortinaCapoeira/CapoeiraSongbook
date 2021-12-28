@@ -3,11 +3,6 @@
     body{
         font-size: 300%;
     }
-    
-    div.wrapper{
-        margin: 4vw;
-        margin-left: 60;
-}
 }
     
     
@@ -16,13 +11,9 @@
     body{
      font-size: 100%;
     }
-    
-    div.wrapper{
-        margin:4vw;
-    }
-
-    
 }
+
+
 
 /* All Sizes */
 
@@ -71,3 +62,7 @@ div.Banner>img{
     margin: auto;
 }
 
+div.wrapper{
+    margin:4vw;
+    margin-left: 3ex;
+}
