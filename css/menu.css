@@ -46,8 +46,7 @@ div.nav li a{
     background-color: #232642;
     color:#B0C4DE;
     display: block;
-    min-width: 10vw;
-    padding: 8px 16px;
+    padding: 8px 1ex;
     text-decoration: none;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */ 
 }
