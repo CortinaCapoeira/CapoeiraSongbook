@@ -28,6 +28,10 @@ title: "Capoeira Songbook|Home"
     <div class ="month">
         <div class = "miniheader">
         Song of the month
+        <b>Some tests</b>
+        {%- for song in songsOfMonth.orderedMonths -%}
+            {{song.somMonth}}/{{song.somYear}}  <a href="{{ '/song/' | url }}{{ song.filename | slug }}.html">{{song.title}}</a><br>
+        {%- endfor -%}
         </div>
         <div class = "container">
             <div class = "songOfMonths">
@@ -44,6 +48,6 @@ title: "Capoeira Songbook|Home"
                     <div class = "SOTMsongCell"><a href="{{ '/' | url }}">aaa</a></div>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
 </div>
