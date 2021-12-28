@@ -28,14 +28,15 @@ title: "Capoeira Songbook|Home"
     <div class ="month">
         <div class = "miniheader">
         Song of the month
-        <b> Some tests</b>
-        {{songsOfMonth}}
-        {%- for song in songsOfMonth.orderedMonths -%}
-            {{song.somMonth}}/{{song.somYear}}  <a href="{{ '/song/' | url }}{{ song.filename | slug }}.html">{{song.title}}</a><br>
-        {%- endfor -%}
         </div>
         <div class = "container">
             <div class = "songOfMonths">
+                {%- for song in songsOfMonth.orderedMonths -%}
+                <div>
+                    <div class = "SOTMmonthCell">TODO, need to convert to month names: {{song.somMonth}}/{{song.somYear}}</div>
+                    <div class = "SOTMsongCell"><a href="{{ '/song/' | url }}{{ song.filename | slug }}.html">{{song.title}}</a></div>
+                </div>
+                {%- endfor -%}
                 <div>
                     <div class = "SOTMmonthCell">January</div>
                     <div class = "SOTMsongCell"><a href="{{ '/' | url }}">Tira meu nome du meu</a></div>
