@@ -18,10 +18,10 @@
 
 /*All sizes*/
 div.nav{
-    left: 1em;
+    left: -1em;
     height: 100%; /* 100% Full-height */
     min-width: 2.1em;
-    /*width: 100px; /* 0 width - change this with JavaScript */*/
+    width: 100px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
