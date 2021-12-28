@@ -1,4 +1,4 @@
-* menu size/padding/margin for laptop and phone
+* ~~menu size/padding/margin for laptop and phone~~
 * resizing of marging of page based on menu size(div.wrapper margin)
 * extra size category between laptop and small(probably limit at 768px)
 * english translation of song in different block for small devices
