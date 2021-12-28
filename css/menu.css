@@ -1,3 +1,4 @@
+/*
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 992px) {
     div.nav{
@@ -11,11 +12,14 @@
         left:-80;
     }
 }
+*/
 
 /*All sizes*/
 div.nav{
+    left: 1em;
     height: 100%; /* 100% Full-height */
-    width: 100px; /* 0 width - change this with JavaScript */
+    min-width: 2.1em;
+    /*width: 100px; /* 0 width - change this with JavaScript */*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
