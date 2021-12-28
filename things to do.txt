@@ -6,3 +6,4 @@
 * english translation of song in different block for small devices
 * start thinking about where to put soundcloud thing
 * song of the month functionality
+** started work on it, need to convaert dates to month names and remove static songs
