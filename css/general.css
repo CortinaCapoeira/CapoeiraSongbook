@@ -1,12 +1,12 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 992px) {
     body{
-        font-size: 120%;
+        font-size: 300%;
     }
     
     div.wrapper{
         margin: 4vw;
-        margin-left: 40;
+        margin-left: 60;
 }
 }
     
