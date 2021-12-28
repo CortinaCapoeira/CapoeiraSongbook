@@ -1,12 +1,14 @@
-/*
+
 /* Extra small devices (phones, 600px and down) */
+/*
 @media only screen and (max-width: 992px) {
     div.nav{
      left: -45;   
     }
 }
-
+*/
 /* Medium devices (landscape tablets, 768px and up) */
+/*
 @media only screen and (min-width: 992px) {
     div.nav{
         left:-80;
