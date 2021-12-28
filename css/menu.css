@@ -64,13 +64,8 @@ div.nav:hover ul {
     display: block;
 }
 div.nav:hover li a {
-    display: block;
-    min-width: 10vw;
-    padding: 8px 16px;
-    /*border: 1px solid #fff;*/
     background: #B0C4DE;
     color: #232642;
-    text-decoration: none;
 }
 
 div.nav li a:hover {
