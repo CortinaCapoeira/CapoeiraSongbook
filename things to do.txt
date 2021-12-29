@@ -5,5 +5,6 @@
 * extra size category between laptop and small(probably limit at 768px)
 * english translation of song in different block for small devices
 * start thinking about where to put soundcloud thing
+** Soundcloud has 180 minutes of music to be uploaded for free else we need to pay - I don't know how much we need. An account has been created with the same email address as github.
 * song of the month functionality
-** started work on it, need to convaert dates to month names and remove static songs
+** started work on it, need to convert dates to month names and remove static songs
