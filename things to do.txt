@@ -2,7 +2,8 @@
 ** done, to check if it's ok
 * resizing of marging of page based on menu size(div.wrapper margin)~~
 ** done, to check if it's ok
-* extra size category between laptop and small(probably limit at 768px)
+* extra size category between laptop and small(probably limit at 768px)~~
+** Added for the parts that have been adapted so far
 * english translation of song in different block for small devices
 * start thinking about where to put soundcloud thing
 ** Soundcloud has 180 minutes of music to be uploaded for free else we need to pay - I don't know how much we need. An account has been created with the same email address as github.
