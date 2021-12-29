@@ -1,46 +1,48 @@
 @media only screen and (max-width: 992px){
     /*For the smaller devices hide all the divs that are for the large screen size*/
-div.FormattingDiv{
-    display: none;
-}
+    div.FormattingDiv{
+        display: none;
+    }
 
-div.smallSong{
-    display: inline;
-    padding: 20px;
-}
+    div.smallSong{
+        display: inline;
+        padding: 20px;
+    }
 
 }
 
 @media only screen and (min-width: 992px) {
-/* For the larger size hide the small screen size div */
-div.smallSong{
-    display: none;
-}    
+    /* For the larger size hide the small screen size div */
+    div.smallSong{
+        display: none;
+    }    
 
-div.FortmattingDiv{
-    display: inline;
-    transition: margin-left .5s;
-    padding: 20px;
-}
+    div.FortmattingDiv{
+        display: inline;
+        transition: margin-left .5s;
+        padding: 20px;
+    }
 
-div.song{
-    display: table;
-    font-size: 1em;
-    margin: auto;
-    width: 90vw;
-}
+    div.song{
+        display: table;
+        font-size: 1em;
+        margin: auto;
+        width: 90vw;
+    }
 
-div.row{
-    display: table-row;
-    width: auto;
-}
+    div.row{
+        display: table-row;
+        width: auto;
+    }
 
-div.cell{
-    display: table-cell;
-    float:left;
-    width: 50%;
-    min-height: 1em;
-    word-wrap: break-word;
+    div.cell{
+        display: table-cell;
+        float:left;
+        width: 50%;
+        min-height: 1em;
+        word-wrap: break-word;
+    }
+
 }
 
 div.bold{
@@ -58,5 +60,4 @@ div.ButtonToIndex{
     text-decoration: none;
     transition: 0.3s;
     list-style-type: none;
-}
 }
