@@ -1,0 +1,6 @@
+div.lyrics{
+    display:block;
+    width: 90vw;
+    word-wrap:break-word;
+}
+
