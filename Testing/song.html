@@ -1,0 +1,37 @@
+<html>
+    
+    <head>
+        <title>
+            {{ title }}
+        </title>
+        <link rel="stylesheet" href="{{ '/css/menu.css' | url }}">
+        <link rel="sylesheet" href="{{ '/css/general.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/song.css' | url }}">t
+        <link rel="stylesheet" href="{{ '/css/home.css' | url }}">
+        <link rel="shortcut icon" type="image/png" href="{{ '/img/favicon.png' | url }}">
+        </head>
+    <body>
+    
+            <div class="Banner" id = 'top'>
+                <img src="{{ '/img/longandthin.png' | url }}">
+            </div>  
+        
+        <div class = "nav">
+                <ul>
+                    <li><a href="{{ '/' | url }}">Home</a></li>
+                    <li><a href="{{ '/song-index' | url }}">Index</a></li>
+                    <li><a href="#contact">Capoeira</a></li>
+                    <li><a href="#about">Samba</a></li>
+                </ul>
+            <div class = "menu">
+                > menu >
+            </div>
+        </div>
+
+        <div class = "wrapper">
+            {{ content }}
+        </div>
+    </body> 
+
+</html>
