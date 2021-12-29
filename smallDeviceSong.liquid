@@ -4,12 +4,12 @@
     {%- for line in songs[songidx].lines -%}
     <div class = "FortmattingDiv">
       <div class = "container">
-          <div class = "ptbr">
+          <div class = "lyrics">
             {%- if line.bold -%}<b>{%- endif -%}
               <div class = "cell">
                   {{line.br}}
               </div>
-              <div class = "en">
+              <div class = "lyrics">
                   {{line.en}}
               </div>
               {%- if line.bold -%}</b>{%- endif -%}  
