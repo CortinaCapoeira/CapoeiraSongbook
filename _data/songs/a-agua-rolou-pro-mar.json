@@ -3,5 +3,16 @@
     {"br":"A agua rolou pro mar","en":"  The water rolled to the sea"},
     {"br":"A agua rolou na la pedreira","en":" The water rolled on the stones"},
     {"br":"A agua que foi pro mar","en":" The water that went to the sea"},
-    {"br":"Ela vem da cachoeira","en":" It comes to the waterfall"}
+    {"br":"Ela vem da cachoeira","en":" It comes to the waterfall"},
+    {"br": " ", "en": " "},
+    {"br":"A agua rolou pro mar","en":"  The water rolled to the sea", "bold":true},
+    {"br":"A agua rolou na la pedreira","en":" The water rolled on the stones", "bold":true},
+    {"br":"A agua que foi pro mar","en":" The water that went to the sea", "bold":true},
+    {"br":"Ela vem da cachoeira","en":" It comes to the waterfall", "bold":true},
+    {"br": " ", "en": " "},
+    {"br": "Chamei Mamãe Oxum", "en": " "},
+    {"br": "Chamei Mãe Iemanja", "en": " "},
+    {"br": "Ela é minha rainha", "en": " "},
+    {"br": "Grande sereia no mar ", "en": " "}
+    
 ]}
