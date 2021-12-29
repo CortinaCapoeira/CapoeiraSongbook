@@ -1,4 +1,4 @@
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 768px){
     /*For the smaller devices hide all the divs that are for the large screen size*/
     div.FormattingDiv{
         display: none;
@@ -11,7 +11,7 @@
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     /* For the larger size hide the small screen size div */
     div.smallSong{
         display: none;
