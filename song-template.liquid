@@ -28,6 +28,25 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
     {%- endfor -%}
   </div>
   
+  <div>
+    {%- for line in songs[songidx].lines -%}
+    <div class = "smallSong">
+      {{line.br}}
+    {%- endfor -%}
+  </div>
+
+  <div>
+    {%- for line in songs[songidx].lines -%}
+    <div class = "smallSong">
+      {{line.en}}
+    {%- endfor -%}
+  </div>
+  
+  <!--<div class = "toIndex">-->
+    <div class = "ButtonToIndex">   
+        <li><a href="{{ '/song-index/' | url }}"> Return to Index</a></ButtonToTop></li>
+    </div>
+
   <!--<div class = "toIndex">-->
     <div class = "ButtonToIndex">   
         <li><a href="{{ '/song-index/' | url }}"> Return to Index</a></ButtonToTop></li>
