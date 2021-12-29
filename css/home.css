@@ -2,20 +2,20 @@
 /* Smaller devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
 
-div.contributions{
-  border: 0.15em solid #232642;
-  width:auto;
-   padding: 1vw;
-  display: block;
-  margin-bottom: 1vw;
- }
- 
- div.month{
-  border: 0.15em solid #232642;
-  display: block;
-  width:auto;
-   margin-top: 1vw;
+  div.contributions{
+    border: 0.15em solid #232642;
+    width:auto;
+    padding: 1vw;
+    display: block;
+    margin-bottom: 1vw;
   }
+  
+  div.month{
+    border: 0.15em solid #232642;
+    display: block;
+    width:auto;
+    margin-top: 1vw;
+    }
 }
 
 /* Medium devices */
@@ -23,7 +23,7 @@ div.contributions{
   div.contributions{
     border: 0.15em solid #232642;
     width:auto;
-     padding: 1vw;
+    padding: 1vw;
     display: block;
     margin-bottom: 1vw;
    }
@@ -32,7 +32,7 @@ div.contributions{
     border: 0.15em solid #232642;
     display: block;
     width:auto;
-     margin-top: 1vw;
+    margin-top: 1vw;
     }
 
 } 
@@ -40,23 +40,23 @@ div.contributions{
 /* Larger devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px) {
 
-div.contributions{
-  position: absolute;
-  left: 55%;
-  right: 5vw;
-  border: 3px solid #232642;
-  width: 45%;
-  max-width: 500px;
-  min-width: 150px;
-  padding: 1vw;
-}  
+  div.contributions{
+    position: absolute;
+    left: 55%;
+    right: 5vw;
+    border: 3px solid #232642;
+    width: 45%;
+    max-width: 500px;
+    min-width: 150px;
+    padding: 1vw;
+  }  
 
-div.month{
-  position: absolute;
-  left:auto;
-  width: 50%;
-  border: 3px solid #232642;
-}  
+  div.month{
+    position: absolute;
+    left:auto;
+    width: 50%;
+    border: 3px solid #232642;
+  }  
 
 }
 
