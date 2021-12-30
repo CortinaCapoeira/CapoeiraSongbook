@@ -43,6 +43,10 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   <div>
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
+      {%- if line.br == "" or line.br == " " -%}
+        <br/>
+        <br/>
+      {%- endif -%}
       {{line.en}}
       </div>
     {%- endfor -%}
