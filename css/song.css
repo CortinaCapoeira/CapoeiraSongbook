@@ -3,6 +3,18 @@
     div.FormattingDiv{
         display: none;
     }
+    
+    div.song{
+        display: none;   
+    }
+    
+    div.row{
+        display: none;
+    }
+    
+    div.cell{
+        display:none;
+    }
 
     div.smallSong{
         display: inline;
