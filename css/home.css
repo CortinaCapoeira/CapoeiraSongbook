@@ -1,9 +1,9 @@
-
+@import "styles.css";
 /* Smaller devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
 
   div.contributions{
-    border: 0.15em solid #232642;
+    border: 0.15em solid var(--text);
     width:auto;
     padding: 1vw;
     display: block;
@@ -11,7 +11,7 @@
   }
   
   div.month{
-    border: 0.15em solid #232642;
+    border: 0.15em solid var(--text);
     display: block;
     width:auto;
     margin-top: 1vw;
@@ -21,7 +21,7 @@
 /* Medium devices */
 @media only screen and (min-width: 768px) {
   div.contributions{
-    border: 0.15em solid #232642;
+    border: 0.15em solid var(--text);
     width:auto;
     padding: 1vw;
     display: block;
@@ -29,7 +29,7 @@
    }
    
    div.month{
-    border: 0.15em solid #232642;
+    border: 0.15em solid var(--text);
     display: block;
     width:auto;
     margin-top: 1vw;
@@ -44,7 +44,7 @@
     position: absolute;
     left: 55%;
     right: 5vw;
-    border: 3px solid #232642;
+    border: 3px solid var(--text);
     width: 45%;
     max-width: 500px;
     min-width: 150px;
@@ -55,7 +55,7 @@
     position: absolute;
     left:auto;
     width: 50%;
-    border: 3px solid #232642;
+    border: 3px solid var(--text);
   }  
 
 }
@@ -63,8 +63,8 @@
 
 /* All sizes */
 div.songOfMonths a:hover {
-    background-color: #232642;
-    color: #B0C4DE;
+    background-color: var(--text);
+    color: var(--base);
 }
 
 div.miniheader{
@@ -101,8 +101,8 @@ div.songOfMonths a {
     display: block;
     min-width: 10vw;
     padding: 8px 16px;
-    background: #B0C4DE;
-    color: #232642;
+    background: var(--base);
+    color: var(--text);
     text-decoration: none;
     transition: 0.5s;
 }
