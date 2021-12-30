@@ -34,9 +34,9 @@ div.nav{
 
 div.nav:hover{
     left: 0;
-    background-color: #B0C4DE;
+    background-color: var(--base);
     border-style: none solid none none;
-    border-color: #232642;
+    border-color: var(--text);
 }
 
 div.nav:hover>div.menu{
@@ -45,8 +45,8 @@ div.nav:hover>div.menu{
 }
 
 div.nav li a{
-    background-color: #232642;
-    color:#B0C4DE;
+    background-color: var(--text);
+    color: var(--base);
     display: block;
     padding: 8px 0.5ex;
     text-decoration: none;
@@ -66,13 +66,13 @@ div.nav:hover ul {
     display: block;
 }
 div.nav:hover li a {
-    background: #B0C4DE;
-    color: #232642;
+    background: var(--base);
+    color: var(--text);
 }
 
 div.nav li a:hover {
-    background-color: #232642;
-    color: #B0C4DE;
+    background-color: var(--text);
+    color: var(--base);
 }
 
 div.menu{
@@ -80,7 +80,7 @@ div.menu{
     text-orientation: upright;
     -webkit-text-orientation: upright;
     float: right;
-    color: #B0C4DE;
+    color: var(--base);
     border-style: none solid none none;
-    border-color: #232642;
+    border-color: var(--text);
 }
