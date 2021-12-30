@@ -9,3 +9,5 @@
 ** Soundcloud has 180 minutes of music to be uploaded for free else we need to pay - I don't know how much we need. An account has been created with the same email address as github.
 * song of the month functionality
 ** started work on it, need to convert dates to month names and remove static songs
+* Update - variables for the two main colours have been added, they are global veriables defined in styles.css. any other variables/ items that are used in many places across the website should be added.
+
