@@ -15,10 +15,6 @@
     div.cell{
         display:none;
     }
-
-    div.subhead{
-        display:none;
-    }
     
     div.smallSong{
         display: inline;
@@ -33,6 +29,10 @@
         display: none;
     }    
 
+    div.subhead{
+        display:none;
+    }
+    
     div.FortmattingDiv{
         display: inline;
         transition: margin-left .5s;
