@@ -28,7 +28,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
     {%- endfor -%}
   </div>
   
-  <div>
+  <div class = "Portuguese">
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
       {%- if line.br == "" or line.br == " " -%}
@@ -40,7 +40,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
     {%- endfor -%}
   </div>
 
-  <div>
+  <div class = "English">
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
       {%- if line.br == "" or line.br == " " -%}
