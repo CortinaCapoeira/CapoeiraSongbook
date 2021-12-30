@@ -16,6 +16,10 @@
         display:none;
     }
 
+    div.subhead{
+        display:none;
+    }
+    
     div.smallSong{
         display: inline;
         padding: 20px;
