@@ -1,3 +1,5 @@
+@import "styles.css";
+
 @media only screen and (max-width: 768px){
     /*For the smaller devices hide all the divs that are for the large screen size*/
     div.FormattingDiv{
@@ -71,8 +73,8 @@ div.ButtonToIndex{
     min-width: 10vw;
     padding: 8px 16px;
     /*border: 1px solid #fff;*/
-    background-color: #B0C4DE;
-    color: #232642;
+    background-color: var(--base);
+    color: var(--text);
     text-decoration: none;
     transition: 0.3s;
     list-style-type: none;
