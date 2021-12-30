@@ -16,6 +16,8 @@
 }
 */
 
+@import "styles.css";
+
 /*All sizes*/
 div.nav{
     left: -6.8ex;
@@ -24,7 +26,7 @@ div.nav{
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    background-color: #232642; /* Not Black*/
+    background-color: var(--text); /* Not Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: left 0.5s; /* 0.5 second transition effect to slide in the sidenav */ 
