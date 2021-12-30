@@ -32,6 +32,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   <div>
     <div class = "subhead">
         Portuguese
+        <br/>
     </div>
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
@@ -46,7 +47,9 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
 
   <div>
     <div class = "subhead">
+      <br/>
       English
+      <br/>
     </div>
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
