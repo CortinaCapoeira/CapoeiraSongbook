@@ -1,3 +1,5 @@
+@import "styles.css";
+
 div.toTop{
     position:fixed;
     bottom: 0;
@@ -10,23 +12,23 @@ div.ButtonToTop{
     min-width: 10vw;
     padding: 8px 16px;
     /*border: 1px solid #fff;*/
-    background-color: #B0C4DE;
-    color: #232642;
+    background-color: var(--base);
+    color: var(--text);
     text-decoration: none;
     transition: 0.3s;
     list-style-type: none;
 }
 
 div.pagination a {
-    color:#232642;
+    color:var(--text);
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
 }
 
 div.pagination a:hover {
-    color:#B0C4DE;
-    background-color: #232642;
+    color:var(--base);
+    background-color: var(--text);
 }
 
 div.pagination{
