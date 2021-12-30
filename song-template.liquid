@@ -30,6 +30,9 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   </div>
 
   <div class = "Portuguese">
+    <div class = "subhead">
+        Portuguese
+    </div>
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
       {%- if line.br == "" or line.br == " " -%}
@@ -42,6 +45,9 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   </div>
 
   <div class = "English">
+    <div class = "subhead">
+      English
+    </div>
     {%- for line in songs[songidx].lines -%}
     <div class = "smallSong">
       {%- if line.br == "" or line.br == " " -%}
