@@ -2,14 +2,7 @@
 /* Smaller devices (phones, 768px and down) */
 
 @media (hover: none) and (pointer: coarse) {
- body{
-   background-color: red;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  div.contributions{
+ div.contributions{
     border: 0.15em solid var(--text);
     width:auto;
     padding: 1vw;
@@ -24,28 +17,6 @@
     margin-top: 1vw;
     }
 }
-
-/* Medium devices */
-@media only screen and (min-width: 768px) {
-  div.contributions{
-    border: 0.15em solid var(--text);
-    width:auto;
-    padding: 1vw;
-    display: block;
-    margin-bottom: 1vw;
-   }
-   
-   div.month{
-    border: 0.15em solid var(--text);
-    display: block;
-    width:auto;
-    margin-top: 1vw;
-    }
-
-} 
-
-/* Larger devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 992px) {
 
   div.contributions{
     position: absolute;
@@ -64,9 +35,6 @@
     width: 50%;
     border: 3px solid var(--text);
   }  
-
-}
-
 
 /* All sizes */
 div.songOfMonths a:hover {
