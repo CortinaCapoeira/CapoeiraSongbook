@@ -1,6 +1,24 @@
 @import "styles.css";
-/* Smaller devices (phones, 768px and down) */
+/*laptop scrren*/
+  div.contributions{
+    position: absolute;
+    left: 55%;
+    right: 5vw;
+    border: 3px solid var(--text);
+    width: 45%;
+    max-width: 500px;
+    min-width: 150px;
+    padding: 1vw;
+  }  
 
+  div.month{
+    position: absolute;
+    left:auto;
+    width: 50%;
+    border: 3px solid var(--text);
+  }  
+
+/*Touchscreen*/
 @media (hover: none) and (pointer: coarse) {
  div.contributions{
     border: 0.15em solid var(--text);
@@ -21,23 +39,7 @@
  }
 }
 
-  div.contributions{
-    position: absolute;
-    left: 55%;
-    right: 5vw;
-    border: 3px solid var(--text);
-    width: 45%;
-    max-width: 500px;
-    min-width: 150px;
-    padding: 1vw;
-  }  
 
-  div.month{
-    position: absolute;
-    left:auto;
-    width: 50%;
-    border: 3px solid var(--text);
-  }  
 
 /* All sizes */
 div.songOfMonths a:hover {
