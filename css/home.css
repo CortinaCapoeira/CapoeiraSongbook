@@ -16,6 +16,9 @@
     width:auto;
     margin-top: 1vw;
     }
+ body{
+  background-color: red;
+ }
 }
 
   div.contributions{
