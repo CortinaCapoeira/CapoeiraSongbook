@@ -52,6 +52,7 @@ div.miniheader{
 div.songOfMonths{
  display: table;
  width: 100%;
+ padding-left: 7px;
 }
 
 div.songOfMonths>div{
