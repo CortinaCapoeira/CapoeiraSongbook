@@ -21,6 +21,7 @@
 /*Touchscreen*/
 @media (hover: none) and (pointer: coarse) {
  div.contributions{
+    position: inital;
     border: 0.15em solid var(--text);
     width:auto;
     padding: 1vw;
@@ -29,14 +30,17 @@
   }
   
   div.month{
+    position: inital;
     border: 0.15em solid var(--text);
     display: block;
     width:auto;
     margin-top: 1vw;
     }
+  /*
  body{
   background-color: red;
  }
+  /*
 }
 
 
