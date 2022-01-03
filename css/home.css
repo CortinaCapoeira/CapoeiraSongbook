@@ -1,5 +1,12 @@
 @import "styles.css";
 /* Smaller devices (phones, 768px and down) */
+
+@media (hover: none) and (pointer: coarse) {
+ body{
+   background-color: red;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   div.contributions{
