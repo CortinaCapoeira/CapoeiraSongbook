@@ -1,34 +1,20 @@
 * ~~menu size/padding/margin for laptop and phone~~
-** ~~done, to check if it's ok~~
 * ~~resizing of marging of page based on menu size(div.wrapper margin)~~
-** ~~done, to check if it's ok
 * ~~extra size category between laptop and small(probably limit at 768px)~~
-** ~~Added for the parts that have been adapted so far
 * ~~english translation of song in different block for small devices~~
 ** Done! More or less - some final formatting preferences and tweaks required
 * start thinking about where to put soundcloud thing
-** Soundcloud has 180 minutes of music to be uploaded for free else we need to pay - I don't know how much we need. An account has been created with the same email address as github.
-* song of the month functionality
-** started work on it, need to convert dates to month names and remove static songs
-* Update - variables for the two main colours have been added, they are global veriables defined in styles.css. any other variables/ items that are used in many places across the website should be added.
-
-Add audio to template file
-add link to json file
-add if statements to check if there even is an audio file yet
-formatting for 3 screen sizes - fix the conditions and boundarys
-chat about song formatting for small screen
-
-menu for smaller devices
-song layout for phones (use touchscreen as a condition?)
-
-list conditions
-  touchscreen
-    small phone portrait
-    small phone landscape
-    med/large phone portrait
-    
-    med/large phone landscape
-    tablet
-    
-   non touchscreen
-    laptop/desktop
+** Soundcloud had small song limit, we are planning to use google drive
+* ~~song of the month functionality~~
+* ~~Update variables for the two main colours have been added~~
+** they are global veriables defined in styles.css
+* Add audio to template file
+** add link to json file
+** add if statements to check if there even is an audio file yet
+* formatting for 3 screen sizes - fix the conditions and boundarys
+** list of types:
+*** touchscreen small-medium portrait
+*** touchscreen small-medium landscape
+*** touchscreen big / computers
+* menu for smaller devices
+* song layout for phones (use touchscreen as a condition?)
