@@ -54,7 +54,7 @@ div.Banner{
 }
 
 div.Banner>img{
-    display: block;
+    display: inline-block;
     max-width: 80%;
     height: auto;
     margin: auto;

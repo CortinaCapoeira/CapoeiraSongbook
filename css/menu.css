@@ -82,7 +82,22 @@ div.mobile-nav{
         background: var(--base);
         color: var(--text);
     }
-    
+
+    button.menuButton{
+        background: var(--text);
+        color: var(--base);
+        width:15%;
+        height: auto;
+        margin: auto;
+        border: none;
+    }
+
+    button.menuButton>svg{
+        fill: var(--base);
+        background-color: var(--text);
+        width:80%;
+        
+    }
 }
 
 /*All Sizes*/
