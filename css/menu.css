@@ -53,6 +53,11 @@ div.menu{
     border-style: none solid none none;
     border-color: var(--text);
 }
+
+div.mobile-nav{
+    display:none;
+}
+
 /*TouchScreen*/
 @media (hover: none) and (pointer: coarse) {
     div.nav{

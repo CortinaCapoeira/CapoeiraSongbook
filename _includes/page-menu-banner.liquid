@@ -17,19 +17,45 @@
         </div>  
         
         <div class = "nav">
+                    <ul>
+                        <li><a href="{{ '/' | url }}">Home</a></li>
+                        <li><a href="{{ '/song-index' | url }}">Index</a></li>
+                        <li><a href="#contact">Capoeira</a></li>
+                        <li><a href="#about">Samba</a></li>
+                    </ul>  
+            <div class = "menu">
+                > menu >
+            </div>
+        </div>
+
+        <div class = "mobile-nav">
+            <div id = "links">
                 <ul>
                     <li><a href="{{ '/' | url }}">Home</a></li>
                     <li><a href="{{ '/song-index' | url }}">Index</a></li>
                     <li><a href="#contact">Capoeira</a></li>
                     <li><a href="#about">Samba</a></li>
                 </ul>
-            <div class = "menu">
-                > menu >
             </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i> MENU </i>
+            </a>
         </div>
 
         <div class = "wrapper">
             {{ content }}
         </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+        </script>
     </body> 
 </html>
