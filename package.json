@@ -4,7 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "build" : "eleventy"
+    "build" : "eleventy",
+    "serve" : "eleventy --serve"
   },
   "repository": {
     "type": "git",

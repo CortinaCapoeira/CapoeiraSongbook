@@ -53,12 +53,55 @@ div.menu{
     border-style: none solid none none;
     border-color: var(--text);
 }
+
+div.mobile-nav{
+    display:none;
+}
+
+button.menuButton{
+    display:none;
+}
+
 /*TouchScreen*/
 @media (hover: none) and (pointer: coarse) {
     div.nav{
-        width: 100%;
-        margin: 0;
-        
+        display:none;
+    }
+
+    div.mobile-nav{
+        display: inherit;
+    }
+
+    div.mobile-nav>#links{
+        display: none;
+    }
+
+    div.mobile-nav li a{
+        background-color: var(--text);
+        color: var(--base);
+        border: none;
+    }
+
+    div.nav:hover li a {
+        background: var(--base);
+        color: var(--text);
+    }
+
+    button.menuButton{
+        background: var(--text);
+        color: var(--base);
+        width:15%;
+        display: initial;
+        height: auto;
+        margin: auto;
+        border: none;
+    }
+
+    button.menuButton>svg{
+        fill: var(--base);
+        background-color: var(--text);
+        width:80%;
+        margin: auto;
     }
 }
 
