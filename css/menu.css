@@ -18,7 +18,7 @@
 
 @import "styles.css";
 
-/*All sizes*/
+/*Laptop etc*/
 div.nav{
     left: -6.8ex;
     height: 100%; /* 100% Full-height */
@@ -44,6 +44,25 @@ div.nav:hover>div.menu{
     display: none;
 }
 
+div.menu{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    -webkit-text-orientation: upright;
+    float: right;
+    color: var(--base);
+    border-style: none solid none none;
+    border-color: var(--text);
+}
+/*TouchScreen*/
+@media (hover: none) and (pointer: coarse) {
+    div.nav{
+        width: 100%;
+        margin: 0;
+        
+    }
+}
+
+/*All Sizes*/
 div.nav li a{
     background-color: var(--text);
     color: var(--base);
@@ -75,12 +94,4 @@ div.nav li a:hover {
     color: var(--base);
 }
 
-div.menu{
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    -webkit-text-orientation: upright;
-    float: right;
-    color: var(--base);
-    border-style: none solid none none;
-    border-color: var(--text);
-}
+
