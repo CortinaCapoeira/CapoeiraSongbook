@@ -18,3 +18,5 @@
 *** touchscreen big / computers
 * menu for smaller devices
 * song layout for phones (use touchscreen as a condition?)
+*Size of button/text in button (pagination and return to top)
+*Text size of song font on mobile devices
