@@ -1,27 +1,16 @@
 @import "styles.css";
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
-    body{
-        font-size: 300%;
-    }
-}
-    
-/* Medium devices (landscape tablets, 768px and up) */ 
-@media only screen and (min-width: 768px) {
-    body{
-        font-size: 150%;
-    }
+/* Laptop Etc. */
+body{
+    font-size: 100%;
 }
 
-
-/* Larger devices (laptops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/*Touchscreen*/
+@media (hover: none) and (pointer: coarse) {
     body{
-        font-size: 100%;
+        font-size:150%;
     }
 }
-
 
 
 /* All Sizes */
