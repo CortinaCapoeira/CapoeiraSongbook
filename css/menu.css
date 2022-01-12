@@ -58,6 +58,10 @@ div.mobile-nav{
     display:none;
 }
 
+button.menuButton{
+    display:none;
+}
+
 /*TouchScreen*/
 @media (hover: none) and (pointer: coarse) {
     div.nav{
@@ -87,6 +91,7 @@ div.mobile-nav{
         background: var(--text);
         color: var(--base);
         width:15%;
+        display: initial;
         height: auto;
         margin: auto;
         border: none;
@@ -96,7 +101,7 @@ div.mobile-nav{
         fill: var(--base);
         background-color: var(--text);
         width:80%;
-        
+        margin: auto;
     }
 }
 

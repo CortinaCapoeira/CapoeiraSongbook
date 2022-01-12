@@ -5,10 +5,24 @@ body{
     font-size: 100%;
 }
 
+div.Banner>img{
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
+
 /*Touchscreen*/
 @media (hover: none) and (pointer: coarse) {
     body{
         font-size:150%;
+    }
+
+    div.Banner>img{
+        display: inline-block;
+        max-width: 80%;
+        height: auto;
+        margin: auto;
     }
 }
 
@@ -53,12 +67,6 @@ div.Banner{
     width: auto;
 }
 
-div.Banner>img{
-    display: inline-block;
-    max-width: 80%;
-    height: auto;
-    margin: auto;
-}
 
 div.wrapper{
     margin:4vw;
