@@ -1,53 +1,51 @@
 @import "styles.css";
-/*laptop scrren*/
-  div.contributions{
-    position: absolute;
-    left: 55%;
-    right: 5vw;
-    border: 3px solid var(--text);
-    width: 45%;
-    max-width: 500px;
-    min-width: 150px;
-    padding: 1vw;
-  }  
+/*laptop screen*/
+div.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  div.month{
-    position: absolute;
-    left:auto;
-    width: 50%;
-    border: 3px solid var(--text);
-  }  
+div.contributions{
+  border: 3px solid var(--text);
+  width: 45%;
+  min-width: 150px;
+  padding: 1vw;
+  margin-bottom: 1em;
+}
 
-/*Touchscreen*/
-@media (hover: none) and (pointer: coarse) {
+div.month{
+  border: 3px solid var(--text);
+  width: 45%;
+  min-width: 150px;
+  margin-bottom: 1em;
+} 
+
+/*Touchsceen and small screen*/
+@media (hover: none) and (pointer: coarse), only screen and (max-width: 700px){
+    
+  div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+
  div.contributions{
-    position: inital;
     border: 0.15em solid var(--text);
-    width:auto;
-    padding: 1vw;
-    display: block;
-    margin-bottom: 1vw;
+    width: auto;
   }
   
   div.month{
-    position: inital;
     border: 0.15em solid var(--text);
-    display: block;
-    width:auto;
-    margin-top: 1vw;
-    }
-  /*
- body{
-  background-color: red;
- }
-  */
+    width: auto;
+  }
 }
 
 
 /* All sizes */
 div.songOfMonths a:hover {
-    background-color: var(--text);
-    color: var(--base);
+  background-color: var(--text);
+  color: var(--base);
 }
 
 div.miniheader{
@@ -56,7 +54,7 @@ div.miniheader{
 
 div.songOfMonths{
  display: table;
- width: 100%;
+ flex: 1;
  padding-left: 7px;
 }
 
@@ -77,16 +75,16 @@ div.songOfMonths>div>.SOTMsongCell{
  text-align: right;
 }
 
-div.container{
- position:relative; 
-} 
+div.songOfMonthContainer{
+  display: flex;
+}
 
 div.songOfMonths a {
-    display: block;
-    min-width: 10vw;
-    padding: 8px 16px;
-    background: var(--base);
-    color: var(--text);
-    text-decoration: none;
-    transition: 0.5s;
+  display: block;
+  min-width: 10vw;
+  padding: 8px 16px;
+  background: var(--base);
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.5s;
 }
