@@ -20,16 +20,12 @@ title: "Capoeira Songbook|Home"
     </p>
 </div>
 <div class = "container">
-    <div class = "contributions">
-        We would love for this project to be a collaboration and we have some ideas for how this can be extended and grow. If you have any ideas, or you want to contribute please get involved.
-        
-    </div>
 
     <div class ="month">
         <div class = "miniheader">
-        Song of the month
+            Song of the month
         </div>
-        <div class = "container">
+        <div class = "songOfMonthContainer">
             <div class = "songOfMonths">
                 {%- for song in songsOfMonth.orderedMonths -%}
                 <div>
@@ -39,5 +35,9 @@ title: "Capoeira Songbook|Home"
                 {%- endfor -%}
             </div>
         </div>
+    </div>
+
+    <div class = "contributions">
+        We would love for this project to be a collaboration and we have some ideas for how this can be extended and grow. If you have any ideas, or you want to contribute please get involved.
     </div>
 </div>
