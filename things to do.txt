@@ -1,22 +1,6 @@
-* ~~menu size/padding/margin for laptop and phone~~
-* ~~resizing of marging of page based on menu size(div.wrapper margin)~~
-* ~~extra size category between laptop and small(probably limit at 768px)~~
-* ~~english translation of song in different block for small devices~~
-** Done! More or less - some final formatting preferences and tweaks required
-* start thinking about where to put soundcloud thing
-** Soundcloud had small song limit, we are planning to use google drive
-* ~~song of the month functionality~~
-* ~~Update variables for the two main colours have been added~~
-** they are global veriables defined in styles.css
-* Add audio to template file
-** add link to json file
-** add if statements to check if there even is an audio file yet
-* formatting for 3 screen sizes - fix the conditions and boundarys
-** list of types:
-*** touchscreen small-medium portrait
-*** touchscreen small-medium landscape
-*** touchscreen big / computers
-* menu for smaller devices
-* song layout for phones (use touchscreen as a condition?)
+*** touchscreen big / computers - Layout for screen sizes
 *Size of button/text in button (pagination and return to top)
-*Text size of song font on mobile devices
+*Text size consistent on mobile devices
+* Location of hamburger menu option in mobiles centered/neater
+*Text/Narrative on home page to welcome people properly
+*Contributions set up
