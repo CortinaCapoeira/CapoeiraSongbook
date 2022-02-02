@@ -4,7 +4,6 @@ div.container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--pale);
 }
 
 div.contributions{
@@ -32,12 +31,12 @@ div.month{
   } 
 
  div.contributions{
-    border: 0.15em solid var(--text);
+    border: 0.15em solid var(--pale);
     width: auto;
   }
   
   div.month{
-    border: 0.15em solid var(--text);
+    border: 0.15em solid var(--pale);
     width: auto;
   }
 }
