@@ -62,10 +62,6 @@ div.songOfMonths>div{
  display: table-row;
 }
 
-div.songOfMonths>div{
- display: table-row;
-}
-
 div.songOfMonths>div>.SOTMmonthCell{
  display: table-cell;
 }
