@@ -1,6 +1,4 @@
 *** touchscreen big / computers - Layout for screen sizes
-*Size of button/text in button (pagination and return to top)
-*Text size consistent on mobile devices
 * Location of hamburger menu option in mobiles centered/neater
 *Text/Narrative on home page to welcome people properly
 *Contributions set up
