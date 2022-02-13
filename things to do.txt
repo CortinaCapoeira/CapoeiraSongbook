@@ -1,5 +1,4 @@
 *** touchscreen big / computers - Layout for screen sizes
-* Location of hamburger menu option in mobiles centered/neater
 *Text/Narrative on home page to welcome people properly
 *Contributions set up
 * maybe how songs look on small device???? (no bold, long lines go in new line but with wrong padding, "Portuguese" and "English" titles don't look like titles)
