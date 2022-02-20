@@ -4,7 +4,7 @@
 div.smallSong{
     padding-left: 39px;
     padding-top: 8px;
-    height: 2ex; /*to make sure empy divs don't shrink to 0 height*/
+    min-height: 2ex; /*to make sure empy divs don't shrink to 0 height*/
 }
 
 div.subhead{
