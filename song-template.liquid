@@ -34,7 +34,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
         Portuguese
         <br/>
     </div>
-    <ol>
+    <ol class="numNoDots">
     {%- for line in songs[songidx].lines -%}
       <li class = "smallSong">
         {%- if line.bold -%}<b>{%- endif -%}
@@ -51,7 +51,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
       English
       <br/>
     </div>
-    <ol>
+    <ol class="numNoDots">
     {%- for line in songs[songidx].lines -%}
       <li class = "smallSong">
         {%- if line.bold -%}<b>{%- endif -%}
