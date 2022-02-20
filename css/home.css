@@ -91,7 +91,8 @@ a.explore{
   color: var(--base);
   padding: 1em;
   text-align: center;
-  margin: auto;
+  margin: 1em auto;
+  display: inline-block;
 }
 
 a.explore:hover{
