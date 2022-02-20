@@ -7,6 +7,10 @@ li.smallSong{
     min-height: 2ex; /*to make sure empy divs don't shrink to 0 height*/
 }
 
+ol.numNoDots{
+    padding-left: 0px;
+}
+
 ol.numNoDots ::marker{
     content: counter(list-item);
 }
