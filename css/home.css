@@ -108,6 +108,7 @@ a.explore:hover{
 
 div.hero-text{
   color: var(--base);
+  letter-spacing: 0.01em;
 }
 
 }
