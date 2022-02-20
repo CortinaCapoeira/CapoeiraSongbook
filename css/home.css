@@ -107,7 +107,7 @@ a.explore:hover{
 }
 
 div.hero-text{
-  font-color: var(--base);
+  color: var(--base);
 }
 
 }
