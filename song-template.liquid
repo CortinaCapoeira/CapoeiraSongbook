@@ -10,7 +10,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
 {%- for songidx in pagination.items -%}
   <h2>{{ songs[songidx].title }}</h2>
   
-  <div>
+  <div class="bigScreenSongDiv">
     {%- for line in songs[songidx].lines -%}
     <div class = "FortmattingDiv">
       <div class = "song">
@@ -29,7 +29,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
     {%- endfor -%}
   </div>
 
-  <div>
+  <div class="mobileSongDiv">
     <div class = "subhead">
         Portuguese
         <br/>
@@ -45,7 +45,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
     {%- endfor -%}
   </div>
 
-  <div>
+  <div class="mobileSongDiv">
     <div class = "subhead">
       <br/>
       English
