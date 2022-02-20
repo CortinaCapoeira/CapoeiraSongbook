@@ -34,13 +34,15 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
         Portuguese
         <br/>
     </div>
+    <ol>
     {%- for line in songs[songidx].lines -%}
-    <div class = "smallSong">
-      {%- if line.bold -%}<b>{%- endif -%}
-      {{line.br}}
-      {%- if line.bold -%}</b>{%- endif -%}
-      </div>
+      <li class = "smallSong">
+        {%- if line.bold -%}<b>{%- endif -%}
+        {{line.br}}
+        {%- if line.bold -%}</b>{%- endif -%}
+      </li>
     {%- endfor -%}
+    </ol>
   </div>
 
   <div class="mobileSongDiv">
@@ -50,11 +52,11 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
       <br/>
     </div>
     {%- for line in songs[songidx].lines -%}
-    <div class = "smallSong">
-      {%- if line.bold -%}<b>{%- endif -%}
-      {{line.en}}
-      {%- if line.bold -%}</b>{%- endif -%}
-      </div>
+      <li class = "smallSong">
+        {%- if line.bold -%}<b>{%- endif -%}
+        {{line.en}}
+        {%- if line.bold -%}</b>{%- endif -%}
+      </li>
     {%- endfor -%}
   </div>
 
