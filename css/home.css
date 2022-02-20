@@ -106,4 +106,8 @@ a.explore:hover{
   border: 0.15em solid var(--pale);
 }
 
+div.hero-text{
+  font-color: var(--base);
+}
+
 }
