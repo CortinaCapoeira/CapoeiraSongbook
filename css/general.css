@@ -15,7 +15,7 @@ div.Banner>img{
 /*Touchscreen*/
 @media (hover: none) and (pointer: coarse) {
     body{
-        font-size:150%;
+        font-size:120%;
     }
 
     div.Banner>img{
