@@ -31,12 +31,10 @@ div.month{
   } 
 
  div.contributions{
-    border: 0.15em solid var(--pale);
     width: auto;
   }
   
   div.month{
-    border: 0.15em solid var(--pale);
     width: auto;
   }
 }
