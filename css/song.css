@@ -1,73 +1,47 @@
 @import "styles.css";
 
-@media only screen and (max-width: 768px){
-    /*For the smaller devices hide all the divs that are for the large screen size*/
-    div.FormattingDiv{
-        display: none;
-    }
-    
-    div.song{
-        display: none;   
-    }
-    
-    div.row{
-        display: none;
-    }
-    
-    div.cell{
-        display:none;
-    }
-    
-    div.smallSong{
-        display: inline;
-        padding: 20px;
-    }
-    
-    
-    div.subhead{
-        font-size: 1.2em;
-    }
+
+div.smallSong{
+    display: inline;
+    padding: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-    /* For the larger size hide the small screen size div */
-    div.smallSong{
-        display: none;
-    }    
+div.subhead{
+    font-weight: bold;
+}
 
-    div.subhead{
-        display:none;
-    }
-    
-    div.FortmattingDiv{
-        display: inline;
-        transition: margin-left .5s;
-        padding: 20px;
-    }
-
-    div.song{
-        display: table;
-        margin: auto;
-        width: 90vw;
-    }
-
-    div.row{
-        display: table-row;
-        width: auto;
-    }
-
-    div.cell{
-        display: table-cell;
-        float:left;
-        width: 50%;
-        min-height: 1em;
-        word-wrap: break-word;
-    }
-
+div.mobileSongDiv{
+    display: none;
 }
 
 div.bold{
     font-weight: bold;
+}
+
+
+div.FortmattingDiv{
+    display: inline;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+div.song{
+    display: table;
+    margin: auto;
+    width: 90vw;
+}
+
+div.row{
+    display: table-row;
+    width: auto;
+}
+
+div.cell{
+    display: table-cell;
+    float:left;
+    width: 50%;
+    min-height: 1em;
+    word-wrap: break-word;
 }
 
 div.ButtonToIndex{
@@ -82,3 +56,22 @@ div.ButtonToIndex{
     transition: 0.3s;
     list-style-type: none;
 }
+
+@media only screen and (max-width: 768px){
+    /*For the smaller devices hide all the divs that are for the large screen size*/
+    div.FormattingDiv{
+        display: none;
+    }
+    
+    div.bigScreenSongDiv{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the larger size hide the small screen size div */
+    div.mobileSongDiv{
+        display: none;
+    }
+}
+
