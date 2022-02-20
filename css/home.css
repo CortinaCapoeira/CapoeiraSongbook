@@ -97,6 +97,7 @@ a.explore{
   padding: 1em;
   display: inline-block;
   text-decoration: none;
+  border: 0.15em solid var(--text);
 }
 
 a.explore:hover{
