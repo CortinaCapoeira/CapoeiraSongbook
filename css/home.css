@@ -102,5 +102,5 @@ a.explore{
 a.explore:hover{
   background-color: var(--base);
   color:var(--text);
-  border-color: var(--pale);
+  border: 0.15em solid var(--pale);
 }
