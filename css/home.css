@@ -89,7 +89,6 @@ div.songOfMonths a {
 div.exploreContainer{
   text-align:center;
   margin: 1em;
-  text-decoration: none;
 }
 
 a.explore{
@@ -97,6 +96,7 @@ a.explore{
   color: var(--base);
   padding: 1em;
   display: inline-block;
+  text-decoration: none;
 }
 
 a.explore:hover{
