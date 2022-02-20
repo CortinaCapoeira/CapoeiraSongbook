@@ -84,3 +84,15 @@ div.songOfMonths a {
   text-decoration: none;
   transition: 0.5s;
 }
+
+
+.button{
+  background-color: var(--text);
+  font-color: var(--base);
+}
+
+.button:hover{
+  background-color: var(--base);
+  font-color:var(--text);
+  border-color: var(--pale);
+}
