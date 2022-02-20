@@ -12,6 +12,11 @@ div.Banner>img{
     margin: auto;
 }
 
+div.wrapper{
+    margin:4vw;
+    margin-left: 3ex;
+}
+
 /*Touchscreen*/
 @media (hover: none) and (pointer: coarse) {
     body{
@@ -21,6 +26,11 @@ div.Banner>img{
     div.Banner>img{
         display: inline-block;
     }
+    
+    div.wrapper{
+    margin:4vw;
+    }
+
 }
 
 
