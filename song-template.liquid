@@ -39,7 +39,9 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
       {%- if line.br == "" or line.br == " " -%}
       <br/>
       {%- endif -%}
+      {%- if line.bold -%}<b>{%- endif -%}
       {{line.br}}
+      {%- if line.bold -%}</b>{%- endif -%}
       <br/>
       </div>
     {%- endfor -%}
@@ -56,7 +58,9 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
       {%- if line.br == "" or line.br == " " -%}
         <br/>
       {%- endif -%}
+      {%- if line.bold -%}<b>{%- endif -%}
       {{line.en}}
+      {%- if line.bold -%}</b>{%- endif -%}
       <br/>
       </div>
     {%- endfor -%}
