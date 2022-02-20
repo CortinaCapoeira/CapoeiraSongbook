@@ -22,7 +22,11 @@
         display: inline;
         padding: 20px;
     }
-
+    
+    
+    div.subhead{
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
