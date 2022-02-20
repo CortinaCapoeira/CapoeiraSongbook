@@ -92,15 +92,15 @@ div.exploreContainer{
 }
 
 a.explore{
-  background-color: var(--text);
-  color: var(--base);
+  background-color: var(--flash);
+  color: var(--text);
   padding: 1em;
   display: inline-block;
   text-decoration: none;
 }
 
 a.explore:hover{
-  background-color: var(--base);
-  color:var(--text);
+  background-color: var(--text);
+  color:var(--base);
   border: 0.15em solid var(--pale);
 }
