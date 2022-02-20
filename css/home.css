@@ -86,12 +86,15 @@ div.songOfMonths a {
 }
 
 
+div.exploreContainer{
+  text-align:center;
+  margin: 1em;
+}
+
 a.explore{
   background-color: var(--text);
   color: var(--base);
   padding: 1em;
-  text-align: center;
-  margin: 1em auto;
   display: inline-block;
 }
 
