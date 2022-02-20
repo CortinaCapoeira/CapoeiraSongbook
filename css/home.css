@@ -88,11 +88,14 @@ div.songOfMonths a {
 
 a.explore{
   background-color: var(--text);
-  font-color: var(--base);
+  color: var(--base);
+  padding: 1em;
+  text-align: center;
+  margin: auto;
 }
 
 a.explore:hover{
   background-color: var(--base);
-  font-color:var(--text);
+  color:var(--text);
   border-color: var(--pale);
 }
