@@ -51,6 +51,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
       English
       <br/>
     </div>
+    <ol>
     {%- for line in songs[songidx].lines -%}
       <li class = "smallSong">
         {%- if line.bold -%}<b>{%- endif -%}
@@ -58,6 +59,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
         {%- if line.bold -%}</b>{%- endif -%}
       </li>
     {%- endfor -%}
+    </ol>
   </div>
 
   <!--<div class = "toIndex">-->
