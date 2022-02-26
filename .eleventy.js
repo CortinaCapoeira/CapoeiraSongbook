@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
         return dateMonth.toLocaleString('en-GB', { month: 'long' });
     });
     
-    eleventyConfig.addFilter("Date", function(value) { return value.toLocaleDateString() });
+    eleventyConfig.addFilter("format_date", function(value) { return value.toLocaleDateString() });
     
     return {
         pathPrefix: "CapoeiraSongbook"
