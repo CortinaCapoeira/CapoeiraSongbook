@@ -24,7 +24,7 @@ jobs:
           command: apt-get update
       - run:
           name: install dependencies used by pdf generator
-          command: apt-get install libxshmfence1 libglu1
+          command: apt-get install -y libxshmfence1 libglu1
       - run:
           name: Generate PDF
           command: npm run-script pdf-build
