@@ -1,0 +1,20 @@
+{%- for item in songs -%}
+  <h2>{{ songs[songidx].title }}</h2>
+
+    <div class="bigScreenSongDiv">
+      {%- for line in songs[songidx].lines -%}
+      <div class = "FortmattingDiv">
+        <div class = "song">
+            <div class = "row">
+              {%- if line.bold -%}<b>{%- endif -%}
+                <div class = "cell">
+                    {{line.br}}
+                </div>
+                <div class = "cell">
+                    {{line.en}}
+                </div>
+                {%- if line.bold -%}</b>{%- endif -%}  
+            </div>
+        </div>
+      </div>
+ {%- endfor -%}
