@@ -72,7 +72,7 @@ date: Last Modified
         
         {%- for item in songs -%}
           <h2>{{count}}.{{ item[1].title }}</h2>
-            {%- increment count -%}
+            {% assign count = count | plus: 1 %}
             <div class="bigScreenSongDiv">
               {%- for line in item[1].lines -%}
               <div class = "FortmattingDiv">
