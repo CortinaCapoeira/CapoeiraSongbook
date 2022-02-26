@@ -82,7 +82,7 @@ button.menuButton{
         border: none;
     }
 
-    div.nav:hover li a {
+    div.mobile-nav:hover li a {
         background: var(--base);
         color: var(--text);
     }
