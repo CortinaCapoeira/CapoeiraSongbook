@@ -2,9 +2,10 @@
 
 {%- for item in songs -%}
 {{item}}
-  <h2>{{ songs[songidx].title }}</h2>
+  <h2>{{ songs[item].title }}</h2>
 
     <div class="bigScreenSongDiv">
+    TEST
       {%- for line in songs[songidx].lines -%}
       <div class = "FortmattingDiv">
         <div class = "song">
