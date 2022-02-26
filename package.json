@@ -20,6 +20,7 @@
   "homepage": "https://github.com/CortinaCapoeira/CapoeiraSongbook#readme",
   "devDependencies": {},
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "electron-pdf": "^15.0.0"
   }
 }
