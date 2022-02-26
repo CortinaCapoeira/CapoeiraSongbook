@@ -62,7 +62,7 @@ div.ButtonToIndex{
     list-style-type: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     /*For the smaller devices hide all the divs that are for the large screen size*/
     div.FormattingDiv{
         display: none;
