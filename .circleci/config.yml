@@ -7,6 +7,12 @@ jobs:
       - image: node:17.2.0
     steps:
       - checkout
+      - run:
+          name: Update Linux libs
+          command: apt-get update
+      - run:
+          name: Install sudo
+          command: apt-get install -y sudo
       - restore_cache:
           key: v1-deps-{{ checksum "package-lock.json" }}   
       - run:
@@ -19,12 +25,6 @@ jobs:
       - run:
           name: Generate website
           command: sudo -u node npm run-script build
-      - run:
-          name: Update Linux libs
-          command: apt-get update
-      - run:
-          name: Install sudo
-          command: apt-get install -y sudo
       - run:
           name: install dependencies used by pdf generator
           command: apt-get install -y libxshmfence1 libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev libasound2
