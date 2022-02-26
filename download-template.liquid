@@ -68,9 +68,11 @@ date: Last Modified
         
         Last Updated: {{page.date | format_date}}
         
+        {%- assign count = 1 -%}
+        
         {%- for item in songs -%}
-          <h2>{{ item[1].title }}</h2>
-
+          <h2>{{count}}.{{ item[1].title }}</h2>
+            {%- increment count -%}
             <div class="bigScreenSongDiv">
               {%- for line in item[1].lines -%}
               <div class = "FortmattingDiv">
