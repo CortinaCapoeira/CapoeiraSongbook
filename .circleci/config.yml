@@ -5,7 +5,7 @@ jobs:
   docs-build:
     docker:
       - image: node:17.2.0
-      - user: node
+        user: node
     steps:
       - checkout
       - restore_cache:
