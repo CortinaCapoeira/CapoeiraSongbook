@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "build" : "eleventy",
-    "serve" : "eleventy --serve"
+    "serve" : "eleventy --serve",
+    "pdf-build" : "electron-pdf $(pwd)/_site/download-template/index.html capoeira-songbook.pdf"
   },
   "repository": {
     "type": "git",
