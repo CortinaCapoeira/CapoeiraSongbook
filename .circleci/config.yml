@@ -27,7 +27,7 @@ jobs:
           command: apt-get install -y libxshmfence1 libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev libasound2
       - run:
           name: users list
-          command: less /etc/passwd
+          command: cat /etc/passwd
       - run:
           name: Generate PDF
           command: npm run-script pdf-build
