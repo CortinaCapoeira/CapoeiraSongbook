@@ -7,7 +7,7 @@
 At it's core, this project is a collection of capoeira songs that we sing in our group, all in one location for easy reference. 
 However we intend to expand on this and use the songs as a base to expore the wider history of capoeira.
 
-## How it's built/Contribtuions
+## How it's built/Contributions
 
 This project is a static website built using eleventyjs. The generated website get deployed to the gh-pages branch, served by github.
 
