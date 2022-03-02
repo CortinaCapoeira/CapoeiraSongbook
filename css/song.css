@@ -63,9 +63,8 @@ div.ButtonToIndex{
 }
 
 .author{
-    display: in-line;
-    text-align: right;
-    margin-right:5ex;
+    font-style: italic;
+    margin-top: 6px;
 }
 
 @media only screen and (max-width: 600px){
