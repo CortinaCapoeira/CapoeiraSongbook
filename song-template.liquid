@@ -16,9 +16,9 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   
   {%- if songs[songidx].audio -%}
     <audio controls>
-        <source src="{{songs[songsidx].audio}}" type="mp3" />
+        <source src="{{songs[songidx].audio}}" type="mp3" />
     </audio>
-    <a href="{{songs[songsidx].audio}}" ></a>
+    <a href="{{songs[songidx].audio}}" ></a>
   {%- endif -%}
   
   <div class="bigScreenSongDiv">
