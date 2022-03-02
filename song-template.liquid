@@ -11,7 +11,7 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
   <h2>{{ songs[songidx].title }}</h2>
   
   {%- if songs[songidx].author -%}
-    <h4 class ="author"> {{songs[songidx].author}} </h4>
+    <p class ="author"> {{songs[songidx].author}} </p>
   {%- endif -%}
   
   {%- if songs[songidx].audio -%}
