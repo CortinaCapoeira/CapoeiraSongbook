@@ -9,9 +9,15 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
 ---
 {%- for songidx in pagination.items -%}
   <h2>{{ songs[songidx].title }}</h2>
+  
   {%- if songs[songidx].author -%}
     <h4> {{songs[songidx].author}} </h4>
   {%- endif -%}
+  
+  <audio controls>
+      <source src="{{songs[songsidx].audio}}" type="mp3" />
+  </audio>
+  <a href="{songs[songsidx].audio}}" ></a>
 
   <div class="bigScreenSongDiv">
     {%- for line in songs[songidx].lines -%}
