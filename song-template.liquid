@@ -10,6 +10,8 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
 {%- for songidx in pagination.items -%}
   <h2>{{ songs[songidx].title }}</h2>
   
+  <h4> {{author}} </h4>
+  
   <div class="bigScreenSongDiv">
     {%- for line in songs[songidx].lines -%}
     <div class = "FortmattingDiv">
