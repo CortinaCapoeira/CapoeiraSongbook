@@ -14,11 +14,13 @@ permalink: "/song/{{ pagination.items[0] | slug }}.html"
     <h4> {{songs[songidx].author}} </h4>
   {%- endif -%}
   
-  <audio controls>
-      <source src="{{songs[songsidx].audio}}" type="mp3" />
-  </audio>
-  <a href="{songs[songsidx].audio}}" ></a>
-
+  {%- if songs[songidx].audio -%}
+    <audio controls>
+        <source src="{{songs[songsidx].audio}}" type="mp3" />
+    </audio>
+    <a href="{{songs[songsidx].audio}}" ></a>
+  {%- endif -%}
+  
   <div class="bigScreenSongDiv">
     {%- for line in songs[songidx].lines -%}
     <div class = "FortmattingDiv">
