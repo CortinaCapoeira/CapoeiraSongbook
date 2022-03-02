@@ -58,6 +58,12 @@ date: Last Modified
                 min-height: 1em;
                 word-wrap: break-word;
             }
+            
+            .author{
+                display: in-line;
+                text-align: right;
+                margin-right:5ex;
+            }
         </style>
      </head>
     <body>
@@ -71,7 +77,13 @@ date: Last Modified
         {%- assign count = 1 -%}
         
         {%- for item in songs -%}
+        
           <h2>{{count}}. {{ item[1].title }}</h2>
+          
+          {%- if item[1].author -%}
+            <h4 class = "author"> {{item[1].author}} <h4>
+          {%- endif -%}
+          
             {% assign count = count | plus: 1 %}
             <div class="bigScreenSongDiv">
               {%- for line in item[1].lines -%}
