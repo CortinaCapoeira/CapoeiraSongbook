@@ -1,28 +1,10 @@
-
-/* Extra small devices (phones, 600px and down) */
-/*
-@media only screen and (max-width: 992px) {
-    div.nav{
-     left: -45;   
-    }
-}
-*/
-/* Medium devices (landscape tablets, 768px and up) */
-/*
-@media only screen and (min-width: 992px) {
-    div.nav{
-        left:-80;
-    }
-}
-*/
-
 @import "styles.css";
 
 /*Laptop etc*/
 div.nav{
-    left: -6.8ex;
+    left: -11.8ex;
     height: 100%; /* 100% Full-height */
-    width: 9ex; /* 0 width - change this with JavaScript */
+    width: 14ex; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
