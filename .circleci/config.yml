@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   docs-build:
     docker:
-      - image: cimg/node:17.7.2
+      - image: cimg/node:17.7.2-browsers
     steps:
       - checkout
 #      - restore_cache:
@@ -26,9 +26,9 @@ jobs:
 #      - run:
 #          name: Install sudo
 #          command: apt-get install -y sudo
-      - run:
-          name: install dependencies used by pdf generator
-          command: apt-get install -y libxshmfence1 libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev libasound2
+#      - run:
+#          name: install dependencies used by pdf generator
+#          command: apt-get install -y libxshmfence1 libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev libasound2
       - run:
           name: Generate PDF
           command: npm run-script pdf-build #sudo -u node npm run-script pdf-build
