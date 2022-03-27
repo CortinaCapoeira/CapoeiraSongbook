@@ -1,10 +1,4 @@
 *** touchscreen big / computers - Layout for screen sizes
 *Text/Narrative on home page to welcome people properly
-* use electron-pdf to generate pdf file to export website
-** this seems to not work easily, we might want to use something else
-** there is wkhtmltopdf but it seems to not work that well
-** pandoc is probably good if we are willing to use latex
-** seems thgat the easiest option would be to use puppeteer: https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/
-*** puppeteer has the same problem as electron-pdf, even specifying --no-sandbox, so we really need to try again to use a different user
-*** i can't remember why we didn't do it, i know that using sudo didn't work, but maybe specifying the user in the docker image import(in the yaml as property) might work
 
+* date format on generated PDF to fix
