@@ -21,7 +21,7 @@ jobs:
           command: npm run-script build 
       - run:
           name: Generate PDF
-          command: npm run-script pdf-build #sudo -u node npm run-script pdf-build
+          command: npm run-script pdf-build
       - run:
           name: list files generated
           command: ls -al _site
@@ -44,7 +44,6 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            npm install -g --silent gh-pages@3.0.0
             git config user.email "sambuccid@gmail.com"
             git config user.name "sambuccid"
       - add_ssh_keys: #try to upload to github using this key
@@ -53,7 +52,7 @@ jobs:
       - run:
           #deploy all the files inside the _site folder
           name: Deploy docs to the gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Generate Website" --dist _site
+          command: npx gh-pages@3.0.0 --dotfiles --message "[skip ci] Generate Website" --dist _site
             
 workflows:
   say-hello-workflow:
