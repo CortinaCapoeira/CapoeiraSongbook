@@ -40,7 +40,7 @@ jobs:
           paths: _site
   docs-deploy:
     docker:
-      - image: node:17.2.0
+      - image: cimg/node:17.7.2
     steps:
       - checkout
       - attach_workspace: #get the saved folder(./_site) in this job so we can use it
