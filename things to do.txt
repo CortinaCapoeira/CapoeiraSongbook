@@ -7,3 +7,5 @@
 ** seems thgat the easiest option would be to use puppeteer: https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/
 *** puppeteer has the same problem as electron-pdf, even specifying --no-sandbox, so we really need to try again to use a different user
 *** i can't remember why we didn't do it, i know that using sudo didn't work, but maybe specifying the user in the docker image import(in the yaml as property) might work
+
+*circleci cache is not working, cause package-lock file not up to date in repo
