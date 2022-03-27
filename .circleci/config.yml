@@ -18,14 +18,11 @@ jobs:
 #          paths: 
 #            - node_modules
       - run:
-          name: curr dir
-          command: pwd
-      - run:
           name: Generate website
           command: npm run-script build
       - run:
           name: Update Linux libs
-          command: apt-get update
+          command: sudo apt-get update
       - run:
           name: Install sudo
           command: apt-get install -y sudo
