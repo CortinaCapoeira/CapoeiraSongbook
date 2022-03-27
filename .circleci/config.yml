@@ -55,7 +55,10 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - docs-build
+      - docs-build:
+          filters:
+            branches:
+              only: main
       - docs-deploy:
           requires:
             - docs-build
