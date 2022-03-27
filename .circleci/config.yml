@@ -8,15 +8,18 @@ jobs:
         user: node
     steps:
       - checkout
-      - restore_cache:
-          key: v1-deps-{{ checksum "package-lock.json" }}   
+#      - restore_cache:
+#          key: v1-deps-{{ checksum "package-lock.json" }}   
       - run:
           name: Install and configure
           command: npm install
-      - save_cache:
-          key: v1-deps-{{ checksum "package-lock.json" }}
-          paths: 
-            - node_modules  
+#      - save_cache:
+#          key: v1-deps-{{ checksum "package-lock.json" }}
+#          paths: 
+            - node_modules
+      - run:
+          name: curr dir
+          command: pwd
       - run:
           name: Generate website
           command: npm run-script build
