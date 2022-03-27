@@ -39,6 +39,9 @@ jobs:
           name: Disable jekyll builds
           command: touch _site/.nojekyll
       - run:
+          name: does npx work?
+          command: npx
+      - run:
           name: Install and configure dependencies
           command: |
             npm install -g --silent gh-pages@3.0.0
