@@ -5,7 +5,6 @@ jobs:
   docs-build:
     docker:
       - image: cimg/node:17.7.2
-        user: node
     steps:
       - checkout
 #      - restore_cache:
