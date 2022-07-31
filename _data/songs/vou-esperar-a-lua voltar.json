@@ -1,0 +1,18 @@
+{ "title":"Vou Esperar a Lua Voltar",
+"lines": [
+    {"br":"Vou esper a lua voltar","en":"I will wait for the moon to return"},
+    {"br":"Eu quero entrar a mata","en":"I want to go into the forest"},
+    {"br":"Vou tirar madeira boa","en":" I will take some good wood"},
+    {"br":"Pro meu berimbau fazer","en":"To make my Berimbau"},
+    {"br": " ", "en": " "},
+    {"br":"Vou esper a lua voltar","en":"I will wait for the moon to return", 'bold':'true'},
+    {"br":"Eu quero entrar a mata","en":"I want to go into the forest", 'bold':'true'},
+    {"br":"Vou tirar madeira boa","en":" I will take some good wood", 'bold':'true'},
+    {"br":"Pro meu berimbau fazer","en":"To make my Berimbau", 'bold':'true'},
+    {"br": " ", "en": " "},
+    {"br": "Madeira boa é como amizade", "en": "Good wood is like friendship"},
+    {"br": "É dificil de encontrar", "en": "It is difficult to find"},
+    {"br": "Amizade eu guado no peito", "en": "Friendship I guard in my heart"},
+    {"br": "Madeira boa pro fazer meu berimbau ", "en": "Good wood is to make my berimbau"}
+    
+]}
