@@ -1,5 +1,5 @@
 
-{ "title":"Apanha a Laranja Menino",
+{ "title":"Apanha a Laranjá Menino",
 "lines": [
     {"br":"Apanha laranjá menino","en":" Pick up the orange, boy"},
     {"br":"Apanha laranjá do chão","en":" Pick up the orange from the floor"},
@@ -14,7 +14,7 @@
     {"br":"Não veio","en":" I didn't see him","bold":true},
     {"br":"Será que é meu amigo","en":" Is he my friend?"},
     {"br":"Eu não sei","en":" I don't know","bold":true},
-    {"br":"Me pediu amizidade","en":" He asked me for friendship"},
+    {"br":"Me pediu amizade","en":" He asked me for friendship"},
     {"br":"Eu dei","en":" Igave it ","bold":true},
     {"br":"Me deixou na saudade","en":" He left me alone"},
     {"br":"Outra vez","en":" another time","bold":true},
