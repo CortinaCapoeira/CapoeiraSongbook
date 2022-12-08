@@ -1,0 +1,28 @@
+{ "title":"Eu Caminhei",
+"lines": [
+    {"br":"Eu caminhei meu mano, eu caminhei","en":"I have walked, my man, I have walked "},
+    {"br":"Como eu andei pra chegar até aqui","en":"How I came to arrive here "},
+    {"br": " ", "en": " "},
+    {"br":"Eu caminhei meu mano, eu caminhei","en":"I have walked, my man, I have walked ", "bold":true},
+    {"br":"Como eu andei pra chegar até aqui","en":"How I came to arrive here ", "bold":true},
+    {"br": " ", "en": " "},
+    {"br":"Sei que tem um caminho de flores", "en":" "},
+    {"br":"Mais foi de espinho que eu percorri ", "en":" "},
+    {"br":"Quem tem tudo de mão beijada", "en": " "}, 
+    {"br": "Nao da valor foi assim que aprendi", "en": " "}, 
+    {"br": "Eu caminhei...", "en": " "},
+    {"br": " ", "en": " "},
+    {"br":"Eu caminhei meu mano, eu caminhei","en":"I have walked, my man, I have walked ", "bold":true},
+    {"br":"Como eu andei pra chegar até aqui","en":"How I came to arrive here ", "bold":true},
+    {"br": " ", "en": " "},
+    {"br": " ", "en": " "},
+    {"br":"O meu mestre me disse um dia ", "en":" "},
+    {"br":"Que o mundo é feito pra se aprender", "en":" "},
+    {"br":"Que o jogo da capoeira", "en": " "}, 
+    {"br": "Toda rasteira te ajuda a crescer", "en": " "}, 
+    {"br": "Eu caminhei...", "en": " "},
+    {"br": " ", "en": " "},
+    {"br":"Eu caminhei meu mano, eu caminhei","en":"I have walked, my man, I have walked ", "bold":true},
+    {"br":"Como eu andei pra chegar até aqui","en":"How I came to arrive here ", "bold":true}
+    
+]}
