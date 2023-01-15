@@ -1,12 +1,14 @@
 { "title":"Vai Lá",
 "lines": [
     {"br":"Vai lá","en":""},
-    {"br":"Eu Disse ora ela que eu vou voltar pra Angola","en":""},
-    {"br":"Eu disse ora ela que eu vou voltar pra Angola","en":""},
+    {"br":"Eu Disse pra ela que eu vou voltar pra Angola","en":""},
+    {"br":"Eu disse pra ela que eu vou voltar pra Angola","en":""},
     {"br":"Vai lá disse pra minha viola","en":""},
     {"br": " ", "en": " "},
     {"br":"Vai lá","en":"", "bold":true},
-    {"br":"Eu Disse ora ela que eu vou voltar pra Angola","en":"", "bold":true},
-    {"br":"Eu disse ora ela que eu vou voltar pra Angola","en":"", "bold":true},
+    {"br":"Eu Disse pra ela que eu vou voltar pra Angola","en":"", "bold":true},
+    {"br":"Eu disse pra ela que eu vou voltar pra Angola","en":"", "bold":true},
     {"br":"Vai lá disse pra minha viola","en":"", "bold":true}    
-]}
+],
+"songOfMonth":"01/2023"
+}
