@@ -2,7 +2,7 @@ module.exports = {
     eleventyComputed: {
       songsOfMonth: {
         orderedMonths: data => {
-          const MONTHS_TO_INCLUDE = 3;
+          const MONTHS_TO_INCLUDE = 5;
           //filter just songs with month prop and copy obj, adding song filename
           var songsOfMonth = [];
           for(songFilename in data.songs){
