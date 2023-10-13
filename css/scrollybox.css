@@ -1,0 +1,33 @@
+.scrollyBox{
+    display: flex;
+    align-items: center;
+}
+
+.scrollyBox>.extCont{
+    overflow:hidden;
+    max-width: 400px;
+    min-width: 400px;
+    display: inline-block;
+}
+
+.scrollyBox .container{
+    display:flex; 
+    padding: 0;
+    margin: 0;
+    align-items: center;     
+}
+
+.scrollyBox .container>li{
+    flex-basis: 100px;
+    flex-grow:0;
+    flex-shrink:0;
+    list-style-type: none;
+}
+
+.scrollyBox .animation{
+    transition:transform 0.5s ease-in-out;
+}
+
+.scrollyBox .fwdMove{
+    transform:translate(-50%);
+}

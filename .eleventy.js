@@ -1,3 +1,5 @@
+const scrollybox = require('./scrollybox.js')
+
 module.exports = function(eleventyConfig) {
     // Output directory: _site
   
@@ -7,6 +9,9 @@ module.exports = function(eleventyConfig) {
     // Copy `css` to `_site/css`
     // Keeps the same directory structure.
     eleventyConfig.addPassthroughCopy("css");
+
+    // Copy `frontend` to `_site/frontend`
+    eleventyConfig.addPassthroughCopy("frontend");
     
     eleventyConfig.addShortcode("monthName", function(monthNumber) {
         monthNumber = parseInt(monthNumber);
