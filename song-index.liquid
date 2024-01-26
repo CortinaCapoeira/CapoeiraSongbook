@@ -5,18 +5,18 @@ title: "Capoeira Songbook|Index"
 <h2>
     Index
 </h2>
-
-<div class="pagination">
+<!-- this is weird becuase the hover only applies to all the letters -->
+<div class="pagination mt-5 font-bold font-mono tracking-widest text-xl text-emerald-400 opacity-80">
     {%- for letterSongs in indexsong.letterGroups -%}
-        <a href="#{{ letterSongs[0] }}">{{ letterSongs[0] }}</a>
+        <a class = "hover:text-amber-600 hover:text-2xl" href="#{{ letterSongs[0] }}">{{ letterSongs[0] }}</a>
     {%- endfor -%}
-    </div>
+</div>
 {%- for letterSongs in indexsong.letterGroups -%}
-    <div id = "{{ letterSongs[0] }}">
-        <h3>List of Songs beginning with {{ letterSongs[0] }}</h3>
+    <div id = "{{ letterSongs[0] }}" class = "font-mono text-amber-600">
+        <h3 class = "italic tracking-wide text-lg  border-y border-stone-400 mb-2 mt-7">List of Songs beginning with {{ letterSongs[0] }}</h3>
         <ul>
             {%- for songsInLetter in letterSongs[1] -%}
-                <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slug }}.html">{{songsInLetter.title}}</a></li>
+                <li class="py-1 hover:font-bold hover:tracking-wider "><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slug }}.html">{{songsInLetter.title}}</a></li>
             {%- endfor -%}
         </ul>
     </div>

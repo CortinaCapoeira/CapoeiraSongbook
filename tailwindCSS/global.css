@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    @apply bg-sky-900/90;
+    @apply mx-5;
+}
+.nav{
+    @apply hidden;
+}
+.Banner{
+    @apply flex justify-around;
+}
+.Banner > .image{
+    @apply h-32 flex;
+}
+.Banner > .image img{
+    @apply object-contain;
+}
