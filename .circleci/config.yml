@@ -52,12 +52,12 @@ jobs:
           command: npx gh-pages@3.0.0 --dotfiles --message "[skip ci] Generate Website" --dist _site
             
 workflows:
-  say-hello-workflow:
+  create-website:
     jobs:
       - docs-build:
           filters:
             branches:
-              only: main
+              ignore: gh-pages
       - docs-deploy:
           requires:
             - docs-build
