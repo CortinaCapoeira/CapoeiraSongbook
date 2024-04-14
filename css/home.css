@@ -1,12 +1,13 @@
 @import "styles.css";
+
 /*laptop screen*/
-div.container{
+div.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-div.contributions{
+div.contributions {
   border: 3px solid var(--text);
   width: 45%;
   min-width: 150px;
@@ -14,27 +15,28 @@ div.contributions{
   margin-bottom: 1em;
 }
 
-div.month{
+div.month {
   border: 3px solid var(--text);
   width: 45%;
   min-width: 150px;
   margin-bottom: 1em;
-} 
+}
 
 /*Touchsceen and small screen*/
-@media (hover: none) and (pointer: coarse), only screen and (max-width: 700px){
-    
-  div.container{
+@media (hover: none) and (pointer: coarse),
+only screen and (max-width: 700px) {
+
+  div.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  } 
+  }
 
- div.contributions{
+  div.contributions {
     width: auto;
   }
-  
-  div.month{
+
+  div.month {
     width: auto;
   }
 }
@@ -46,30 +48,30 @@ div.songOfMonths a:hover {
   color: var(--base);
 }
 
-div.miniheader{
- font-size: 1.5em; 
-}  
-
-div.songOfMonths{
- display: table;
- flex: 1;
- padding-left: 7px;
+div.miniheader {
+  font-size: 1.5em;
 }
 
-div.songOfMonths>div{
- display: table-row;
+div.songOfMonths {
+  display: table;
+  flex: 1;
+  padding-left: 7px;
 }
 
-div.songOfMonths>div>.SOTMmonthCell{
- display: table-cell;
+div.songOfMonths>div {
+  display: table-row;
 }
 
-div.songOfMonths>div>.SOTMsongCell{
- display: table-cell;
- text-align: right;
+div.songOfMonths>div>.SOTMmonthCell {
+  display: table-cell;
 }
 
-div.songOfMonthContainer{
+div.songOfMonths>div>.SOTMsongCell {
+  display: table-cell;
+  text-align: right;
+}
+
+div.songOfMonthContainer {
   display: flex;
 }
 
@@ -84,12 +86,12 @@ div.songOfMonths a {
 }
 
 
-div.exploreContainer{
-  text-align:center;
+div.exploreContainer {
+  text-align: center;
   margin: 1em;
 }
 
-a.explore{
+a.explore {
   background-color: var(--flash);
   color: var(--text);
   padding: 1em;
@@ -98,19 +100,17 @@ a.explore{
   border: 0.15em solid var(--text);
 }
 
-a.explore:hover{
+a.explore:hover {
   background-color: var(--text);
-  color:var(--base);
+  color: var(--base);
   border: 0.15em solid var(--pale);
 }
 
-div.hero-text{
+div.hero-text {
   color: var(--base);
   letter-spacing: 0.01em;
 }
 
-h2{
+h2 {
   color: var(--flash);
-}
-
 }
