@@ -4,9 +4,9 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "build" : "eleventy",
-    "serve" : "eleventy --serve",
-    "pdf-build" : "electron-pdf $(pwd)/_site/download-template/index.html _site/capoeira-songbook.pdf"
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "pdf-build": "electron-pdf $(pwd)/_site/download-template/index.html _site/capoeira-songbook.pdf"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,11 @@
     "url": "https://github.com/CortinaCapoeira/CapoeiraSongbook/issues"
   },
   "homepage": "https://github.com/CortinaCapoeira/CapoeiraSongbook#readme",
-  "devDependencies": {},
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "1.0.2",
     "electron-pdf": "^15.0.0"
+  },
+  "devDependencies": {
+    "hulipaa": "^1.0.2"
   }
 }

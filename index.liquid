@@ -54,7 +54,7 @@ title: "Capoeira Songbook|Home"
                 {%- for song in songsOfMonth.orderedMonths -%}
                 <div>
                     <div class = "SOTMmonthCell">{% monthName song.somMonth %} {{song.somYear}}</div>
-                    <div class = "SOTMsongCell"><a href="{{ '/song/' | url }}{{ song.filename | slug }}.html">{{song.title}}</a></div>
+                    <div class = "SOTMsongCell"><a href="{{ '/song/' | url }}{{ song.filename | slugify }}.html">{{song.title}}</a></div>
                 </div>
                 {%- endfor -%}
             </div>
