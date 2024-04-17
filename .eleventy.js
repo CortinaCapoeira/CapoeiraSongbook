@@ -1,5 +1,8 @@
 const scrollybox = require('./scrollybox.js')
+const generateSearchResults = require('./generate-search-results.js')
 
+const DEPLOYED_SONG_DATA_FOLDER = "song-data"
+const SEARCH_RESULTS_OUTPUT_FOLDER = 'search-index'
 module.exports = function (eleventyConfig) {
     // Output directory: _site
 
@@ -13,6 +16,11 @@ module.exports = function (eleventyConfig) {
     // Copy `frontend` to `_site/frontend`
     eleventyConfig.addPassthroughCopy("frontend");
 
+    // TODO will need to add passthrough for "DEPLOYED_SONG_DATA_FOLDER" (to allow hulipaa to access the json of the songs)
+
+    // Copy generated index of the search results done by hulipaa
+    eleventyConfig.addPassthroughCopy(SEARCH_RESULTS_OUTPUT_FOLDER);
+
     eleventyConfig.addShortcode("monthName",function (monthNumber) {
         monthNumber = parseInt(monthNumber);
         //needed just to get a date, year and day not really needed
@@ -21,6 +29,13 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("format_date",function (value) { return value.toLocaleDateString('en-GB') });
+
+    eleventyConfig.on("eleventy.before",async ({ dir,runMode,outputMode }) => {
+        generateSearchResults(
+            SEARCH_RESULTS_OUTPUT_FOLDER,
+            DEPLOYED_SONG_DATA_FOLDER) // TODO will need to pass pathPrefix
+    });
+    // TODO somewhere will need to copy _data/song to passthough folder "DEPLOYED_SONG_DATA_FOLDER" (to allow hulipaa to access the json of the songs)
 
     return {
         pathPrefix: "CapoeiraSongbook"
