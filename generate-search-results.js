@@ -2,7 +2,9 @@ const path = require('path');
 const slugify = require('@sindresorhus/slugify');
 const Hulipaa = require('hulipaa')
 
-function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder,websitePathPrefix) {
+async function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder,websitePathPrefix) {
+  const { parseSongFileContent } = await import('./frontend/parse-song-content.mjs');
+
   Hulipaa({
     inputFolder: '_data/songs',
     parseData: function (fileContent,filePath) {
@@ -13,8 +15,7 @@ function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder,
       }
       songDataDeployedPath = makeAbsolutePath(songDataDeployedPath)
 
-      const parsedFile = JSON.parse(fileContent)
-      const extractedProps = parseSongObject(parsedFile)
+      const extractedProps = parseSongFileContent(fileContent)
 
       return {
         text: extractedProps.text,
@@ -36,35 +37,6 @@ function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder,
   })
 }
 
-function parseSongObject(songObject) {
-  return {
-    text: getSongText(songObject),
-    title: songObject.title,
-  }
-}
-
-const LINE_SEPARATOR = '\n'
-const SONG_SEPARATOR = '\n'
-function getSongText(songObject) {
-  return getEnglishSongText(songObject) + SONG_SEPARATOR + getBrazilianSongText(songObject)
-}
-
-function getEnglishSongText(songObject) {
-  const fullEngText = getSongTextByLang(songObject,"en")
-  return fullEngText
-}
-
-function getBrazilianSongText(songObject) {
-  const fullBrText = getSongTextByLang(songObject,"br")
-  return fullBrText
-}
-
-function getSongTextByLang(songObject,langPropertyName) {
-  const lines = songObject.lines.map((line) => line[langPropertyName].trim())
-  const fullText = lines.join(LINE_SEPARATOR)
-  return fullText
-}
-
 function makeAbsolutePath(aPath) {
   if (aPath[0] == '/')
     return aPath
@@ -73,4 +45,6 @@ function makeAbsolutePath(aPath) {
 }
 
 
-module.exports = generateSearchResults
+module.exports = {
+  generateSearchResults
+}

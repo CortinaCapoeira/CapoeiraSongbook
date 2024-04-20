@@ -1,12 +1,10 @@
 const scrollybox = require('./scrollybox.js')
-const generateSearchResults = require('./generate-search-results.js')
+const { generateSearchResults } = require('./generate-search-results.js')
+const { WEBSITE_PATH_PREFIX,SEARCH_RESULTS_OUTPUT_FOLDER,DEPLOYED_SONG_DATA_FOLDER } = require('./constants.js')
 
-const WEBSITE_PATH_PREFIX = "CapoeiraSongbook"
-const DEPLOYED_SONG_DATA_FOLDER = "song-data"
-const SEARCH_RESULTS_OUTPUT_FOLDER = 'search-index'
 module.exports = function (eleventyConfig) {
     eleventyConfig.on("eleventy.before",async ({ dir,runMode,outputMode }) => {
-        generateSearchResults(
+        await generateSearchResults(
             SEARCH_RESULTS_OUTPUT_FOLDER,
             DEPLOYED_SONG_DATA_FOLDER,
             WEBSITE_PATH_PREFIX)
