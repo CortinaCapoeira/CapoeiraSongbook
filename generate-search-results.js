@@ -2,13 +2,16 @@ const path = require('path');
 const slugify = require('@sindresorhus/slugify');
 const Hulipaa = require('hulipaa')
 
-function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder) {
+function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder,websitePathPrefix) {
   Hulipaa({
     inputFolder: '_data/songs',
     parseData: function (fileContent,filePath) {
       const fileName = path.basename(filePath)
-      // TODO will need to add pathPrefix
-      const songDataDeployedPath = path.join(deployedSongDataFolder,fileName)
+      let songDataDeployedPath = path.join(deployedSongDataFolder,fileName)
+      if (websitePathPrefix) {
+        songDataDeployedPath = path.join(websitePathPrefix,songDataDeployedPath)
+      }
+      songDataDeployedPath = makeAbsolutePath(songDataDeployedPath)
 
       const parsedFile = JSON.parse(fileContent)
       const extractedProps = parseSongObject(parsedFile)
@@ -17,14 +20,17 @@ function generateSearchResults(searchResultsOutputFolder,deployedSongDataFolder)
         text: extractedProps.text,
         title: extractedProps.title,
         path: songDataDeployedPath
-
       }
     },
     generateLink: function (fileName,inputFolder) {
       const nameWithoutExtension = path.parse(fileName).name
       const pageNameInUrl = slugify(nameWithoutExtension)
-      // TODO will need to add pathPrefix
-      return `/song/${pageNameInUrl}.html`
+
+      let link = `/song/${pageNameInUrl}.html`
+      if (websitePathPrefix) {
+        link = websitePathPrefix + link
+      }
+      return makeAbsolutePath(link)
     },
     outputFolder: searchResultsOutputFolder
   })
@@ -57,6 +63,13 @@ function getSongTextByLang(songObject,langPropertyName) {
   const lines = songObject.lines.map((line) => line[langPropertyName].trim())
   const fullText = lines.join(LINE_SEPARATOR)
   return fullText
+}
+
+function makeAbsolutePath(aPath) {
+  if (aPath[0] == '/')
+    return aPath
+  else
+    return '/' + aPath
 }
 
 

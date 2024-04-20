@@ -1,6 +1,7 @@
 const scrollybox = require('./scrollybox.js')
 const generateSearchResults = require('./generate-search-results.js')
 
+const WEBSITE_PATH_PREFIX = "CapoeiraSongbook"
 const DEPLOYED_SONG_DATA_FOLDER = "song-data"
 const SEARCH_RESULTS_OUTPUT_FOLDER = 'search-index'
 module.exports = function (eleventyConfig) {
@@ -33,11 +34,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.on("eleventy.before",async ({ dir,runMode,outputMode }) => {
         generateSearchResults(
             SEARCH_RESULTS_OUTPUT_FOLDER,
-            DEPLOYED_SONG_DATA_FOLDER) // TODO will need to pass pathPrefix
+            DEPLOYED_SONG_DATA_FOLDER,
+            WEBSITE_PATH_PREFIX)
     });
     // TODO somewhere will need to copy _data/song to passthough folder "DEPLOYED_SONG_DATA_FOLDER" (to allow hulipaa to access the json of the songs)
 
     return {
-        pathPrefix: "CapoeiraSongbook"
+        pathPrefix: WEBSITE_PATH_PREFIX
     };
 };
