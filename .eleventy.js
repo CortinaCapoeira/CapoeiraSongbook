@@ -5,6 +5,13 @@ const WEBSITE_PATH_PREFIX = "CapoeiraSongbook"
 const DEPLOYED_SONG_DATA_FOLDER = "song-data"
 const SEARCH_RESULTS_OUTPUT_FOLDER = 'search-index'
 module.exports = function (eleventyConfig) {
+    eleventyConfig.on("eleventy.before",async ({ dir,runMode,outputMode }) => {
+        generateSearchResults(
+            SEARCH_RESULTS_OUTPUT_FOLDER,
+            DEPLOYED_SONG_DATA_FOLDER,
+            WEBSITE_PATH_PREFIX)
+    });
+
     // Output directory: _site
 
     // Copy `img/` to `_site/img`
@@ -17,7 +24,9 @@ module.exports = function (eleventyConfig) {
     // Copy `frontend` to `_site/frontend`
     eleventyConfig.addPassthroughCopy("frontend");
 
-    // TODO will need to add passthrough for "DEPLOYED_SONG_DATA_FOLDER" (to allow hulipaa to access the json of the songs)
+    // Copy data of songs to folder in deployed website
+    // So would copy "_data/songs" into "_site/song-data"
+    eleventyConfig.addPassthroughCopy({ "_data/songs": DEPLOYED_SONG_DATA_FOLDER });
 
     // Copy generated index of the search results done by hulipaa
     eleventyConfig.addPassthroughCopy(SEARCH_RESULTS_OUTPUT_FOLDER);
@@ -30,14 +39,6 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("format_date",function (value) { return value.toLocaleDateString('en-GB') });
-
-    eleventyConfig.on("eleventy.before",async ({ dir,runMode,outputMode }) => {
-        generateSearchResults(
-            SEARCH_RESULTS_OUTPUT_FOLDER,
-            DEPLOYED_SONG_DATA_FOLDER,
-            WEBSITE_PATH_PREFIX)
-    });
-    // TODO somewhere will need to copy _data/song to passthough folder "DEPLOYED_SONG_DATA_FOLDER" (to allow hulipaa to access the json of the songs)
 
     return {
         pathPrefix: WEBSITE_PATH_PREFIX
