@@ -16,7 +16,7 @@ title: "Capoeira Songbook|Index"
         <h3>List of Songs beginning with {{ letterSongs[0] }}</h3>
         <ul>
             {%- for songsInLetter in letterSongs[1] -%}
-                <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slug }}.html">{{songsInLetter.title}}</a></li>
+                <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slugify }}.html">{{songsInLetter.title}}</a></li>
             {%- endfor -%}
         </ul>
     </div>
