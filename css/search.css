@@ -1,0 +1,21 @@
+/* TODO remove this once the button follows the same styling of the other buttons in the library*/
+.hulipaa_searchbar form button {
+  border: 0;
+  background-color: transparent;
+}
+
+/* TODO remove this once the button follows the same styling of the other buttons in the library*/
+.hulipaa_searchbar form button:hover {
+  cursor: pointer;
+}
+
+/* TODO remove this once the button follows the same styling of the other buttons in the library*/
+.hulipaa_searchbar form img {
+  filter: invert(13%)
+}
+
+/* TODO remove this fix once the error has been fixed in the library*/
+.hulipaa_searchbar .open-div {
+  /*Not a perfect fix, but it looks better than before*/
+  flex-basis: 0% !important;
+}
