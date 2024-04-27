@@ -1,0 +1,8 @@
+{ "title":"A bananeira caiu",
+"lines": [
+    {"br":"O facão bateu em baixo","en":" The big knife cut at the bottom"}, 
+    {"br":"A bananeira caiu","en":" The banana tree fell","bold":true},
+    {"br":"Cai cai bananeira","en":" Fall fall banana tree"}, 
+    {"br":"A bananeira caiu","en":" The banana tree fell","bold":true}
+]
+}

@@ -1,0 +1,22 @@
+{ "title":"Sou capoeira que vai",
+"lines": [
+    {"br":"Sob avião","en":"  "},
+    {"br":"Tem medo não","en":"Don't be afraid ","bold":true},
+    {"br":"Desce avião","en":" "},
+    {"br":"Tem medo não","en":" Don't be afraid","bold":true},
+    {"br":"","en":" "},
+    {"br":"Sou capoeira que vai","en":" I am capoeira who goes"},
+    {"br":"Sou capoeira que vem","en":" I am capoeira who comes"},
+    {"br":"Sou capoeira que vai","en":" I am capoeira who goes","bold":true},
+    {"br":"Sou capoeira que vem","en":" I am capoeira who comes","bold":true},
+    {"br":"","en":" "},
+    {"br":"Jogo na areia da praia","en":" I play on the sand of the beach"},
+    {"br":"Jogo na linha do trem","en":" I play on the train line "},
+    {"br":"Jogo na academia","en":" I play in the academy"},
+    {"br":"E jogo na rua também","en":" And I play in the street as well"},
+    {"br":"","en":" "},
+    {"br":"Jogo na areia de praia","en":" I play on the sand of the beach ","bold":true},
+    {"br":"Jogo na linha do trem","en":" I play on the train line ","bold":true},
+    {"br":"Jogo na academia","en":" I play in the academy","bold":true},
+    {"br":"E jogo na rua também","en":" And I play in teh street as well","bold":true}
+]}

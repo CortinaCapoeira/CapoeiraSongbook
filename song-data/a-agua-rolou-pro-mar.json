@@ -1,0 +1,18 @@
+{ "title":"A água rolou pro mar",
+"lines": [
+    {"br":"A água rolou pro mar","en":"  The water rolled to the sea"},
+    {"br":"A água rolou na la pedreira","en":" The water rolled on the stones"},
+    {"br":"A água que foi pro mar","en":" The water that went to the sea"},
+    {"br":"Ela vem da cachoeira","en":" It comes to the waterfall"},
+    {"br": " ", "en": " "},
+    {"br":"A água rolou pro mar","en":"  The water rolled to the sea", "bold":true},
+    {"br":"A água rolou na la pedreira","en":" The water rolled on the stones", "bold":true},
+    {"br":"A água que foi pro mar","en":" The water that went to the sea", "bold":true},
+    {"br":"Ela vem da cachoeira","en":" It comes to the waterfall", "bold":true},
+    {"br": " ", "en": " "},
+    {"br": "Chamei Mamãe Oxum", "en": " I called Mother Oxum"},
+    {"br": "Chamei Mãe Iemanjá", "en": "I called Mother Iemanjá"},
+    {"br": "Ela é minha rainha", "en": "She is my queen "},
+    {"br": "Grande sereia no mar ", "en": "Great mermaid of the sea "}
+    
+]}

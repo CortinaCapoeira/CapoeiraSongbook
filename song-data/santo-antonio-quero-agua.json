@@ -1,0 +1,15 @@
+{ "title":"Santo Antônio quero água",
+"lines": [
+    {"br":"Santo Antônio quero água","en":" Saint Antônio wants water"},
+    {"br":"Santo Antônio quero água","en":"Saint Antônio wants water","bold":true},
+    {"br":"","en":" "},
+    {"br":"Quero água pra beber","en":" I want water to drink"},
+    {"br":"Quero água pra lavar","en":" I want water to wash "},
+    {"br":"Quero água pra benzer","en":" I want water to give blessings"},
+    {"br":"Quero água","en":" I want water"},   
+    {"br":"","en":" "}, 
+    {"br":"Quero água pra beber","en":" I want water to drink","bold":true},
+    {"br":"Quero água pra lavar","en":" I want water to wash ","bold":true},
+    {"br":"Quero água pra benzer","en":" I want water to give blessings","bold":true},
+    {"br":"Quero água","en":" I want water","bold":true}
+]}

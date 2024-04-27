@@ -1,0 +1,18 @@
+{ "title":"Vamos Vadiar",
+"lines": [
+    {"br":"Daqui pra ali","en":"  From here to there"},
+    {"br":"De lá pra cá","en":" From there to here"},
+    {"br":"Daqui pra lá","en":" From here to there "},
+    {"br":"Vamos vadiar","en":" Let's play"},
+    {"br":"","en":""},
+    {"br":"Daqui pra ali","en":"  From here to there","bold":true},
+    {"br":"De lá pra cá","en":" From there to here","bold":true},
+    {"br":"Daqui pra lá ","en":" From here to there ","bold":true},
+    {"br":"Vamos vadiar","en":" Let's play","bold":true},
+    {"br":"","en":""},
+    {"br":"Vamos vadiar angola","en":" Let's play Angola"},
+    {"br":"Angola vamos vadiar","en":" Angola let's play"},
+    {"br":"","en":""},
+    {"br":"Vamos vadiar angola","en":" Let's play Angola","bold":true},
+    {"br":"Angola vamos vadiar","en":"Angola let's play","bold":true}
+]}

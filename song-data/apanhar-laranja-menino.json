@@ -1,0 +1,25 @@
+
+{ "title":"Apanha a Laranjá Menino",
+"lines": [
+    {"br":"Apanha laranjá menino","en":" Pick up the orange, boy"},
+    {"br":"Apanha laranjá do chão","en":" Pick up the orange from the floor"},
+    {"br":"Defende o seu reino sozinho","en":" Defend your kingdom alone"},
+    {"br":"Com a forca do seu coraçao","en":" With the strength or your heart"},
+    {"br":"Apanha laranjá menino","en":" Pick up the orange, boy","bold":true},
+    {"br":"Apanha laranjá do chão","en":" Pick up the orange from the floor","bold":true},
+    {"br":"Defende o seu reino sozinho","en":"Defend your kingdom alone","bold":true},
+    {"br":"Com a forca do seu coração","en":"With the strength of your heart","bold":true},
+    {"br":"","en":""},
+    {"br":"Procurei meu amigo","en":" I searched for my friend"},
+    {"br":"Não veio","en":" I didn't see him","bold":true},
+    {"br":"Será que é meu amigo","en":" Is he my friend?"},
+    {"br":"Eu não sei","en":" I don't know","bold":true},
+    {"br":"Me pediu amizade","en":" He asked me for friendship"},
+    {"br":"Eu dei","en":" Igave it ","bold":true},
+    {"br":"Me deixou na saudade","en":" He left me alone"},
+    {"br":"Outra vez","en":" another time","bold":true},
+    {"br":"Quem faz uma faz duas","en":"Who can do one, can do two"},
+    {"br":"Faz três","en":" Can do three","bold":true},
+    {"br":"Quem faz quatro faz cinco","en":"Can do four, can do five"},
+    {"br":"Faz seis","en":" can do six","bold":true}
+]}

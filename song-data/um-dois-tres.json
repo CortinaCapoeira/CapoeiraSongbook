@@ -1,0 +1,24 @@
+
+{ "title":"Um dois três",
+"lines": [
+    {"br":"Um dois três","en":" 1, 2, 3 "},
+    {"br":"Três e três: seis","en":" 3 and 3 is 6"},
+    {"br":"Seis e três: nove","en":" 6 and 3 is 9"},
+    {"br":"Nove e três: doze","en":" 9 and 3 is 12"},
+    {"br":"Um dois três","en":" 1, 2, 3 ","bold":true},
+    {"br":"Três e três: seis","en":" 3 and 3 is 6","bold":true},
+    {"br":"Seis e três: nove","en":" 6 and 3 is 9","bold":true},
+    {"br":"Nove e três: doze","en":" 9 and 3 is 12","bold":true},
+    {"br":"","en":" "},
+    {"br":"A manhã é dia santo","en":" Tomorrow is the day of the saints"},
+    {"br":"um dois três","en":" 1, 2, 3","bold":true},
+    {"br":"","en":" "},
+    {"br":"Dia de povo de deus","en":" Day of the people of god"},
+    {"br":"três e três: seis","en":" 3 and 3 is 6","bold":true},
+    {"br":"","en":" "},
+    {"br":"Quem tem roupa vai na missa?","en":" Who has clothes for mass?"},
+    {"br":"seis e três: nove","en":" 6 and 3 is 9","bold":true},
+    {"br":"","en":" "},
+    {"br":"Quem não tem faz como eu","en":"Who doesn't have them, does it like me"},
+    {"br":"nove e três: doze","en":" 9 and 3 is 12","bold":true}
+]}

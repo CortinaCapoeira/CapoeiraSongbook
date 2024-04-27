@@ -1,0 +1,12 @@
+{ "title":"Dançar angola é bom",
+"lines": [
+    {"br":"Meu Mestre disse","en":"My Master said "},
+    {"br":"Quem dançar Angola é bom","en":" Who dances Angola is good"},
+    {"br":"Meu Mestre disse","en":"My Master said ", "bold":true},
+    {"br":"Quem dançar Angola é bom","en":" Who dances Angola is good", "bold": true}, 
+    {"br":" ", "en": " "},
+    {"br":"Quem dançar Angola é bom","en":" Who dances Angola is good"},
+    {"br":"Quem dançar Angola é bom","en":" Who dances Angola is good"},
+    {"br":"Quem dançar Angola é bom","en":" Who dances Angola is good", "bold":true},
+    {"br":"Quem dançar Angola é bom","en":" Who dances Angola is good", "bold":true}
+]}

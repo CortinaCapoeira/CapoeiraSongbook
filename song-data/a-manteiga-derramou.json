@@ -1,0 +1,24 @@
+
+{ "title":"A Manteiga derramou",
+"lines": [
+    {"br":"Vou dizer a meu sinhô","en":" I'm going to tell my master "},
+    {"br":"Que a manteiga derramou","en":" That the butter spilt "},
+    {"br":"Vou dizer a meu sinhô ","en":" I'm going to tell my master ","bold":true},
+    {"br":"Que a manteiga derramou ","en":" That the butter spilt ","bold":true},
+    {"br":"E a manteiga não é minha","en":" and the butter is not mine"},
+    {"br":"E a manteiga é de ioiô","en":" The butter is of my grandfather"},
+    {"br":"Vou dizer a meu sinhô ","en":" I'm going to tell my master ","bold":true},
+    {"br":"Que a manteiga derramou ","en":" That the butter spilt ","bold":true},
+    {"br":"A manteiga é de ioiô","en":" The butter is of my grandfather"},
+    {"br":"Caiu na água e se molhou","en":" It fell in the water and got wet"},
+    {"br":"Vou dizer a meu sinhô ","en":" I'm going to tell my master ","bold":true},
+    {"br":"Que a manteiga derramou ","en":" That the butter spilt ","bold":true},
+    {"br":"A manteiga é do patrão","en":" It's the butter of the boss"},
+    {"br":"Caiu no chão e derramou","en":" It fell to the floor and spilled "},
+    {"br":"Vou dizer a meu sinhô ","en":" I'm going to tell my master ","bold":true},
+    {"br":"Que a manteiga derramou ","en":" That the butter spilt ","bold":true},
+    {"br":"A manteiga não é minha","en":" The butter is not mine"},
+    {"br":"É prá filha de ioiô","en":" It's for the daughter of ?"},
+    {"br":"Vou dizer a meu sinhô ","en":" I'm going to tell my master ","bold":true},
+    {"br":"Que a manteiga derramou ","en":" That the butter spilt ","bold":true}
+]}

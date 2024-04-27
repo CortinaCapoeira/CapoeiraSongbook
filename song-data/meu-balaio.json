@@ -1,0 +1,13 @@
+{ "title":"Meu balaio",
+"lines": [
+    {"br":"Eu vou vender o meu pão dentro do balaio","en":"  I will sell my bread that's in the basket"},
+    {"br":"Más meu balaio eu não vendo pra ninguém","en":"  but my basket I won't sell to anyone"},
+    {"br":"Eu vou vender o meu pão dentro do balaio","en":" I will sell my brad that's in the basket","bold":true},
+    {"br":"Más meu balaio eu não vendo pra ninguém","en":"but my basket I won't sell to anyone","bold":true},
+    {"br":"","en":" "},
+    {"br":"Más quem quiser comprar pão","en":" But who wants to buy bread"},
+    {"br":"Pão tem","en":" you have bread","bold":true},
+    {"br":"","en":" "},
+    {"br":"Eu já falei que meu balaio","en":" I already said that my basket"},
+    {"br":"Eu não vendo pra niguém","en":" I won't sell to anyone","bold":true}
+]}
