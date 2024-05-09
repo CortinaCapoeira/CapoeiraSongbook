@@ -1,3 +1,12 @@
+.search-container {
+  margin-bottom: 5px;
+}
+
+/* Hide song index when there are resuls */
+.search-container:has(>.hulipaa_searchbar .result-div > div)+.index-songs {
+  display: none;
+}
+
 /* TODO remove this once the button follows the same styling of the other buttons in the library*/
 .hulipaa_searchbar form button {
   border: 0;
