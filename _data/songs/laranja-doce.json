@@ -1,0 +1,19 @@
+{ "title":"Laranja doce",
+"lines": [
+    {"br":"Laranja pera","en":""},
+    {"br":"Laranja lima","en":""},
+    {"br":"Laranja seleta","en":""},
+    {"br":"A tangerina,"en":""},
+    {"br": " ", "en": " "},
+    {"br":"Laranja pera","en":"", "bold":true},
+    {"br":"Laranja lima","en":"", "bold":true},
+    {"br":"Laranja seleta","en":"", "bold":true},
+    {"br":"A tangerina,"en":"", "bold":true},
+    {"br":"Eu falei, eu falei....","en":""},
+    {"br": " ", "en": " "},
+    {"br":"Laranja doce","en":" "},
+    {"br":"É tão doce", "en":""),
+    {"br":"Laranja doce","en":" ", "bold":"true"},
+    {"br":"É laranja madura", "en":""),
+    {"br":"Laranja doce","en":" ", "bold":"true"}
+]}
