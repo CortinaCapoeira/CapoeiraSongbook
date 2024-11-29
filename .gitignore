@@ -3,3 +3,5 @@ node_modules/
 search-index/
 song-data/
 .DS_Store
+
+.vscode/
