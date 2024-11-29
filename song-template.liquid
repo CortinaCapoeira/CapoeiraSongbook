@@ -21,16 +21,20 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
   {%- endif -%}
   
   <div class="bigScreenSongDiv">
-    {%- for line in songs[songidx].lines -%}
+    {%- for line in linesWithDetails -%}
     <div class = "FortmattingDiv">
       <div class = "song">
           <div class = "row">
             {%- if line.bold -%}<b>{%- endif -%}
               <div class = "cell">
-                  {{line.br}}
+                  {%- for element in line.br -%}
+                    {{element.text}}
+                  {%- endfor -%}
               </div>
               <div class = "cell">
-                  {{line.en}}
+                  {%- for element in line.en -%}
+                    {{element.text}}
+                  {%- endfor -%}
               </div>
               {%- if line.bold -%}</b>{%- endif -%}  
           </div>
@@ -71,6 +75,13 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
     {%- endfor -%}
     </ol>
   </div>
+
+  {%- if songs[songidx].details -%}
+    <a href="#s" data-tooltip = "This is a test tooltip">
+    <!-- This is commented out so that the test tooltip doesn't show while it doesn't work-->
+    <!--test-->
+    </a>
+  {%- endif -%}
 
   <!--<div class = "toIndex">-->
     <div class = "ButtonToIndex">   
