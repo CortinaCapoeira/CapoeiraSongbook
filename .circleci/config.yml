@@ -8,17 +8,20 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v2-deps-{{ checksum "package-lock.json" }}   
+          key: v2-deps-{{ checksum "package-lock.json" }}
       - run:
           name: Install and configure
           command: npm install
       - save_cache:
           key: v2-deps-{{ checksum "package-lock.json" }}
-          paths: 
+          paths:
             - node_modules
       - run:
+          name: Check spelling
+          command: npm run-script spellcheck
+      - run:
           name: Generate website
-          command: npm run-script build 
+          command: npm run-script build
       - run:
           name: Generate PDF
           command: npm run-script pdf-build
@@ -50,7 +53,7 @@ jobs:
           #deploy all the files inside the _site folder
           name: Deploy docs to the gh-pages branch
           command: npx gh-pages@3.0.0 --dotfiles --message "[skip ci] Generate Website" --dist _site
-            
+
 workflows:
   create-website:
     jobs:

@@ -6,6 +6,7 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
+    "spellcheck": "node spellchecking/spellcheck.js",
     "pdf-build": "electron-pdf $(pwd)/_site/download-template/index.html _site/capoeira-songbook.pdf"
   },
   "repository": {
@@ -21,7 +22,8 @@
   "homepage": "https://github.com/CortinaCapoeira/CapoeiraSongbook#readme",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "electron-pdf": "^15.0.0"
+    "electron-pdf": "^15.0.0",
+    "spellchecker": "^3.7.1"
   },
   "devDependencies": {
     "hulipaa": "^1.0.2"
