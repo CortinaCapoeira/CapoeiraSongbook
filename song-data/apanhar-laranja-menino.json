@@ -1,12 +1,12 @@
 
-{ "title":"Apanha a Laranjá Menino",
+{ "title":"Apanha a Laranja Menino",
 "lines": [
-    {"br":"Apanha laranjá menino","en":" Pick up the orange, boy"},
-    {"br":"Apanha laranjá do chão","en":" Pick up the orange from the floor"},
+    {"br":"Apanha laranja menino","en":" Pick up the orange, boy"},
+    {"br":"Apanha laranja do chão","en":" Pick up the orange from the floor"},
     {"br":"Defende o seu reino sozinho","en":" Defend your kingdom alone"},
-    {"br":"Com a forca do seu coraçao","en":" With the strength or your heart"},
-    {"br":"Apanha laranjá menino","en":" Pick up the orange, boy","bold":true},
-    {"br":"Apanha laranjá do chão","en":" Pick up the orange from the floor","bold":true},
+    {"br":"Com a forca do seu coração","en":" With the strength or your heart"},
+    {"br":"Apanha laranja menino","en":" Pick up the orange, boy","bold":true},
+    {"br":"Apanha laranja do chão","en":" Pick up the orange from the floor","bold":true},
     {"br":"Defende o seu reino sozinho","en":"Defend your kingdom alone","bold":true},
     {"br":"Com a forca do seu coração","en":"With the strength of your heart","bold":true},
     {"br":"","en":""},

@@ -1,1 +1,22 @@
-{"title":"O gavião é um pássaro guerreiro","lines":[{"br":"O gavião é um pássaro guerreiro","en":""},{"br":"Quando chega no terreiro","en":""},{"br":"Pega o pinto que ele quer","en":""},{"br":"O gavião é um pássaro guerreiro","en":"","bold":true},{"br":"Quando chega no terreiro","en":"","bold":true},{"br":"Pega o pinto que ele quer","en":"","bold":true},{"br":"Até sabia cantou","en":""},{"br":"Bateu asas e voou","en":""},{"br":"Foi morar no Abaeté","en":""},{"br":"Até sabia cantou","en":"","bold":true},{"br":"Bateu asas e voou","en":"","bold":true},{"br":"Foi morar no Abaeté","en":"","bold":true},{"br":"Simiao simiao simiao","en":""},{"br":"Bicho correo por medo do gavião","en":""},{"br":"Simiao simiao simiao","en":"","bold":true},{"br":"Bicho correo por medo do gavião","en":""},{"br":"Simiao simiao simiao","en":"","bold":true}]}
+{
+  "title": "O gavião é um pássaro guerreiro",
+  "lines": [
+    { "br": "O gavião é um pássaro guerreiro", "en": "" },
+    { "br": "Quando chega no terreiro", "en": "" },
+    { "br": "Pega o pinto que ele quer", "en": "" },
+    { "br": "O gavião é um pássaro guerreiro", "en": "", "bold": true },
+    { "br": "Quando chega no terreiro", "en": "", "bold": true },
+    { "br": "Pega o pinto que ele quer", "en": "", "bold": true },
+    { "br": "Até sabia cantou", "en": "" },
+    { "br": "Bateu asas e voou", "en": "" },
+    { "br": "Foi morar no Abaeté", "en": "" },
+    { "br": "Até sabia cantou", "en": "", "bold": true },
+    { "br": "Bateu asas e voou", "en": "", "bold": true },
+    { "br": "Foi morar no Abaeté", "en": "", "bold": true },
+    { "br": "Simiao simiao simiao", "en": "" },
+    { "br": "Bicho correu por medo do gavião", "en": "" },
+    { "br": "Simiao simiao simiao", "en": "", "bold": true },
+    { "br": "Bicho correu por medo do gavião", "en": "" },
+    { "br": "Simiao simiao simiao", "en": "", "bold": true }
+  ]
+}
