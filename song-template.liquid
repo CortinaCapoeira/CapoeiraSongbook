@@ -28,7 +28,13 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
             {%- if line.bold -%}<b>{%- endif -%}
               <div class = "cell">
                   {%- for element in line.br -%}
-                    {{element.text}}
+                    {%- if element.tooltip -%}
+                      <a href="#s" data-tooltip = "{{element.tooltip}}">
+                        {{element.text}}
+                      </a>
+                    {%- else -%}
+                      {{element.text}}
+                    {%- endif -%}
                   {%- endfor -%}
               </div>
               <div class = "cell">
@@ -49,10 +55,18 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
         <br/>
     </div>
     <ol class="numNoDots">
-    {%- for line in songs[songidx].lines -%}
+    {%- for line in linesWithDetails -%}
       <li class = "smallSong">
         {%- if line.bold -%}<b>{%- endif -%}
-        {{line.br}}
+          {%- for element in line.br -%}
+            {%- if element.tooltip -%}
+              <a href="#s" data-tooltip = "{{element.tooltip}}">
+                {{element.text}}
+              </a>
+            {%- else -%}
+              {{element.text}}
+            {%- endif -%}
+          {%- endfor -%}
         {%- if line.bold -%}</b>{%- endif -%}
       </li>
     {%- endfor -%}
@@ -66,22 +80,17 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
       <br/>
     </div>
     <ol class="numNoDots">
-    {%- for line in songs[songidx].lines -%}
+    {%- for line in linesWithDetails -%}
       <li class = "smallSong">
         {%- if line.bold -%}<b>{%- endif -%}
-        {{line.en}}
+          {%- for element in line.en -%}
+            {{element.text}}
+          {%- endfor -%}
         {%- if line.bold -%}</b>{%- endif -%}
       </li>
     {%- endfor -%}
     </ol>
   </div>
-
-  {%- if songs[songidx].details -%}
-    <a href="#s" data-tooltip = "This is a test tooltip">
-    <!-- This is commented out so that the test tooltip doesn't show while it doesn't work-->
-    <!--test-->
-    </a>
-  {%- endif -%}
 
   <!--<div class = "toIndex">-->
     <div class = "ButtonToIndex">   

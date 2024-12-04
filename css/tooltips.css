@@ -3,6 +3,15 @@
   a[data-tooltip]{
     display: inline;
     position: relative;
+    padding: unset;
+    text-decoration: revert;
+    color: var(--text);
+  }
+
+  a[data-tooltip]:hover{
+    background-color: unset;
+    color: inherit;
+    cursor: revert;
   }
 
   a[data-tooltip]:focus::after{
@@ -15,6 +24,7 @@
     padding: 5px 15px;
     position: absolute;
     z-index: 98;
-    min-width: 100px;
+    min-width: 160px;
     max-width: 500px;
+    font-size: small;
   }
