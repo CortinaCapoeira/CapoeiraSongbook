@@ -1,3 +1,5 @@
+const {tooltipIdentification, emptyTextObject} = require("./tooltip-identification")
+
 module.exports = {
   eleventyComputed: {
     linesWithDetails: data => {
@@ -7,22 +9,20 @@ module.exports = {
 
       detailedLines = []
       function newLine() { return { br: [], en: [] , bold: undefined} }
-      function newText() { return { text: "", tooltip: undefined } }
 
       for(let songLine of song.lines){
-        const brText = newText()
-        const enText = newText()
+        const enText = emptyTextObject()
         const singleLine = newLine()
 
-        brText.text = songLine.br
+        singleLine.br = tooltipIdentification(songLine.br, song.details)
+
         enText.text = songLine.en
-        singleLine.br.push(brText)
         singleLine.en.push(enText)
         singleLine.bold = songLine.bold
+
         detailedLines.push(singleLine)
       }
 
-      // console.log(JSON.stringify(detailedLines))
       return detailedLines
     }
     
