@@ -31,4 +31,9 @@
     {"br":"Foge pra Camugerê, Aidê","en":" Escape to Camugerê, Aidê"},
     {"br":"Foge pra Camugerê, Aidê","en":" Escape to Camugerê, Aidê"},
     {"br":"Foge pra Camugerê, Aidê","en":" Escape to Camugerê, Aidê"}
-]}
+    ],
+    "details" : [
+        {"key":"Quilombo", "desc":"A community of escaped slaves"},
+        {"key":"Camugerê", "desc":"The name of one of the quilombos that existed in Brazil"}
+    ]
+}

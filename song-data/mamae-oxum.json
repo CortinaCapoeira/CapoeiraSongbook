@@ -1,6 +1,6 @@
 { "title":"Mamãe Oxum",
 "lines": [
-    {"br":"Eu vi mamãe Oxum na cachoeira","en":"  I saw Mother Oxum at the waterfall"},
+    {"br":"Eu vi Mamãe Oxum na cachoeira","en":"  I saw Mother Oxum at the waterfall"},
     {"br":"Sentada na beira do rio","en":" Sitting on the riverbank"},
     {"br":"Colhendo lírio lirulê","en":" Harvesting lilies"},
     {"br":"Colhendo lírio lirulá","en":" Harvesting Lilies"},
@@ -11,4 +11,8 @@
     {"br":"Colhendo lírio lirulá","en":" Harvesting lilies","bold":true},
     {"br":"Colhendo lírio","en":" Harvesting lilies","bold":true},
     {"br":"Pra enfeitar o seu conga","en":" To decorate the shrine","bold":true}
-]}
+    ],
+    "details":[
+        {"key":"Mamãe Oxum", "desc":"An orixa - goddess of fresh water"}
+    ]
+}

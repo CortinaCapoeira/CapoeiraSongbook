@@ -33,4 +33,10 @@
     {"br":"","en":""},
     {"br":"Lê lê lê lê lê lê","en":"","bold":true},
     {"br":"Lê lê lê lê lê oo","en":"","bold":true}
-]}
+    ],
+    "details": [
+        {"key":"Pastinha", "desc":"A very influential master in the Angola style of capoeira"},
+        {"key":"Bimba", "desc":"Mestre Bimba was the creator of the Regional style of capoeira, thought to help decriminalise capoeira"},
+        {"key":"axé", "desc":"Used to mean good energy"}
+    ]
+}

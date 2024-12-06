@@ -14,4 +14,8 @@
     {"br":"Dourado, que é meu berimbau","en":" Gold, like my berimbau"},
     {"br":"Dourado, de cordão de ouro","en":" Gold of cordão de ouro"},
     {"br":"Besouro, Besouro, Besouro","en":" Besouro, Besouro, Besouro"}
-]}
+    ],
+    "details":[
+        {"key":"besouro", "desc":"Referring to Besouro Mangangá - a famous capoeiraista, with many legends surrounding him"}
+    ]
+}

@@ -22,4 +22,8 @@
     {"br":"Nego nago","en":" ","bold":true},
     {"br":"Canta ai","en":" Sing there"},
     {"br":"Nego nago","en":" ","bold":true}
-]}
+    ],
+    "details":[
+        {"key":"senzala", "desc":"The houses/buildings where the slaves lived on plantations"}
+    ]
+}

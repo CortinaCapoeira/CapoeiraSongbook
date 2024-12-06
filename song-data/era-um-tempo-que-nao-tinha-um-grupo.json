@@ -34,4 +34,9 @@
     {"br":"Um dia eu queria viver","en":" One day I want to live it"},
     {"br":"Conhecer toda a malícia","en":" To know all the malicia"},
     {"br":"Toda mandinga também o saber","en":" And also all the mandinga"}
-]}
+    ],
+    "details":[
+        {"key":"Mestre Pastinha", "desc":"A very influential master in the Angola style of capoeira"},
+        {"key":"Mestre Waldemar", "desc":"A famous master from Bahia"}
+    ]
+}

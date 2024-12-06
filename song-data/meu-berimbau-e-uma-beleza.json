@@ -22,6 +22,10 @@
     {"br":"","en":""},
     {"br":"Meu berimbau comanda roda","en":" My berimbau commands the roda"},
     {"br":"Sempre em boa harmonia","en":" Always in a good harmony"},
-    {"br":"Na cabeça eu arame pedaço de pau","en":" in the cabeça I stiing the piece of wood (?)"},
+    {"br":"Na cabeça eu arame pedaço de pau","en":" With the cabeça I string the piece of wood"},
     {"br":"Meu berimbau toca alegria","en":" My berimabu plays joy"}
+],
+"details":[
+    {"key":"cabeça", "desc":"The soundbox of the berimbau - made of a dried gourd fruit"},
+    {"key":"arame", "desc":"The wire sting of the berimbau"}
 ]}

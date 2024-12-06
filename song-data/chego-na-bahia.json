@@ -7,7 +7,7 @@
     { "br": "Capoeira no domingo é la na Humaitá", "en": " " },
     { "br": "Subo o Curuzu só pra ver ilê", "en": " " },
     { "br": "Peço proteção as meus orixás", "en": " " },
-    { "br": "Praça Cairu na boca da noite", "en": " " },
+    { "br": "Praça Cayru na boca da noite", "en": " " },
     { "br": "Elevador Lacerda vem iluminar", "en": " " },
     { "br": "", "en": "" },
     { "br": "Chega na Bahia Mercado Modelo", "en": " " },
@@ -19,9 +19,10 @@
   ],
   "details":[
     {"key":"acarajé", "desc":"A traditional food from Bahia - deep fried fritta usually filled with vatapá and shrimps"},
-    {"key":"vatapá", "desc":"A traditional food from Bahia - bread, shrimp, coconut milk, finely ground peanuts and palm oil mashed into a creamy paste"},
+    {"key":"vatapá", "desc":"A traditional food from Bahia - a paste made of shrimps and peanuts"},
     {"key":"orixás", "desc":"Gods of the candomblé religion which first arose in the slave population of Brazil"},
-    {"key":"Praça Cayru", "desc":"A square in Salvador, Bahia"},
-    {"key":"Elevador Lacerda", "desc":"A lift in Salvador, Bahia that links the low city and the high city"}
+    {"key":"Elevador Lacerda", "desc":"A lift in Salvador, Bahia that links the low city and the high city"},
+    {"key":"Mercado Modelo", "desc":"A famous artisan market in Salvador, Bahia"},
+    {"key":"Praça Cairu", "desc":"The square outside the Mercado Modelo in Salvador"}
   ]
 }

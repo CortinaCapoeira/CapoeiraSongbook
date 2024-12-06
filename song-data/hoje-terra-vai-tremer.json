@@ -19,4 +19,8 @@
     {"br":"Num agrado Iemanjá","en":" "},
     {"br":"Hoje terra vai tremer","en":"  Today the ground will shake"},
     {"br":"Hoje terra vai tremer","en":"  Today the ground will shake"}
-]}
+    ],
+    "details":[
+        {"key":"Iemanjá", "desc":"An orixa - goddess of seas and oceans and a protector of sailors"}
+    ]
+}

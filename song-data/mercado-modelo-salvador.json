@@ -9,11 +9,20 @@
     {"br":"Moro na cidade baixa ","en":" I live in the low city","bold":true},
     {"br":"Subo de elevado-o-or","en":" Go up in the lift","bold":true},
     {"br":"","en":" "},
-    {"br":"Antiga praça Cairu","en":" Ancient Cairu square "},
+    {"br":"Antiga Praça Cayru","en":" Ancient Cairu square "},
     {"br":"Mercado modelo em Salvador","en":" Mercado modelo in Salvador","bold":true},
     {"br":"","en":" "},
     {"br":"yea yea yea yea yea yea","en":""},
     {"br":"yo yo yo yo yo yo yo","en":"","bold":true},
     {"br":"yea yea yea yea yea yea","en":""},
     {"br":"yo yo yo yo yo yo yo","en":"","bold":true}
-]}
+    ],
+    "details":[
+        {"key":"acarajé", "desc":"A traditional food from Bahia - deep fried fritta usually filled with vatapá and shrimps"},
+        {"key":"vatapá", "desc":"A traditional food from Bahia - a paste made of shrimps and peanuts"},
+        {"key":"orixás", "desc":"Gods of the candomblé religion which first arose in the slave population of Brazil"},
+        {"key":"elevado-o-or", "desc":"Referring to Elevador Lacerda - A lift in Salvador, Bahia that links the low city and the high city"},
+        {"key":"Mercado Modelo", "desc":"A famous artisan market in Salvador, Bahia"},
+        {"key":"Praça Cayru", "desc":"The square outside the Mercado Modelo in Salvador"}
+    ]
+}
