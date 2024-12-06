@@ -19,4 +19,9 @@
     {"br":"Angola que tem dendê","en":"  Angola has dendê"},
     {"br":"Angola que tem dendê","en":" Angola has dendê","bold":true},
     {"br":"Angola que tem dendê","en":" Angola has dendê","bold":true}
-]}
+    ],
+    "details": [
+        {"key":"dendê", "desc":"Literally Red Palm Oil, but used in capoeira to mean good energy"},
+        {"key":"mandingueiro", "desc":"A person who uses mandinga - sneakiness and trickery in capoeira"}
+    ]
+}

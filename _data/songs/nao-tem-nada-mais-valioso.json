@@ -1,17 +1,17 @@
 { "title":"Não tem nada mais valioso",
 "lines": [
-    {"br":"Não tem nada mais valioso, que a Capoeira","en":"  "},
-    {"br":"Não tem, não tem meu camarada,","en":" "},
-    {"br":"Nem ouro","en":" "},
-    {"br":"Nem prata","en":" "},
-    {"br": "Nem diamante", "en": " "},
-    {"br": "Vale mais que a capoeira.", "en": " "},
+    {"br":"Não tem nada mais valioso, que a Capoeira","en":"There is nothing more valuable than capoeira"},
+    {"br":"Não tem, não tem meu camarada,","en":"There isn't, there isn't my friend"},
+    {"br":"Nem ouro","en":"Not gold"},
+    {"br":"Nem prata","en":" Nor silver"},
+    {"br": "Nem diamante", "en": "Nor diamonds"},
+    {"br": "Vale mais que a capoeira.", "en": "Are worth more than capoeira"},
     {"br": " ", "en": " "},
-    {"br":"Não tem nada mais valioso, que a Capoeira","en":"  ","bold":true},
-    {"br":"Não tem, não tem meu camarada,","en":" ","bold":true},
-    {"br":"Nem ouro","en":" ","bold":true},
-    {"br":"Nem prata","en":" ","bold":true},
-    {"br": "Nem diamante", "en": " ","bold":true},
-    {"br": "Vale mais que a capoeira.", "en": " ","bold":true}
+    {"br":"Não tem nada mais valioso, que a Capoeira","en":"There is nothing more valuable than capoeira","bold":true},
+    {"br":"Não tem, não tem meu camarada,","en":"There isn't, there isn't my friend","bold":true},
+    {"br":"Nem ouro","en":"Not golf","bold":true},
+    {"br":"Nem prata","en":"Nor silver","bold":true},
+    {"br": "Nem diamante", "en": "Nor diamonds","bold":true},
+    {"br": "Vale mais que a capoeira.", "en": "Are worth more than capoeria","bold":true}
     
 ]}

@@ -13,4 +13,9 @@
     {"br":"Eh, eh, eh dendê maré","en":" "},
     {"br":"Eh, eh, eh maré dendê","en":"","bold":true},
     {"br":"Eh, eh, eh dendê maré","en":"","bold":true}
-]}
+],
+    "details": [
+        {"key":"dendê", "desc":"Literally Red Palm Oil, but used in capoeira to mean good energy"},
+        {"key":"besouro", "desc":"Referring to Besouro Manganga - a famous capoeiraista, with many legends surrounding him"}
+    ]
+}

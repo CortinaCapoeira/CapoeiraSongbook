@@ -14,5 +14,9 @@
     {"br": "Chamei Mãe Iemanjá", "en": "I called Mother Iemanjá"},
     {"br": "Ela é minha rainha", "en": "She is my queen "},
     {"br": "Grande sereia no mar ", "en": "Great mermaid of the sea "}
-    
-]}
+    ],
+    "details":[
+        {"key":"Mamãe Oxum", "desc":"An orixa - goddess of fresh water"},
+        {"key":"Mãe Iemanjá", "desc":"An orixa - goddess of seas and oceans and a protector of sailors"}
+    ]    
+}
