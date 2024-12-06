@@ -13,7 +13,7 @@
     {"br":"É na Aruanda","en":" ","bold":true},
     {"br":"É na Aruanda aê","en":" ","bold":true},
     {"br":"","en":""},
-    {"br":"E na linguagem Jeje, Congo, Angola e Nagô","en":" "},
+    {"br":"E na linguagem Jeje, Congo, Angola e Nagô","en":""},
     {"br":"Veio o povo Bantu que no Brasil chegou","en":" "},
     {"br":"Com sua cultura, sua historia, seu axé","en":" "},
     {"br":"Os mistérios dos ancestrais e a força do candomblé","en":""},
@@ -22,4 +22,11 @@
     {"br":"É na Aruanda aê","en":" "},
     {"br":"É na Aruanda","en":" ","bold":true},
     {"br":"É na Aruanda aê","en":" ","bold":true}
-]}
+    ],
+    "details":[
+        {"key":"Bantu", "desc":"A tribe from Africa were slaves were taken from"},
+        {"key":"axé", "desc":"Used to mean good energy"},
+        {"key":"candomblé", "desc":"A afro-brasillian religion formed from the cultures of the slaves"}
+    ]
+
+}

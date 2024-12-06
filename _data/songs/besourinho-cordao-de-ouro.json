@@ -5,4 +5,8 @@
     {"br":"","en":""},
     {"br":"Besouro Besourinho","en":" "},
     {"br":"Cordão de Ouro","en":" ","bold":true}
-]}
+    ],
+    "details":[
+        {"key":"besouro", "desc":"Referring to Besouro Manganga - a famous capoeiraista, with many legends surrounding him"}
+    ]
+}

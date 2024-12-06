@@ -25,4 +25,8 @@
     {"br":"Marinheiro só","en":" Only a sailor","bold":true},
     {"br":"com seu bonezinho","en":" "},
     {"br":"Marinheiro só","en":" Only a sailor","bold":true}
-]}
+    ],
+    "details": [
+        {"key": "Bahia", "desc": "A state in Brasil"}
+    ]
+}

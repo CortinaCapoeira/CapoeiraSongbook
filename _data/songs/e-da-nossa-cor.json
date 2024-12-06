@@ -15,4 +15,8 @@
     {"br":"É da nossa cor","en":" It is our colour","bold":true},
     {"br":"Mestre Bimba","en":" Mestre Bimba"},
     {"br":"É da nossa cor","en":" It is our colour","bold":true}
-]}
+    ],
+    "details":[
+        {"key":"Bimba", "desc":"Mestre Bimba was the creator of the Regional style of capoeira, thought to help decriminalise capoeira"}
+    ]
+}

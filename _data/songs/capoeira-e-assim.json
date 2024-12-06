@@ -3,6 +3,10 @@
 "lines": [
     {"br":"Capoeira é assim","en":"  Capoeira is like this"},
     {"br":"É malicia e manha","en":" it is trickery and craftiness"},
-    {"br":"Mandingueiro vadeia","en":" ??"},
+    {"br":"Mandingueiro vadeia","en":""},
     {"br":"Cheio de artimanha","en":" Full of trickery"}
-]}
+    ],
+    "details":[
+        {"key":"mandingueiro", "desc":"A person who uses mandinga - sneakiness and trickery in capoeira"}
+    ]
+}

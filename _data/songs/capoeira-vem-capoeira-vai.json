@@ -46,4 +46,9 @@
     {"br":"Pra outros é vadiação","en":"And for others it's a game"},
     {"br":"Mas pra mim é um tesouro","en":"But for me it's a treasure"},
     {"br":"Luta de libertação","en":"A fight of liberty"}
-]}
+],
+    "details": [
+        {"key":"dendê", "desc":"Literally Red Palm Oil, but used in capoeira to mean good energy"},
+        {"key":"axé", "desc":"Used to mean good energy"}
+    ]
+}
