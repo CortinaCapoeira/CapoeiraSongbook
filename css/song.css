@@ -56,7 +56,7 @@ div.ButtonToIndex{
     padding: 8px 16px;
     /*border: 1px solid #fff;*/
     background-color: var(--base);
-    color: var(--text);
+    color: var(--primary);
     text-decoration: none;
     transition: 0.3s;
     list-style-type: none;

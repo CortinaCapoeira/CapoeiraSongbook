@@ -13,14 +13,14 @@ div.ButtonToTop {
     padding: 8px 16px;
     /*border: 1px solid #fff;*/
     background-color: var(--base);
-    color: var(--text);
+    color: var(--primary);
     text-decoration: none;
     transition: 0.3s;
     list-style-type: none;
 }
 
 div.pagination a {
-    color: var(--text);
+    color: var(--primary);
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
@@ -28,7 +28,7 @@ div.pagination a {
 
 div.pagination a:hover {
     color: var(--base);
-    background-color: var(--text);
+    background-color: var(--primary);
 }
 
 div.pagination {

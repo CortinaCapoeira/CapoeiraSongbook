@@ -1,6 +1,7 @@
 :root{
-    --text: #232642;
-    --base: #B0C4DE;
-    --pale: #B0DCFD;
-    --flash: #e69b00;
+    --base: #8ECAE6;
+    --primary: #023047;
+    --primary-light: #219EBC;
+    --secondary: #FBB500;
+    --secondary-light: #FFB703;
 }

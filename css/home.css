@@ -8,7 +8,7 @@ div.container {
 }
 
 div.contributions {
-  border: 3px solid var(--text);
+  border: 3px solid var(--primary);
   width: 45%;
   min-width: 150px;
   padding: 1vw;
@@ -16,7 +16,7 @@ div.contributions {
 }
 
 div.month {
-  border: 3px solid var(--text);
+  border: 3px solid var(--primary);
   width: 45%;
   min-width: 150px;
   margin-bottom: 1em;
@@ -44,7 +44,7 @@ only screen and (max-width: 700px) {
 
 /* All sizes */
 div.songOfMonths a:hover {
-  background-color: var(--text);
+  background-color: var(--primary);
   color: var(--base);
 }
 
@@ -80,7 +80,7 @@ div.songOfMonths a {
   min-width: 10vw;
   padding: 8px 16px;
   background: var(--base);
-  color: var(--text);
+  color: var(--primary);
   text-decoration: none;
   transition: 0.5s;
 }
@@ -92,18 +92,18 @@ div.exploreContainer {
 }
 
 a.explore {
-  background-color: var(--flash);
-  color: var(--text);
+  background-color: var(--secondary);
+  color: var(--primary);
   padding: 1em;
   display: inline-block;
   text-decoration: none;
-  border: 0.15em solid var(--text);
+  border: 0.15em solid var(--primary);
 }
 
 a.explore:hover {
-  background-color: var(--text);
-  color: var(--base);
-  border: 0.15em solid var(--pale);
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 0.15em solid var(--secondary-light);
 }
 
 div.hero-text {
@@ -112,5 +112,5 @@ div.hero-text {
 }
 
 h2 {
-  color: var(--flash);
+  color: var(--secondary);
 }
