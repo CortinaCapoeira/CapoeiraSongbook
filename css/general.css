@@ -69,14 +69,11 @@ div.Banner {
     align-items: center;
 }
 
-div.ButtonToTop {
-    display: block;
+/* Used in multiple pages! */
+div.NavigationButton {
     float: right;
     color: var(--primary);
-    text-decoration: none;
-    transition: 0.3s;
 }
-
-div.ButtonToTop img {
+div.NavigationButton img {
     height: 35px;
 }

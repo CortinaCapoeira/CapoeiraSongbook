@@ -92,11 +92,11 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
     </ol>
   </div>
 
-  <!--<div class = "toIndex">-->
-    <div class = "ButtonToIndex">   
-        <li><a href="{{ '/song-index/' | url }}"> Return to Index</a></ButtonToTop></li>
-    </div>
-<!--</div>*-->
+  <div class = "NavigationButton">   
+    <a href="{{ '/song-index/' | url }}">
+      <img src="{{ '/img/left-arrow.svg' | url }}" alt="Return to Index"/>
+    </a>
+  </div>
 {%- endfor -%}
 
 
