@@ -2,17 +2,29 @@
 
 
 li.smallSong{
-    padding-left: 39px;
-    padding-top: 8px;
+    padding-left: 1.5em;
+    padding-top: 20px;
     min-height: 2ex; /*to make sure empy divs don't shrink to 0 height*/
+    position: relative;
+}
+li.smallSong::before{
+    content: counter(list-item);
+
+    background: var(--secondary-light);
+  
+    border-radius: 0 0.8em 0.8em 0;
+    text-align: center;
+  
+    padding: 0.35em 0.3em 0.35em 2.25%;
+    top: calc(20px - 0.35em); /* top padding of .smallSong minus top padding of this element, to be able to center correctly the text*/
+    left: -7%;
+    width: 1.35em;
+    position: absolute;
 }
 
 ol.numNoDots{
     padding-left: 1ex;
-}
-
-ol.numNoDots ::marker{
-    content: counter(list-item);
+    list-style: none;
 }
 
 div.subhead{

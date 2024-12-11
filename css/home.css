@@ -103,7 +103,7 @@ a.explore {
 a.explore:hover {
   background-color: var(--primary);
   color: var(--secondary);
-  border: 0.15em solid var(--secondary-light);
+  border: 0.15em solid var(--secondary);
 }
 
 div.hero-text {
