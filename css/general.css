@@ -68,3 +68,15 @@ div.Banner {
     display: flex;
     align-items: center;
 }
+
+div.ButtonToTop {
+    display: block;
+    float: right;
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+div.ButtonToTop img {
+    height: 35px;
+}
