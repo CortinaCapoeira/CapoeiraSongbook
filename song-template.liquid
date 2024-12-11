@@ -49,54 +49,38 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
     {%- endfor -%}
   </div>
 
-  <div class="mobileSongDiv">
-    <div class = "subhead">
-        Portuguese
+  {%- for section in formattedMobileSections -%}
+    <div class="mobileSongDiv">
+      <div class = "subhead">
         <br/>
-    </div>
-    <ol class="numNoDots">
-    {%- for line in linesWithDetails -%}
-      <li class = "smallSong">
-        {%- if line.bold -%}<b>{%- endif -%}
-          {%- for element in line.br -%}
-            {%- if element.tooltip -%}
-              <a href="#s" data-tooltip = "{{element.tooltip}}">
+        {{ section.title }}
+        <br/>
+      </div>
+      <ol class="numNoDots">
+      {%- for line in section.lines -%}
+        <li class = "smallSong">
+          {%- if line.bold -%}<b>{%- endif -%}
+            {%- for element in line.text -%}
+              {%- if element.tooltip -%}
+                <a href="#s" data-tooltip = "{{element.tooltip}}">
+                  {{element.text}}
+                </a>
+              {%- else -%}
                 {{element.text}}
-              </a>
-            {%- else -%}
-              {{element.text}}
-            {%- endif -%}
-          {%- endfor -%}
-        {%- if line.bold -%}</b>{%- endif -%}
-      </li>
-    {%- endfor -%}
-    </ol>
-  </div>
-
-  <div class="mobileSongDiv">
-    <div class = "subhead">
-      <br/>
-      English
-      <br/>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- if line.bold -%}</b>{%- endif -%}
+        </li>
+      {%- endfor -%}
+      </ol>
     </div>
-    <ol class="numNoDots">
-    {%- for line in linesWithDetails -%}
-      <li class = "smallSong">
-        {%- if line.bold -%}<b>{%- endif -%}
-          {%- for element in line.en -%}
-            {{element.text}}
-          {%- endfor -%}
-        {%- if line.bold -%}</b>{%- endif -%}
-      </li>
-    {%- endfor -%}
-    </ol>
-  </div>
+  {%- endfor -%}
 
-  <!--<div class = "toIndex">-->
-    <div class = "ButtonToIndex">   
-        <li><a href="{{ '/song-index/' | url }}"> Return to Index</a></ButtonToTop></li>
-    </div>
-<!--</div>*-->
+  <div class = "NavigationButton">   
+    <a href="{{ '/song-index/' | url }}">
+      <img src="{{ '/img/left-arrow.svg' | url }}" alt="Return to Index"/>
+    </a>
+  </div>
 {%- endfor -%}
 
 
