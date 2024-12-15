@@ -9,14 +9,14 @@ div.nav>#links {
 }
 
 div.nav li a {
-    background-color: var(--primary-light);
+    background-color: var(--secondary-light);
     color: var(--base);
     border: none;
 }
 
 div.nav li a:hover {
     background: var(--base);
-    color: var(--primary-light);
+    color: var(--secondary-light);
 }
 
 button.menuButton {
