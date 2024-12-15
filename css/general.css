@@ -35,7 +35,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: var(--base);
-    color: var(--text);
+    color: var(--primary);
 }
 
 
@@ -45,7 +45,7 @@ li a {
     padding: 8px 16px;
     /*border: 1px solid #fff;*/
     background: var(--base);
-    color: var(--text);
+    color: var(--primary);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -58,13 +58,22 @@ ul {
 }
 
 li a:hover {
-    background-color: var(--text);
+    background-color: var(--primary);
     color: var(--base);
 }
 
 div.Banner {
-    background-color: var(--text);
+    background-color: var(--primary);
     width: auto;
     display: flex;
     align-items: center;
+}
+
+/* Used in multiple pages! */
+div.NavigationButton {
+    float: right;
+    color: var(--primary);
+}
+div.NavigationButton img {
+    height: 35px;
 }
