@@ -8,7 +8,7 @@ div.container {
 }
 
 div.contributions {
-  border: 3px solid var(--primary);
+  border: 1px solid var(--primary);
   width: 45%;
   min-width: 150px;
   padding: 1vw;
@@ -16,8 +16,9 @@ div.contributions {
 }
 
 div.month {
-  border: 3px solid var(--primary);
+  border: 1px solid var(--primary);
   width: 45%;
+  padding: 1vw;
   min-width: 150px;
   margin-bottom: 1em;
 }
@@ -55,7 +56,6 @@ div.miniheader {
 div.songOfMonths {
   display: table;
   flex: 1;
-  padding-left: 7px;
 }
 
 div.songOfMonths>div {
@@ -93,21 +93,21 @@ div.exploreContainer {
 
 a.explore {
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--base);
   padding: 1em;
   display: inline-block;
   text-decoration: none;
-  border: 0.15em solid var(--primary);
+  border: 0.15em solid var(--base);
 }
 
 a.explore:hover {
-  background-color: var(--primary);
+  background-color: var(--base);
   color: var(--secondary);
   border: 0.15em solid var(--secondary);
 }
 
 div.hero-text {
-  color: var(--base);
+  color: var(--primary);
   letter-spacing: 0.01em;
 }
 
