@@ -78,9 +78,7 @@ permalink: "/song/{{ pagination.items[0] | slugify }}.html"
 
   <div class = "NavigationButton">   
     <a href="{{ '/song-index/' | url }}">
-      <img src="{{ '/img/left-arrow.svg' | url }}" alt="Return to Index"/>
+      {% include 'icon/back-arrow.svg' %}
     </a>
   </div>
 {%- endfor -%}
-
-

@@ -7,10 +7,19 @@
   display: none;
 }
 
+.hulipaa_searchbar form input {
+  background-color: inherit;
+  border: 2px groove var(--secondary-light);
+  border-radius: 6px;
+  color: var(--primary);
+  outline: 0px;
+}
+
 /* TODO remove this once the button follows the same styling of the other buttons in the library*/
 .hulipaa_searchbar form button {
   border: 0;
   background-color: transparent;
+  filter: var(--secondary-light-filters);
 }
 
 /* TODO remove this once the button follows the same styling of the other buttons in the library*/

@@ -10,7 +10,8 @@ li.smallSong{
 li.smallSong::before{
     content: counter(list-item);
 
-    background: var(--secondary-light);
+    background: var(--secondary);
+    color: var(--base);
   
     border-radius: 0 0.8em 0.8em 0;
     text-align: center;

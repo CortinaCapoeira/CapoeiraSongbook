@@ -63,10 +63,11 @@ li a:hover {
 }
 
 div.Banner {
-    background-color: var(--primary);
+    background-color: var(--base);
     width: auto;
     display: flex;
     align-items: center;
+    border-bottom: 1px groove var(--secondary)
 }
 
 /* Used in multiple pages! */
@@ -76,4 +77,9 @@ div.NavigationButton {
 }
 div.NavigationButton img {
     height: 35px;
+}
+div.NavigationButton svg {
+    height: 35px;
+    width: 35px;
+    stroke: var(--secondary-light)
 }
