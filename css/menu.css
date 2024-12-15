@@ -9,18 +9,18 @@ div.nav>#links {
 }
 
 div.nav li a {
-    background-color: var(--text);
+    background-color: var(--primary);
     color: var(--base);
     border: none;
 }
 
 div.nav li a:hover {
     background: var(--base);
-    color: var(--text);
+    color: var(--primary);
 }
 
 button.menuButton {
-    background: var(--text);
+    background: var(--primary);
     color: var(--base);
     width: 15%;
     max-width: 6ex;
@@ -32,7 +32,7 @@ button.menuButton {
 
 button.menuButton>svg {
     fill: var(--base);
-    background-color: var(--text);
+    background-color: var(--primary);
     width: 80%;
     margin: auto;
 }

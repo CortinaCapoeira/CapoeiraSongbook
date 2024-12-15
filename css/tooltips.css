@@ -5,7 +5,7 @@
     position: relative;
     padding: unset;
     text-decoration: revert;
-    color: var(--text);
+    color: var(--primary);
   }
 
   a[data-tooltip]:hover{
@@ -16,10 +16,10 @@
 
   a[data-tooltip]:focus::after{
     content: attr(data-tooltip);
-    background: var(--flash);
+    background: var(--secondary);
     border-radius: 5px;
     top: 26px;
-    color: var(--text);
+    color: var(--primary);
     left: 20%;
     padding: 5px 15px;
     position: absolute;
