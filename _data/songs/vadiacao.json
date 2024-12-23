@@ -1,10 +1,10 @@
 { "title":"Vadiação",
 "lines": [
     {"br":"Vadiação, ação de vadiar ação","en":"  "},
-    {"br":"ação de vadiar ação, ação de vadiar","en":" "},
+    {"br":"ação de vadiar ação, ação de vadiar","en":""},
     {"br":"","en":""},
     {"br":"Vadiação, ação de vadiar ação","en":"  ","bold":true},
-    {"br":"Ação de vadiar ação, ação de vadiar","en":" ","bold":true},
+    {"br":"Ação de vadiar ação, ação de vadiar","en":"","bold":true},
     {"br":"","en":""},
     {"br":"Primeiro é conhecer,","en":" First it is to know"},
     {"br":"E se identificar,","en":" And the know yourself"},

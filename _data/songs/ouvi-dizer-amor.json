@@ -5,12 +5,12 @@
     {"br":"Ouvi falar","en":" I heard it spoken"},
     {"br":"Ouvi dizer, amor","en":" I heard it said, love", "bold":true},
     {"br":"Ouvi falar","en":" I heard it spoken", "bold":true},
-    {"br": " ", "en": " "},
+    {"br": "", "en": ""},
     {"br":"O que a filha chamou a mãe","en":"  "},
-    {"br":"Cabelo de arapua","en":" ", "bold":true},
-    {"br": " ", "en": " "},
+    {"br":"Cabelo de arapua","en":"", "bold":true},
+    {"br": "", "en": ""},
     {"br":"O que a filha chamou a mãe","en":"  "},
-    {"br":"Cabelo de arapua","en":" ", "bold":true}
+    {"br":"Cabelo de arapua","en":"", "bold":true}
     
     
 ]}

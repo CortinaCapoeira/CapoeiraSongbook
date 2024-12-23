@@ -3,8 +3,8 @@
     {"br":"Agora sim, quem mataram meu besouro","en":"  Now yes, who killed my Besouro?"},
     {"br":"Depois de morto, besourinho cordão de ouro","en":" After death, little Besouro is a cord of gold"},
     {"br":"","en":""},
-    {"br":"Besouro Besourinho","en":" "},
-    {"br":"Cordão de Ouro","en":" ","bold":true}
+    {"br":"Besouro Besourinho","en":""},
+    {"br":"Cordão de Ouro","en":"","bold":true}
     ],
     "details":[
         {"key":"besouro", "desc":"Referring to Besouro Manganga - a famous capoeiraista, with many legends surrounding him"}

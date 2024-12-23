@@ -1,11 +1,11 @@
 
 { "title":"Luanda é pandeiro",
 "lines": [
-    {"br":"Luanda é pandeiro","en":" "},
-    {"br":"Luanda é para","en":" "},
-    {"br":"Teresa samba deitada","en":" "},
+    {"br":"Luanda é pandeiro","en":""},
+    {"br":"Luanda é para","en":""},
+    {"br":"Teresa samba deitada","en":""},
     {"br":"O dailila samba de pé","en":""},
     {"br":"E lá no cais da Bahia","en":""},
-    {"br":"Não tem lele, não tem nada","en":" "},
-    {"br":"Não tem lele, não lala","en":" "}
+    {"br":"Não tem lele, não tem nada","en":""},
+    {"br":"Não tem lele, não lala","en":""}
 ]}

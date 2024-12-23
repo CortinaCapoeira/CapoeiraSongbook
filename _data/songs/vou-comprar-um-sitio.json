@@ -3,17 +3,17 @@
     {"br":"Vou comprar um sitio","en":" I'm going to buy a sitio"},
     {"br":"Ele é tão bonito","en":" He is so beautiful"},
     {"br":"É na beira do mar","en":" By the sea"},
-    {"br": " ", "en": " "},
+    {"br": "", "en": ""},
     {"br":"Vou comprar um sitio","en":" I'm going to buy a sitio", "bold":true},
     {"br":"Ele é tão bonito","en":" He is so beautiful", "bold":true},
     {"br":"É na beira do mar","en":" By the sea", "bold":true},
-    {"br": " ", "en": " "},
-    {"br": "É no Humaitá", "en": " "},
-    {"br": "No Humaitá", "en": " "},
-    {"br": "No Humaitá", "en": " "},
-    {"br": " ", "en": " "},
-    {"br": "É no Humaitá", "en": " ", "bold":true},
-    {"br": "No Humaitá", "en": " ", "bold":true},
-    {"br": "No Humaitá", "en": " ", "bold":true}
+    {"br": "", "en": ""},
+    {"br": "É no Humaitá", "en": ""},
+    {"br": "No Humaitá", "en": ""},
+    {"br": "No Humaitá", "en": ""},
+    {"br": "", "en": ""},
+    {"br": "É no Humaitá", "en": "", "bold":true},
+    {"br": "No Humaitá", "en": "", "bold":true},
+    {"br": "No Humaitá", "en": "", "bold":true}
     
 ]}

@@ -7,6 +7,11 @@ li.smallSong{
     min-height: 2ex; /*to make sure empy divs don't shrink to 0 height*/
     position: relative;
 }
+
+li.smallSong:empty::before{
+    display: none
+}
+
 li.smallSong::before{
     content: counter(list-item);
 
@@ -35,7 +40,6 @@ div.subhead{
 div.bold{
     font-weight: bold;
 }
-
 
 div.FortmattingDiv{
     display: inline;
