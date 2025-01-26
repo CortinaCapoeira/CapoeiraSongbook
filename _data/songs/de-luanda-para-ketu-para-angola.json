@@ -6,14 +6,21 @@
     {"br":"É de Uganda, para Angola","en":"","bold":true},
     {"br":"","en":" "},
     {"br":"Ô lêlê ô lala!","en":"Ô lêlê ô lala! "},
-    {"br":"Quero ver o jaburu cantar!","en":"I want to see the jaburu sing"},
+    {"br":"Quero ver o jabiru cantar!","en":"I want to see the jabiru sing"},
     {"br":"Ô lêlê ô lala!","en":" Ô lêlê ô lala!","bold":true},
-    {"br":"Quero ver o jaburu cantar!","en":"I want to see the jaburu sing ","bold":true},
+    {"br":"Quero ver o jabiru cantar!","en":"I want to see the jabiru sing ","bold":true},
     {"br":"","en":" "},
     {"br":"No passo que Ema deu","en":" "},
     {"br":"No passo que Ema da","en":" ", "bold":true},
     {"br":"No passo que Ema deu","en":" "},
     {"br":"No passo que Ema da","en":" ", "bold":true},
     {"br":"No passo que Ema deu","en":" "},
-    {"br":"No passo que Ema da","en":" ", "bold":true}    
+    {"br":"No passo que Ema da","en":" ", "bold":true},
+    "details":[
+        {"key":"Luanda", "desc":"Capital of Angola"},
+        {"key":"Angola", "desc":"A country in Africa"},
+        {"key":"Uganda", "desc":"A country in Africa"}.
+        {"key":"jabiru", "desc":"A bird - a type of stork found in the Americas"},
+        {"key":"Ema", "desc":"A bird - another name for the American Rhea"}
+    ]
 ]}
