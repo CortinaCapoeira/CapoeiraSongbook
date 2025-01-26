@@ -16,6 +16,7 @@
     {"br":"No passo que Ema da","en":" ", "bold":true},
     {"br":"No passo que Ema deu","en":" "},
     {"br":"No passo que Ema da","en":" ", "bold":true},
+],
     "details":[
         {"key":"Luanda", "desc":"Capital of Angola"},
         {"key":"Angola", "desc":"A country in Africa"},
@@ -23,4 +24,4 @@
         {"key":"jabiru", "desc":"A bird - a type of stork found in the Americas"},
         {"key":"Ema", "desc":"A bird - another name for the American Rhea"}
     ]
-]}
+}
