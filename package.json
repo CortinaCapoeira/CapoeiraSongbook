@@ -22,7 +22,7 @@
   "homepage": "https://github.com/CortinaCapoeira/CapoeiraSongbook#readme",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "electron-pdf": "^15.0.0",
+    "electron-pdf": "^25.0.0",
     "spellchecker": "^3.7.1"
   },
   "devDependencies": {
