@@ -1,0 +1,61 @@
+
+.suggest-song #title{
+    width: 100%;
+    font-size: larger;
+    max-width: 30rem;
+    padding: 0px;
+}
+
+.suggest-song form{
+}
+
+.suggest-song #brazilian-lines{
+    counter-reset: line-num;
+}
+
+.suggest-song .line{
+    position: relative;
+    padding-top: 20px;
+}
+.suggest-song .line input{
+    width: 100%;
+    max-width: 30rem;
+}
+.suggest-song .line::before{
+    counter-increment: line-num;
+    content: counter(line-num);
+
+    background: var(--secondary);
+    color: var(--base);
+  
+    border-radius: 0 0.8em 0.8em 0;
+    text-align: center;
+  
+    padding: 0.35em 0em 0.35em 2.25%;
+    top: calc(20px - 0.35em); /* top padding of .smallSong minus top padding of this element, to be able to center correctly the text*/
+    left: -7%;
+    width: 1em;
+    position: absolute;
+}
+
+.suggest-song #add-line {
+    position: fixed;
+    bottom: 4vw;
+    right: 4vw;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.suggest-song #add-line svg{
+    fill: var(--primary);
+    height: 3rem;
+    width: 3rem;
+}
+
+.suggest-song #error-messages {
+    color: rgb(255, 72, 0);
+    font-size: larger;
+}
