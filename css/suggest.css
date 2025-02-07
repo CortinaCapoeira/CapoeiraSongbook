@@ -1,9 +1,13 @@
 
+
+.suggest-song .span-title{
+    display: block;
+    max-width: 30rem;
+}
 .suggest-song #title{
     width: 100%;
+    box-sizing: border-box;
     font-size: larger;
-    max-width: 30rem;
-    padding: 0px;
 }
 
 .suggest-song form{
@@ -17,9 +21,14 @@
     position: relative;
     padding-top: 20px;
 }
-.suggest-song .line input{
-    width: 100%;
+.suggest-song .line span{
+    display: block;
     max-width: 30rem;
+}
+.suggest-song .line input{
+    width: calc(100% - 0.4em); /* Ems subtracted from margin */
+    margin-left: 0.4em;
+    box-sizing: border-box;
 }
 .suggest-song .line::before{
     counter-increment: line-num;
@@ -32,16 +41,13 @@
     text-align: center;
   
     padding: 0.35em 0em 0.35em 2.25%;
-    top: calc(20px - 0.35em); /* top padding of .smallSong minus top padding of this element, to be able to center correctly the text*/
     left: -7%;
     width: 1em;
     position: absolute;
 }
 
-.suggest-song #add-line {
+.suggest-song button {
     position: fixed;
-    bottom: 4vw;
-    right: 4vw;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -49,10 +55,19 @@
     cursor: pointer;
 }
 
-.suggest-song #add-line svg{
+.suggest-song button svg{
     fill: var(--primary);
     height: 3rem;
     width: 3rem;
+}
+
+.suggest-song #add-line {
+    bottom: 4vw;
+    right: 4vw;
+}
+.suggest-song #send {
+    bottom: 4vw;
+    left: 4vw;
 }
 
 .suggest-song #error-messages {

@@ -5,7 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const addLineButton = document.getElementById("add-line")
     addLineButton.addEventListener("click", addLine)
+
+    const sendButton = document.getElementById("send")
+    sendButton.addEventListener("click", send)
 });
+
+function send(){
+    console.log("Sending....")
+}
 
 function addLine(){
     const brLinesDiv = document.getElementById("brazilian-lines");
