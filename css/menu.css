@@ -18,21 +18,3 @@ div.nav li a:hover {
     background: var(--base);
     color: var(--secondary-light);
 }
-
-button.menuButton {
-    background: inherit;
-    color: var(--base);
-    width: 15%;
-    max-width: 6ex;
-    cursor: pointer;
-    height: auto;
-    margin: auto 2% auto 0;
-    border: none;
-}
-
-button.menuButton>svg {
-    fill: var(--primary);
-    background-color: inherit;
-    width: 80%;
-    margin: auto;
-}

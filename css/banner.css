@@ -1,0 +1,178 @@
+:root {
+    --banner-color: var(--base);
+    --berimbau-size: 50px;
+    --berimbau-background: var(--base);
+    --berimbau-lines-color: var(--secondary);
+    --berimbau-verga-color: rgb(230, 169, 78);
+    --berimbau-arame-color: rgb(185, 185, 185);
+    --berimbau-cabaca-color: rgb(230, 139, 78);
+    --berimbau-string-color: rgb(228, 204, 168);
+}
+
+.Banner {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: var(--banner-color);
+    padding: 1rem 0;
+    box-shadow: 0 1px 5px 1px #0006;
+    transition: all 250ms linear;
+}
+
+.Banner:hover {
+    box-shadow: 0 1px 5px 1px #000a;
+}
+
+.Banner>img {
+    max-width: 80%;
+    height: auto;
+    max-height: 8ex;
+}
+
+.menuButton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2rem;
+    margin: auto 0;
+    width: var(--berimbau-size);
+    height: var(--berimbau-size);
+    padding: 0;
+    border: 0;
+}
+
+.checkbox-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-checkbox {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.berimbau-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--berimbau-background);
+}
+
+.berimbau {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    font-size: 16px;
+    transition: all 400ms linear;
+}
+
+/* --- BEFORE --- */
+.berimbau-container section>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    rotate: 0deg;
+    width: 80%;
+    height: 8%;
+    background-color: var(--berimbau-lines-color);
+    border-radius: 100vw;
+    box-shadow: none;
+    transition: all 400ms linear;
+}
+
+.berimbau-container section:first-child>* {
+    top: 20%;
+}
+
+.berimbau-container section:last-child>* {
+    top: 80%;
+}
+
+/* --- AFTER --- */
+.menu-checkbox:checked~.berimbau-container .verga {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 43%;
+    height: 80%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -2px 0 0 1px var(--berimbau-verga-color);
+}
+
+.menu-checkbox:checked~.berimbau-container .verga::after {
+    content: '';
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 13%;
+    width: 20%;
+    height: 105%;
+    background-color: var(--berimbau-background);
+}
+
+.menu-checkbox:checked~.berimbau-container .arame {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 0.9%;
+    height: 80%;
+    background-color: var(--berimbau-arame-color);
+}
+
+.menu-checkbox:checked~.berimbau-container .cabaca {
+    position: absolute;
+    bottom: 12%;
+    left: 30%;
+    bottom: 12%;
+    width: 20%;
+    height: 18%;
+    background-color: var(--berimbau-cabaca-color);
+    border-radius: 50%;
+    rotate: -13deg;
+}
+
+.menu-checkbox:checked~.berimbau-container .cabaca::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 96%;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 2%;
+    background-color: var(--berimbau-string-color);
+    rotate: 13deg;
+}
+
+.menu-checkbox:checked~.berimbau-container .cabaca::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 50%;
+    background-color: rgba(50, 50, 50, 0.35);
+    border-radius: 50%;
+}
+
+.menu-checkbox:checked~.berimbau-container .berimbau {
+    rotate: 15deg;
+}
