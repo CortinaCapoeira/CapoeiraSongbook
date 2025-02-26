@@ -1,6 +1,6 @@
 :root {
     --banner-color: var(--base);
-    --berimbau-size: 50px;
+    --berimbau-size: 45px;
     --berimbau-background: var(--base);
     --berimbau-lines-color: var(--secondary);
     --berimbau-verga-color: rgb(230, 169, 78);
@@ -27,21 +27,19 @@
 }
 
 .Banner>img {
+    display: inline-block;
     max-width: 80%;
     height: auto;
     max-height: 8ex;
+    margin: auto;
 }
 
 .menuButton {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 2rem;
-    margin: auto 0;
     width: var(--berimbau-size);
     height: var(--berimbau-size);
     padding: 0;
     border: 0;
+    margin-right: 1rem;
 }
 
 .checkbox-container {
