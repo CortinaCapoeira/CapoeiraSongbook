@@ -19,10 +19,10 @@
         <script type="text/javascript" defer src="{{ '/frontend/fe-scrollybox.js' | url }}"></script>
         </head>
     <body>
-        <div class="Banner" id="top">
-            <img src="{{ '/img/banner.webp' | url }}">
-            <button class = "menuButton" onclick="myFunction()">
-                <div class="checkbox-container">
+        <div class="Banner-container">
+            <div class="Banner" id="top">
+                <img src="{{ '/img/banner.webp' | url }}">
+                <div class="checkbox-container" onclick="myFunction()">
                     <input type="checkbox" class="menu-checkbox">
                     <div class="berimbau-container">
                         <div class="berimbau">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-            </button>
+            </div>
 
             <div class="nav">
                 <div id="links">
