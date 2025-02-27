@@ -40,8 +40,8 @@
                 </div>
             </div>
 
-            <div class="nav">
-                <div id="links">
+            <div class="nav" id="nav-links">
+                <div class="links">
                     <ul>
                         <li><a href="{{ '/' | url }}">Home</a></li>
                         <li><a href="{{ '/song-index/' | url }}">Index</a></li>
@@ -58,11 +58,11 @@
 
         <script>
             function myFunction() {
-                var x = document.getElementById("links");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
+                var x = document.getElementById("nav-links");
+                if (!x.classList.contains("nav-active")) {
+                    x.classList.add("nav-active");
                 } else {
-                    x.style.display = "block";
+                    x.classList.remove("nav-active");
                 }
             }
         </script>

@@ -16,6 +16,7 @@
 .Banner-container {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .Banner {
@@ -25,13 +26,6 @@
     width: auto;
     background-color: var(--banner-color);
     padding: 1rem 0;
-    box-shadow: 0 1px 5px 1px #0006;
-    transition: all 250ms linear;
-    z-index: 1;
-}
-
-.Banner:hover {
-    box-shadow: 0 1px 5px 1px #000a;
 }
 
 .Banner>img {
@@ -183,11 +177,16 @@
 /* --- NAV LINKS --- */
 
 div.nav {
+    position: absolute;
     display: inherit;
+    z-index: -1;
+    transform: translateY(-100%);
+    box-shadow: 0 1px 5px 1px #0006;
+    transition: transform 0s ease-out, box-shadow 250ms linear;
 }
 
-div.nav>#links {
-    display: none;
+div.nav>.links {
+    width: 100svw;
 }
 
 div.nav li a {
@@ -196,7 +195,20 @@ div.nav li a {
     border: none;
 }
 
+/* - Hover effects - */
+
+.Banner-container:hover div.nav {
+    box-shadow: 0 1px 5px 1px #000a;
+}
+
 div.nav li a:hover {
     background: var(--base);
     color: var(--secondary-light);
+}
+
+/* - Activating (Showing) links - */
+
+#nav-links.nav-active {
+    transform: translateY(0);
+    transition: transform 0.5s ease-out, box-shadow 250ms linear;
 }
