@@ -69,9 +69,13 @@
     bottom: 4vw;
     left: 4vw;
 }
-/* Maybe smaller icon with also text saying "Send"*/
 
 .suggest-song #error-messages {
     color: rgb(255, 72, 0);
+    font-size: larger;
+}
+
+.suggest-song #success-messages {
+    color: rgb(0, 255, 81);
     font-size: larger;
 }

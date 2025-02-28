@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     onEvent(SELECT.addLine(), 'click', addLine)
 
     onEvent(SELECT.form(), "submit", send)
+
+    addLine() // First line
 });
 
 // TODO extract to global parameter?
@@ -20,34 +22,7 @@ function send(e){
     }
     console.log(data)
     // TODO validation!!!
-    // TODO fix CORS error
     sendNewSong(data)
-
-    // Other ways...
-    // const form = SELECT.form()
-    // const formData = new FormData(form)
-    // const data = {
-    //     title: formData.get("title"),
-    //     lines: formData.getAll("line").map(l => ({br: l}))
-    // }
-
-    // const data = {}
-    // for (const key of formData.keys()) {
-    //     console.log(key)
-    //     console.log()
-    //     const valArray = formData.getAll(key)
-    //     const val = valArray
-    //     data[key] =
-    // }
-
-
-    // const titleEl = document.getElementById("title");
-    // const title = titleData(titleEl)
-
-    // const brLinesDiv = document.getElementById("brazilian-lines");
-    // const lineElements = brLinesDiv.querySelectorAll('input')
-    // const lines = lineElements.map(lineData)
-
 }
 
 function addLine(){
@@ -59,12 +34,33 @@ function addLine(){
     brLinesDiv.appendChild(clone);
 }
 
+const sendNewSong = (data) => {
+    fetch(`${songbookContributorUrl}/song`, {
+        method: "POST",
+        body: JSON.stringify(data)
+    }).then(resp => {
+        if (!resp.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+        // TODO perhaps redirect, or maybe clean form
+        SELECT.message().textContent="Song successfully submitted"
+    }).catch(e => {
+        console.log(e)
+        SELECT.error().textContent = "Error while submitting the song"
+    }).finally(()=>{
+        // TODO remove any spinner that might have been running
+    });
+}
+
+
 function checkTemplateSupport(){
     if (("content" in document.createElement("template")) == false) {
         const errorMessagesDiv = SELECT.error()
         errorMessagesDiv.textContent="Browser too old to support this functionality"
     }
 }
+
+// ---- Helper functions ----
 
 const getElId = (id) => document.getElementById(id)
 
@@ -76,6 +72,7 @@ const getFormValue = (name) => getFormElements(name)[0].value
 
 const SELECT = [
     {id: "error-messages",              name: 'error'},
+    {id: "success-messages",            name: 'message'},
     {id: "new-line",                    name: "newLineTemplate"},
     {id: "brazilian-lines",             name: "brLines"},
     {id: "add-line",                    name: "addLine"},
@@ -91,10 +88,3 @@ const SELECT = [
 const onEvent = (el, ev, func) => el.addEventListener(ev, func)
 
 const onElEvent = (elementId, ev, func) => onEvent(getElId(elementId), ev, func)
-
-const sendNewSong = (data) => {
-    fetch(`${songbookContributorUrl}/song`, {
-        method: "POST",
-        body: data
-    });
-}
