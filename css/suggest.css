@@ -1,0 +1,81 @@
+
+
+.suggest-song .span-title{
+    display: block;
+    max-width: 30rem;
+}
+.suggest-song #title{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: larger;
+}
+
+.suggest-song form{
+}
+
+.suggest-song #brazilian-lines{
+    counter-reset: line-num;
+}
+
+.suggest-song .line{
+    position: relative;
+    padding-top: 20px;
+}
+.suggest-song .line span{
+    display: block;
+    max-width: 30rem;
+}
+.suggest-song .line input{
+    width: calc(100% - 0.4em); /* Ems subtracted from margin */
+    margin-left: 0.4em;
+    box-sizing: border-box;
+}
+.suggest-song .line::before{
+    counter-increment: line-num;
+    content: counter(line-num);
+
+    background: var(--secondary);
+    color: var(--base);
+  
+    border-radius: 0 0.8em 0.8em 0;
+    text-align: center;
+  
+    padding: 0.35em 0em 0.35em 2.25%;
+    left: -7%;
+    width: 1em;
+    position: absolute;
+}
+
+.suggest-song button {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.suggest-song button svg{
+    fill: var(--primary);
+    height: 3rem;
+    width: 3rem;
+}
+
+.suggest-song #add-line {
+    bottom: 4vw;
+    right: 4vw;
+}
+.suggest-song #send {
+    bottom: 4vw;
+    left: 4vw;
+}
+
+.suggest-song #error-messages {
+    color: rgb(255, 72, 0);
+    font-size: larger;
+}
+
+.suggest-song #success-messages {
+    color: rgb(0, 255, 81);
+    font-size: larger;
+}

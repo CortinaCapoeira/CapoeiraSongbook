@@ -1,0 +1,25 @@
+---
+layout: page-menu-banner.liquid
+title: "Capoeira Songbook|Suggest Song"
+---
+<script type="text/javascript" defer src="{{ '/frontend/suggest-song.js' | url }}"></script>
+
+<h2>
+    Suggest new song
+</h2>
+
+
+<div class="suggest-song">
+    <form>
+        <div id="error-messages"></div>
+        <div id="success-messages"></div>
+        <div><span class="span-title"><input id="title" name="title" placeholder="New song title"></span></div>
+        <div id="brazilian-lines"></div>
+        <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
+        <button id="send" type="submit">{% include 'icon/send-filled.svg' %}</button>
+    </form>
+</div>
+
+<template id="new-line">
+    <div class="line"><span><input name="line"></span></div>
+</template>
