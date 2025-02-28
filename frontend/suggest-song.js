@@ -17,7 +17,7 @@ function send(e){
 
     const data = {
         title: getFormValue("title"),
-        lines: getFormElements("line").map(lineEl => ({br: lineEl.value}))
+        lines: getFormElements("line").map(lineEl => ({ br: lineEl.value, en: "" }))
         //bold: 'bold' in lineEl.dataset (to access actual value ois lineEl.dataset.bold, but I don't think we need it)
     }
     console.log(data)
