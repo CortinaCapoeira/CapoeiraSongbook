@@ -70,7 +70,6 @@
     position: absolute;
     width: inherit;
     height: inherit;
-    font-size: 16px;
     transition: all 400ms linear;
 }
 
@@ -115,10 +114,8 @@
     display: inline;
     position: absolute;
     top: 50%;
-    left: 48%;
     left: 52%;
     transform: translate(-50%, -50%);
-    width: 13%;
     width: 20%;
     height: 105%;
     background-color: var(--berimbau-background);
@@ -138,7 +135,6 @@
     position: absolute;
     bottom: 12%;
     left: 30%;
-    bottom: 12%;
     width: 20%;
     height: 18%;
     background-color: var(--berimbau-cabaca-color);
