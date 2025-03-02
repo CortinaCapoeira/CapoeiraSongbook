@@ -1,16 +1,14 @@
 @import "styles.css";
 
+/* TODO: Apply this style - individual 'divs' must me formatted */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
 /* Laptop Etc. */
 body {
     font-size: 100%;
-}
-
-div.Banner>img {
-    display: inline-block;
-    max-width: 80%;
-    height: auto;
-    margin: auto;
-    max-height: 8ex;
 }
 
 div.wrapper {
@@ -28,7 +26,6 @@ div.wrapper {
     }
 }
 
-
 /* All Sizes */
 
 body {
@@ -37,7 +34,6 @@ body {
     background: var(--base);
     color: var(--primary);
 }
-
 
 li a {
     display: block;
@@ -62,22 +58,16 @@ li a:hover {
     color: var(--base);
 }
 
-div.Banner {
-    background-color: var(--base);
-    width: auto;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px groove var(--secondary)
-}
-
 /* Used in multiple pages! */
 div.NavigationButton {
     float: right;
     color: var(--primary);
 }
+
 div.NavigationButton img {
     height: 35px;
 }
+
 div.NavigationButton svg {
     height: 35px;
     width: 35px;
