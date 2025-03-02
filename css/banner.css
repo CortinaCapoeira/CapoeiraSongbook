@@ -1,0 +1,210 @@
+@import "styles.css";
+
+:root {
+    --banner-color: var(--base);
+    --berimbau-size: 45px;
+    --berimbau-background: var(--base);
+    --berimbau-lines-color: var(--secondary);
+    --berimbau-verga-color: rgb(230, 169, 78);
+    --berimbau-arame-color: rgb(185, 185, 185);
+    --berimbau-cabaca-color: rgb(230, 139, 78);
+    --berimbau-string-color: rgb(228, 204, 168);
+}
+
+/* --- BANNER CONTAINER --- */
+
+.Banner-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: var(--banner-color);
+    padding: 1rem 0;
+}
+
+.Banner>img {
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
+    max-height: 8ex;
+    margin: auto;
+}
+
+/* --- BERIMBAU CHECKBOX --- */
+
+.checkbox-container {
+    position: relative;
+    width: var(--berimbau-size);
+    height: var(--berimbau-size);
+    padding: 0;
+    border: 0;
+    margin-right: 1rem;
+}
+
+.menu-checkbox {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.berimbau-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--berimbau-background);
+}
+
+.berimbau {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transition: all 400ms linear;
+}
+
+/* - Before - */
+.berimbau-container section>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    rotate: 0deg;
+    width: 80%;
+    height: 8%;
+    background-color: var(--berimbau-lines-color);
+    border-radius: 100vw;
+    box-shadow: none;
+    transition: all 400ms linear;
+}
+
+.berimbau-container section:first-child>* {
+    top: 20%;
+}
+
+.berimbau-container section:last-child>* {
+    top: 80%;
+}
+
+/* - After - */
+.menu-checkbox:checked~.berimbau-container .verga {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 43%;
+    height: 80%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -2px 0 0 1px var(--berimbau-verga-color);
+}
+
+.menu-checkbox:checked~.berimbau-container .verga::after {
+    content: '';
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 105%;
+    background-color: var(--berimbau-background);
+}
+
+.menu-checkbox:checked~.berimbau-container .arame {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 0.9%;
+    height: 80%;
+    background-color: var(--berimbau-arame-color);
+}
+
+.menu-checkbox:checked~.berimbau-container .cabaca {
+    position: absolute;
+    bottom: 12%;
+    left: 30%;
+    width: 20%;
+    height: 18%;
+    background-color: var(--berimbau-cabaca-color);
+    border-radius: 50%;
+    rotate: -13deg;
+}
+
+.menu-checkbox:checked~.berimbau-container .cabaca::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 96%;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 2%;
+    background-color: var(--berimbau-string-color);
+    rotate: 13deg;
+}
+
+.menu-checkbox:checked~.berimbau-container .cabaca::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 50%;
+    background-color: rgba(50, 50, 50, 0.35);
+    border-radius: 50%;
+}
+
+.menu-checkbox:checked~.berimbau-container .berimbau {
+    rotate: 15deg;
+}
+
+/* --- NAV LINKS --- */
+
+div.nav {
+    position: absolute;
+    display: inherit;
+    z-index: -1;
+    transform: translateY(-100%);
+    box-shadow: 0 1px 5px 1px #0006;
+    transition: transform 0s ease-out, box-shadow 250ms linear;
+}
+
+div.nav>.links {
+    width: 100svw;
+}
+
+div.nav li a {
+    background-color: var(--secondary-light);
+    color: var(--base);
+    border: none;
+}
+
+/* - Hover effects - */
+
+.Banner-container:hover div.nav {
+    box-shadow: 0 1px 5px 1px #000a;
+}
+
+div.nav li a:hover {
+    background: var(--base);
+    color: var(--secondary-light);
+}
+
+/* - Activating (Showing) links - */
+
+#nav-links.nav-active {
+    transform: translateY(0);
+    transition: transform 0.5s ease-out, box-shadow 250ms linear;
+}

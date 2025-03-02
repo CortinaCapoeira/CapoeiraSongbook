@@ -4,7 +4,6 @@
         <title>
             Capoeira Songbook|Index
         </title>
-        <link rel="stylesheet" href="/CapoeiraSongbook/css/menu.css">
         <link rel="stylesheet" href="/CapoeiraSongbook/css/general.css">
         <link rel="stylesheet" href="/CapoeiraSongbook/css/index.css">
         <link rel="stylesheet" href="/CapoeiraSongbook/css/index-search.css">
@@ -14,26 +13,43 @@
         <link rel="stylesheet" href="/CapoeiraSongbook/css/tooltips.css">
         <link rel="stylesheet" href="/CapoeiraSongbook/css/suggest.css">
         <link rel="shortcut icon" type="image/png" href="/CapoeiraSongbook/img/favicon.png">
+
+        <link rel="stylesheet" href="/CapoeiraSongbook/css/banner.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" defer src="/CapoeiraSongbook/frontend/fe-scrollybox.js"></script>
         </head>
     <body>
-        <div class="Banner" id="top">
-            <img src="/CapoeiraSongbook/img/banner.webp">
-            <button class = "menuButton" onclick="myFunction()">
-                <!-- TODO This SVG could be moved inside _includes/icon and import it using liquid's include function -->
-                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
-            </button>
-        </div>
+        <div class="Banner-container">
+            <div class="Banner" id="top">
+                <img src="/CapoeiraSongbook/img/banner.webp">
+                <div class="checkbox-container" onclick="myFunction()">
+                    <input type="checkbox" class="menu-checkbox">
+                    <div class="berimbau-container">
+                        <div class="berimbau">
+                            <section class="verga-container">
+                                <div class="verga"></div>
+                            </section>
+                            <section class="arame-container">
+                                <div class="arame"></div>
+                            </section>
+                            <section class="cabaca-container">
+                                <div class="cabaca"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="nav">
-            <div id="links">
-                <ul>
-                    <li><a href="/CapoeiraSongbook/">Home</a></li>
-                    <li><a href="/CapoeiraSongbook/song-index/">Index</a></li>
-                    <li><a href="/CapoeiraSongbook/capoeira-songbook.pdf" download>Download PDF</a></li>
-                    <!-- <li><a href="#about">Samba</a></li> -->
-                </ul>
+            <div class="nav" id="nav-links">
+                <div class="links">
+                    <ul>
+                        <li><a href="/CapoeiraSongbook/">Home</a></li>
+                        <li><a href="/CapoeiraSongbook/song-index/">Index</a></li>
+                        <li><a href="/CapoeiraSongbook/capoeira-songbook.pdf" download>Download PDF</a></li>
+                        <!-- <li><a href="#about">Samba</a></li> -->
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -133,11 +149,11 @@
 
         <script>
             function myFunction() {
-                var x = document.getElementById("links");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
+                var x = document.getElementById("nav-links");
+                if (!x.classList.contains("nav-active")) {
+                    x.classList.add("nav-active");
                 } else {
-                    x.style.display = "block";
+                    x.classList.remove("nav-active");
                 }
             }
         </script>
