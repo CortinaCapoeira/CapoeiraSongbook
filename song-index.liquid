@@ -2,6 +2,7 @@
 layout: page-menu-banner.liquid
 title: "Capoeira Songbook|Index"
 ---
+
 <h2>
     Index
 </h2>
@@ -12,7 +13,6 @@ title: "Capoeira Songbook|Index"
 
     loadSearch('{{ SEARCH_RESULTS_OUTPUT_URL_PATH | url }}')
 </script>
-
 
 <div class="search-container">
     <div class="hulipaa_searchbar"></div>
@@ -26,8 +26,8 @@ title: "Capoeira Songbook|Index"
         {%- endfor -%}
         </div>
     {%- for letterSongs in indexsong.letterGroups -%}
-        <div id = "{{ letterSongs[0] }}">
-            <h3>List of Songs beginning with {{ letterSongs[0] }}</h3>
+        <div id = "{{ letterSongs[0] }}" class="letter-group">
+            {% comment %} <h3>List of Songs beginning with {{ letterSongs[0] }}</h3> {% endcomment %}
             <ul>
                 {%- for songsInLetter in letterSongs[1] -%}
                     <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slugify }}.html">{{songsInLetter.title}}</a></li>
