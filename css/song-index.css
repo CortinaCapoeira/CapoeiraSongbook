@@ -1,7 +1,15 @@
 @import "styles.css";
 
+.letter-groups {
+    columns: auto;
+    column-width: 300px;
+    column-gap: 50px;
+    margin: 2.5rem 0;
+}
+
 .letter-group {
-    margin: 2rem 0;
+    margin-bottom: 3.5rem;
+    break-inside: avoid;
 }
 
 .letter-group ul li:first-child a::first-letter {
