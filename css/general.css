@@ -39,7 +39,7 @@ li a {
     display: block;
     min-width: 10vw;
     padding: 8px 16px;
-    /*border: 1px solid #fff;*/
+    padding: 0.5rem 1rem;
     background: var(--base);
     color: var(--primary);
     text-decoration: none;

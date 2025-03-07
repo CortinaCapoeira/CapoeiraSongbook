@@ -28,7 +28,6 @@ title: "Capoeira Songbook|Index"
     <div class="letter-groups">
         {%- for letterSongs in indexsong.letterGroups -%}
             <div id = "{{ letterSongs[0] }}" class="letter-group">
-                {% comment %} <h3>List of Songs beginning with {{ letterSongs[0] }}</h3> {% endcomment %}
                 <ul>
                     {%- for songsInLetter in letterSongs[1] -%}
                         <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slugify }}.html">{{songsInLetter.title}}</a></li>
