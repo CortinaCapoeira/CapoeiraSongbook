@@ -11,7 +11,6 @@ div.toTop {
 div.pagination a {
     color: var(--primary);
     padding: 0.5rem 1rem;
-    border-radius: 5px;
     text-decoration: none;
     transition: background-color .3s;
 }
@@ -33,7 +32,7 @@ div.pagination {
     columns: auto;
     column-width: 18.75rem;
     column-gap: 3.125rem;
-    margin: 2.5rem 0;
+    margin: 40px 0;
 }
 
 .letter-group {
@@ -41,16 +40,12 @@ div.pagination {
     break-inside: avoid;
 }
 
-.letter-group ul li a {
-    border-radius: 10px;
-}
-
 .letter-group ul li:first-child a {
-    padding-top: 1rem;
+    padding-top: 1.2em;
 }
 
 .letter-group ul li:first-child a::first-letter {
-    font-size: 2em;
+    font-size: 2.8em;
     line-height: 0;
     color: var(--secondary);
 }

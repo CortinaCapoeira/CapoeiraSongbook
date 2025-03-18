@@ -6,6 +6,8 @@
     padding: 0;
 } */
 
+/* TODO: Add round borders to buttons and links */
+
 /* Laptop Etc. */
 body {
     font-size: 100%;
@@ -39,7 +41,6 @@ li a {
     display: block;
     min-width: 10vw;
     padding: 8px 16px;
-    padding: 0.5rem 1rem;
     background: var(--base);
     color: var(--primary);
     text-decoration: none;
