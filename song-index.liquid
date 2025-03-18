@@ -2,6 +2,7 @@
 layout: page-menu-banner.liquid
 title: "Capoeira Songbook|Index"
 ---
+
 <h2>
     Index
 </h2>
@@ -13,7 +14,6 @@ title: "Capoeira Songbook|Index"
     loadSearch('{{ SEARCH_RESULTS_OUTPUT_URL_PATH | url }}')
 </script>
 
-
 <div class="search-container">
     <div class="hulipaa_searchbar"></div>
 </div>
@@ -24,21 +24,22 @@ title: "Capoeira Songbook|Index"
         {%- for letterSongs in indexsong.letterGroups -%}
             <a href="#{{ letterSongs[0] }}">{{ letterSongs[0] }}</a>
         {%- endfor -%}
-        </div>
-    {%- for letterSongs in indexsong.letterGroups -%}
-        <div id = "{{ letterSongs[0] }}">
-            <h3>List of Songs beginning with {{ letterSongs[0] }}</h3>
-            <ul>
-                {%- for songsInLetter in letterSongs[1] -%}
-                    <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slugify }}.html">{{songsInLetter.title}}</a></li>
-                {%- endfor -%}
-            </ul>
-        </div>
-    {%- endfor -%}
+    </div>
+    <div class="letter-groups">
+        {%- for letterSongs in indexsong.letterGroups -%}
+            <div id = "{{ letterSongs[0] }}" class="letter-group">
+                <ul>
+                    {%- for songsInLetter in letterSongs[1] -%}
+                        <li><a href="{{ '/song/' | url }}{{ songsInLetter.filename | slugify }}.html">{{songsInLetter.title}}</a></li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        {%- endfor -%}
+    </div>
 
     <div class = "toTop">
         <div class = "NavigationButton">
-            <a href="#top">
+            <a href="#">
               {% include 'icon/top-arrow.svg' %}
             </a>
         </div>
