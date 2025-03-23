@@ -42,18 +42,16 @@ title: "Capoeira Songbook|Home"
         </div>
     </div>
 </div>
-        
 
 <div class = "container">
-
-    <div class ="month">
+    <div class ="container-item">
         <div class = "miniheader">
             Song of the month
         </div>
         <div class = "songOfMonthContainer">
             <div class = "songOfMonths">
                 {%- for song in songsOfMonth.orderedMonths -%}
-                <div>
+                <div class="song-month">
                     <div class = "SOTMmonthCell">{% monthName song.somMonth %} {{song.somYear}}</div>
                     <div class = "SOTMsongCell"><a href="{{ '/song/' | url }}{{ song.filename | slugify }}.html">{{song.title}}</a></div>
                 </div>
@@ -62,7 +60,7 @@ title: "Capoeira Songbook|Home"
         </div>
     </div>
 
-    <div class = "contributions">
+    <div class = "container-item">
         <div class = "miniheader">
             Get involved!
         </div>

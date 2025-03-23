@@ -1,116 +1,81 @@
 @import "styles.css";
 
-/*laptop screen*/
-div.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-div.contributions {
-  border: 1px solid var(--primary);
-  width: 45%;
-  min-width: 150px;
-  padding: 1vw;
-  margin-bottom: 1em;
-}
-
-div.month {
-  border: 1px solid var(--primary);
-  width: 45%;
-  padding: 1vw;
-  min-width: 150px;
-  margin-bottom: 1em;
-}
-
-/*Touchsceen and small screen*/
-@media (hover: none) and (pointer: coarse),
-only screen and (max-width: 700px) {
-
-  div.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  div.contributions {
-    width: auto;
-  }
-
-  div.month {
-    width: auto;
-  }
-}
-
-
-/* All sizes */
-div.songOfMonths a:hover {
-  background-color: var(--primary);
-  color: var(--base);
-}
-
-div.miniheader {
-  font-size: 1.5em;
-}
-
-div.songOfMonths {
-  display: table;
-  flex: 1;
-}
-
-div.songOfMonths>div {
-  display: table-row;
-}
-
-div.songOfMonths>div>.SOTMmonthCell {
-  display: table-cell;
-}
-
-div.songOfMonths>div>.SOTMsongCell {
-  display: table-cell;
-  text-align: right;
-}
-
-div.songOfMonthContainer {
-  display: flex;
-}
-
-div.songOfMonths a {
-  display: block;
-  min-width: 10vw;
-  padding: 8px 16px;
-  background: var(--base);
-  color: var(--primary);
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-
-div.exploreContainer {
-  text-align: center;
-  margin: 1em;
-}
-
-a.explore {
-  background-color: var(--secondary);
-  color: var(--base);
-  padding: 1em;
-  display: inline-block;
-  text-decoration: none;
-  border: 0.15em solid var(--base);
-}
-
-a.explore:hover {
-  background-color: var(--base);
+/* --- General --- */
+h2 {
   color: var(--secondary);
-  border: 0.15em solid var(--secondary);
 }
 
-div.hero-text {
+p {
+  line-height: 1.75em;
+}
+
+/* --- Image --- */
+.hero-text {
   color: var(--primary);
   letter-spacing: 0.01em;
 }
 
-h2 {
-  color: var(--secondary);
+/* --- Containers --- */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.25rem 4svw;
+}
+
+.container-item {
+  border: 1px solid var(--primary);
+  padding: 1vw;
+}
+
+.miniheader {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.song-month {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.SOTMsongCell {
+  text-align: right;
+  vertical-align: center;
+}
+
+.songOfMonths a {
+  display: block;
+  min-width: 10vw;
+  padding: 0.5rem 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.exploreContainer {
+  text-align: center;
+  margin: 1em;
+}
+
+.explore {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: var(--base);
+  padding: 1rem;
+  border: 2px solid var(--base);
+}
+
+/* --- Only devices with 'hover' feature --- */
+@media (hover: hover) {
+  div.songOfMonths a:hover {
+    background-color: var(--primary);
+    color: var(--base);
+  }
+
+  a.explore:hover {
+    background-color: var(--base);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
 }
