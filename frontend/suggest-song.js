@@ -15,10 +15,14 @@ const songbookContributorUrl = 'https://api.capoeriasongbookcontributor.cc'
 function send(e){
     e.preventDefault();
 
+    const linesEl = Array.from(SELECT.brLines().children)
     const data = {
         title: getFormValue("title"),
-        lines: getFormElements("line").map(lineEl => ({ br: lineEl.value, en: "" }))
-        //bold: 'bold' in lineEl.dataset (to access actual value ois lineEl.dataset.bold, but I don't think we need it)
+        lines: linesEl.map(lineEl => ({
+            br: getFormValueIn(lineEl, 'line'),
+            en: '',
+            bold: getFormValueIn(lineEl, 'chorus')
+        })),
     }
     console.log(data)
     // TODO validation!!!
@@ -64,11 +68,18 @@ function checkTemplateSupport(){
 
 const getElId = (id) => document.getElementById(id)
 
-const getEl = (selector) => document.querySelector(selector)
+const getElOf = (parent, selector) => parent.querySelector(selector)
+// const getElsOf = (parent, selector) => parent.querySelectorAll(selector)
+
+const getEl = (selector) => getElOf(document,selector)
+// const getEls = (selector) => getElsOf(document,selector)
 
 const getFormElements = (name) => Array.from(SELECT.form().querySelectorAll(`[name="${name}"]`))
+const getFormElementIn = (parent, name) => parent.querySelector(`[name="${name}"]`)
 
-const getFormValue = (name) => getFormElements(name)[0].value
+const getElValue = (el) => el.type === 'checkbox'? el.checked : el.value
+const getFormValue = (name) => getElValue(getFormElements(name)[0])
+const getFormValueIn = (parent, name) => getElValue(getFormElementIn(parent, name))
 
 const SELECT = [
     {id: "error-messages",              name: 'error'},
@@ -86,5 +97,3 @@ const SELECT = [
 }, {})
 
 const onEvent = (el, ev, func) => el.addEventListener(ev, func)
-
-const onElEvent = (elementId, ev, func) => onEvent(getElId(elementId), ev, func)

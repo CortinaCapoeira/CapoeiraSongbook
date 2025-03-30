@@ -1,17 +1,28 @@
-
-
-.suggest-song .span-title{
-    display: block;
-    max-width: 30rem;
-}
-.suggest-song #title{
-    width: 100%;
-    box-sizing: border-box;
-    font-size: larger;
+.suggest-song {
+    --lines-width: 90%;
 }
 
 .suggest-song form{
+    width: 100%;
+    max-width: 33rem; /*Check if we want rem or something else*/
 }
+
+.suggest-song .form-table div.row > span:first-child {
+    display: inline-block;
+    width: var(--lines-width);
+}
+
+.suggest-song .title-row{
+    font-size: larger;
+}
+
+.suggest-song #title{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* .suggest-song .form-table {
+} */
 
 .suggest-song #brazilian-lines{
     counter-reset: line-num;
@@ -21,15 +32,12 @@
     position: relative;
     padding-top: 20px;
 }
-.suggest-song .line span{
-    display: block;
-    max-width: 30rem;
-}
-.suggest-song .line input{
+.suggest-song .line input:not([type]),.suggest-song .line input[type=""],.suggest-song .line input[type=text] {
     width: calc(100% - 0.4em); /* Ems subtracted from margin */
     margin-left: 0.4em;
     box-sizing: border-box;
 }
+
 .suggest-song .line::before{
     counter-increment: line-num;
     content: counter(line-num);
