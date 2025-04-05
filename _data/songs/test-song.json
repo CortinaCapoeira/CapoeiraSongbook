@@ -1,0 +1,7 @@
+{ "title": "test song",
+  "lines": [
+    { "br": "Br1", "en": "En1" },
+    { "br": "Br2Bold", "en": "En2", "bold": true },
+    { "br": "Br3", "en": "En3" }
+  ]
+}
