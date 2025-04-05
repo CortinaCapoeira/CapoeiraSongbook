@@ -15,19 +15,26 @@ title: "Capoeira Songbook|Suggest Song"
         <div id="success-messages"></div>
         <div class="form-table">
             <div class="row title-row">
-                <span class="span-title"><input id="title" name="title" placeholder="New song title"></span>
+                <span><input id="title" name="title" placeholder="New song title"></span>
                 <span><b>CH</b></span>
             </div>
             <div id="brazilian-lines"></div>
+            <div class="row separator-row"><h3>English</h3></div>
+            <div id="english-lines"></div>
         </div>
         <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
         <button id="send" type="submit">{% include 'icon/send-filled.svg' %}</button>
     </form>
 </div>
 
-<template id="new-line">
+<template id="new-line-br">
     <div class="line row">
-        <span><input name="line"></span>
+        <span><input name="brline"></span>
         <span><input name="chorus" type="checkbox" /></span>
+    </div>
+</template>
+<template id="new-line-en">
+    <div class="line row">
+        <span><input name="enline"></span>
     </div>
 </template>

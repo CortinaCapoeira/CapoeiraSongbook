@@ -21,10 +21,21 @@
     box-sizing: border-box;
 }
 
+/* TODO will need to rename separator-row or even delete the element completely */
+.suggest-song .separator-row h3 {
+    font-size: large;
+    color: var(--secondary);
+    margin: 2rem 0px 0px 0px; /* TODO Add consistency to all file about margines and em vs rem*/
+}
+
 /* .suggest-song .form-table {
 } */
 
 .suggest-song #brazilian-lines{
+    counter-reset: line-num;
+}
+
+.suggest-song #english-lines{
     counter-reset: line-num;
 }
 
@@ -69,6 +80,7 @@
     width: 3rem;
 }
 
+/* change vw to something else, otehrwise whenever we resize screen everything moves */
 .suggest-song #add-line {
     bottom: 4vw;
     right: 4vw;

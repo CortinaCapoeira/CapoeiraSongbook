@@ -15,12 +15,13 @@ const songbookContributorUrl = 'https://api.capoeriasongbookcontributor.cc'
 function send(e){
     e.preventDefault();
 
-    const linesEl = Array.from(SELECT.brLines().children)
+    const brLinesEl = Array.from(SELECT.brLines().children)
+    const enLinesEl = Array.from(SELECT.enLines().children)
     const data = {
         title: getFormValue("title"),
-        lines: linesEl.map(lineEl => ({
-            br: getFormValueIn(lineEl, 'line'),
-            en: '',
+        lines: brLinesEl.map((lineEl, idx) => ({
+            br: getFormValueIn(lineEl, 'brline'),
+            en: getFormValueIn(enLinesEl[idx], 'enline'),
             bold: getFormValueIn(lineEl, 'chorus')
         })),
     }
@@ -30,12 +31,11 @@ function send(e){
 }
 
 function addLine(){
-    const brLinesDiv = SELECT.brLines()
-    const template = SELECT.newLineTemplate()
+    const newBrLine = SELECT.newBrLineTemplate().content.cloneNode(true)
+    const newEnLine = SELECT.newEnLineTemplate().content.cloneNode(true)
 
-    const clone = template.content.cloneNode(true);
-
-    brLinesDiv.appendChild(clone);
+    SELECT.brLines().appendChild(newBrLine);
+    SELECT.enLines().appendChild(newEnLine);
 }
 
 const sendNewSong = (data) => {
@@ -84,8 +84,10 @@ const getFormValueIn = (parent, name) => getElValue(getFormElementIn(parent, nam
 const SELECT = [
     {id: "error-messages",              name: 'error'},
     {id: "success-messages",            name: 'message'},
-    {id: "new-line",                    name: "newLineTemplate"},
+    {id: "new-line-br",                 name: "newBrLineTemplate"},
+    {id: "new-line-en",                 name: "newEnLineTemplate"},
     {id: "brazilian-lines",             name: "brLines"},
+    {id: "english-lines",               name: "enLines"},
     {id: "add-line",                    name: "addLine"},
     {id: "send",                        name: "send"},
     {selector: ".suggest-song form",    name: "form"}
