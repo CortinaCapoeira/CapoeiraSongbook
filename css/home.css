@@ -1,7 +1,10 @@
 @import "styles.css";
 
+/* TODO: 'Explore Songs' animation for cellphones users */
+
 /* --- General --- */
 h2 {
+  --text-shadow-color: var(--base);
   color: var(--secondary);
 }
 
@@ -10,26 +13,90 @@ p {
 }
 
 /* --- Image --- */
+
+/* The second box-shadow hides the bottom pixel error */
+.hero-image {
+  box-shadow: 0 5px 10px #0006, inset 0 -1px #000b;
+}
+
 .hero-text {
   color: var(--primary);
   letter-spacing: 0.01em;
 }
 
+/* --- 'Explore Songs' button */
+.exploreContainer {
+  text-align: center;
+  margin: 1em;
+}
+
+.explore {
+  --side-padding: 1rem;
+  --transition-timing: 250ms;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 1rem var(--side-padding);
+  border-radius: 0.5rem;
+  color: var(--base);
+  font-weight: bold;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color ease-in var(--transition-timing);
+}
+
+.explore::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--primary);
+  opacity: 0.7;
+  border-radius: inherit;
+  z-index: -1;
+  transition: background-color ease-in var(--transition-timing);
+}
+
+/* --- 'Explore Songs' button's SVGs */
+.explore svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  transition: opacity linear var(--transition-timing), transform ease-in var(--transition-timing);
+}
+
+#icon-musicalNote {
+  fill: #bcbcbc;
+  opacity: 0;
+  transform: translateX(calc(var(--side-padding) * -1));
+}
+
+#icon-arrow {
+  stroke: var(--base);
+  stroke-width: 2.5;
+}
+
 /* --- Containers --- */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.25rem 4svw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem 2svw;
 }
 
 .container-item {
-  border: 1px solid var(--primary);
-  padding: 1vw;
+  padding: 16px 24px;
+  box-shadow: 0 5px 8px #0002;
+  background-color: var(--base);
+  filter: brightness(1.1);
 }
 
 .miniheader {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .song-month {
@@ -52,30 +119,45 @@ p {
   transition: 0.5s;
 }
 
-.exploreContainer {
-  text-align: center;
-  margin: 1em;
-}
+/* --- Only devices without 'hover' feature --- */
+@media (hover: none) {
+  .explore {
+    gap: 0.2rem;
+  }
 
-.explore {
-  display: inline-block;
-  text-decoration: none;
-  background-color: var(--secondary);
-  color: var(--base);
-  padding: 1rem;
-  border: 2px solid var(--base);
+  #icon-musicalNote {
+    fill: var(--base);
+    opacity: 1;
+    transform: none;
+  }
+
+  #icon-arrow {
+    display: none;
+  }
 }
 
 /* --- Only devices with 'hover' feature --- */
 @media (hover: hover) {
-  div.songOfMonths a:hover {
+  .songOfMonths a:hover {
     background-color: var(--primary);
     color: var(--base);
   }
 
-  a.explore:hover {
-    background-color: var(--base);
-    color: var(--secondary);
-    border-color: var(--secondary);
+  .explore:hover {
+    color: #bcbcbc;
+  }
+
+  .explore:hover::before {
+    background-color: var(--secondary);
+  }
+
+  .explore:hover #icon-musicalNote {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .explore:hover #icon-arrow {
+    transform: translateX(calc(var(--side-padding) * 0.5));
+    opacity: 0;
   }
 }
