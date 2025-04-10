@@ -1,5 +1,7 @@
 @import "styles.css";
 
+/* TODO: Adjust the padding on top of 'first-letter' so 'accents' do not go outside the 'hovered' area (e.g., check 'é')*/
+
 /* --- To Top Button --- */
 div.toTop {
     position: fixed;

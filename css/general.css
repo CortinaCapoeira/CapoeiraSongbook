@@ -8,27 +8,9 @@
 
 /* TODO: Add round borders to buttons and links */
 
-/* Laptop Etc. */
-body {
-    font-size: 100%;
-}
-
-div.wrapper {
+.wrapper {
     margin: 4vw;
 }
-
-/*Touchscreen*/
-@media (hover: none) and (pointer: coarse) {
-    body {
-        font-size: 120%;
-    }
-
-    div.wrapper {
-        margin: 4vw;
-    }
-}
-
-/* All Sizes */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -60,16 +42,16 @@ li a:hover {
 }
 
 /* Used in multiple pages! */
-div.NavigationButton {
+.NavigationButton {
     float: right;
     color: var(--primary);
 }
 
-div.NavigationButton img {
+.NavigationButton img {
     height: 35px;
 }
 
-div.NavigationButton svg {
+.NavigationButton svg {
     height: 35px;
     width: 35px;
     stroke: var(--secondary-light)

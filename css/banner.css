@@ -1,5 +1,7 @@
 @import "styles.css";
 
+/* TODO: Decrease height of the banner for landscape phones */
+
 :root {
     --banner-color: var(--base);
     --berimbau-size: 45px;
@@ -175,6 +177,7 @@
 div.nav {
     position: absolute;
     display: inherit;
+    width: 100%;
     z-index: -1;
     transform: translateY(-100%);
     box-shadow: 0 1px 5px 1px #0006;
@@ -182,7 +185,7 @@ div.nav {
 }
 
 div.nav>.links {
-    width: 100svw;
+    width: 100%;
 }
 
 div.nav li a {

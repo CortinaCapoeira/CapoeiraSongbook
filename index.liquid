@@ -5,7 +5,8 @@ title: "Capoeira Songbook|Home"
 <style>
     /* this is set here to be able to load the image as soon as the browser reads the html */
     div.hero-image{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/HomePage.webp");
+        background-image: linear-gradient(45deg, var(--base) 50%, var(--secondary)), url("img/HomePage.webp");
+        background-blend-mode: multiply;
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -32,28 +33,27 @@ title: "Capoeira Songbook|Home"
             <p>
                 The Capoeira Songbook is an ever growing project and we intend to add new sections to delve into the hidden meanings, stories, and histories behind the music.
             </p>
-
-        </div>
-
-        <div class = "exploreContainer">
-            <a class = "explore" href="{{ '/song-index/' | url }}">
-                Explore songs!
-            </a>
         </div>
     </div>
+    <div class="exploreContainer">
+        <a class="explore" href="{{ '/song-index/' | url }}">
+            {% include '_includes/icon/icon-musicalNote.svg' %}
+            Explore Songs
+            {% include '_includes/icon/icon-arrow.svg' %}
+        </a>
+
+    </div>
 </div>
-        
 
 <div class = "container">
-
-    <div class ="month">
+    <div class ="container-item">
         <div class = "miniheader">
             Song of the month
         </div>
         <div class = "songOfMonthContainer">
             <div class = "songOfMonths">
                 {%- for song in songsOfMonth.orderedMonths -%}
-                <div>
+                <div class="song-month">
                     <div class = "SOTMmonthCell">{% monthName song.somMonth %} {{song.somYear}}</div>
                     <div class = "SOTMsongCell"><a href="{{ '/song/' | url }}{{ song.filename | slugify }}.html">{{song.title}}</a></div>
                 </div>
@@ -62,12 +62,12 @@ title: "Capoeira Songbook|Home"
         </div>
     </div>
 
-    <div class = "contributions">
+    <div class = "container-item">
         <div class = "miniheader">
             Get involved!
         </div>
         <p>
-        The translations we have here are always being updated and improved and if you have any sugesstions, spot any errors or just want to get involved please send us a message!
+        The translations we have here are always being updated and improved and if you have any suggestions, spot any errors or just want to get involved please send us a message!
         </p><p>
         We would love for this project to be a collaboration and we have some ideas for how this can be extended and grow. If you have any ideas, or you want to contribute, just get involved.
         </p><p>
