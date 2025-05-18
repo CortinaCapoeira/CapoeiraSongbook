@@ -9,7 +9,7 @@
     { "br": "Esse quilombo é nosso", "en": "This quilombo is ours" , "bold":"true"},
     { "br": "Esse quilombo e meu e seu", "en": "This quilombo is mine and yours", "bold":"true" },
     { "br": "Esse quilombo é nosso", "en": "This quilombo is ours" , "bold":"true"}
-  ]
+  ],
   "details":[
         {"key":"Quilombo", "desc":"An organised community comprised mostly of escaped slaves"}
    ]
