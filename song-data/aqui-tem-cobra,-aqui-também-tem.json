@@ -1,0 +1,14 @@
+{ "title": "Aqui tem cobra, Aqui também tem",
+  "author":"Mestre Malícia",
+  "lines": [
+    { "br": "O ninho de cobra que você falou", "en": "The nest of snakes that you spoke about" },
+    { "br": "Isso existe em todo lugar", "en": "Exists in many places" },
+    { "br": "Mas a cobra que é boa cobra", "en": "But the snake that is a good snake" },
+    { "br": "Ela morde de leve pra não machucar", "en": "Bites lightly to not injure" },
+    { "br": "", "en": "" },
+    { "br": "Se aí tem cobra", "en": "If there there is a snake" },
+    { "br": "Aqui também tem", "en": "There is also one here" ,"bold":"true"},
+    { "br": "Se aí tem cabra bom", "en": "If there is there is good goat" },
+    { "br": "Aqui também tem", "en": "There is also one here","bold":"true" }
+  ]
+}
