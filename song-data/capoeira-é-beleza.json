@@ -1,0 +1,13 @@
+{ "title": "Capoeira é beleza",
+  "lines": [
+    { "br": "Capoeira é beleza", "en": "Capoeira is beauty" },
+    { "br": "É tradição", "en": "It is tradition" },
+    { "br": "Tem fundamentos", "en": "It has fundamentals" },
+    { "br": "É vibração", "en": "It is vibration" },
+    { "br": "", "en": "" },
+    { "br": "Capoeira é beleza", "en": "Capoeira is beauty","bold":"true" },
+    { "br": "É tradição", "en": "It is tradition","bold":"true" },
+    { "br": "Tem fundamentos", "en": "It has fundamental","bold":"true" },
+    { "br": "É vibração", "en": "It is vibration","bold":"true" }
+  ]
+}
