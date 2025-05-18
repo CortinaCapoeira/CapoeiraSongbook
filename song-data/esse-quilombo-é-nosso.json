@@ -1,0 +1,16 @@
+{ "title": "Esse quilombo é nosso",
+  "lines": [
+    { "br": "Maria Conga", "en": "Maria Conga" },
+    { "br": "Esse quilombo é nosso", "en": "This quilombo is ours" },
+    { "br": "Esse quilombo é meu e seu", "en": "This quilombo is mine and yours" },
+    { "br": "Esse quilombo é nosso", "en": "This quilombo is ours" },
+    { "br": "", "en": "" },
+    { "br": "Maria Conga", "en": "Maria Conga", "bold":"true" },
+    { "br": "Esse quilombo é nosso", "en": "This quilombo is ours" , "bold":"true"},
+    { "br": "Esse quilombo e meu e seu", "en": "This quilombo is mine and yours", "bold":"true" },
+    { "br": "Esse quilombo é nosso", "en": "This quilombo is ours" , "bold":"true"}
+  ],
+  "details":[
+        {"key":"Quilombo", "desc":"An organised community comprised mostly of escaped slaves"}
+   ]
+}
