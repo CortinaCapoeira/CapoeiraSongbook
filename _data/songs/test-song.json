@@ -1,0 +1,8 @@
+{ "title": "Test song",
+  "lines": [
+    { "br": "Line 1", "en": "En1" },
+    { "br": "Chorus", "en": "En2", "bold": true },
+    { "br": "Line3", "en": "En3" },
+    { "br": "Line4", "en": "en4" }
+  ]
+}
