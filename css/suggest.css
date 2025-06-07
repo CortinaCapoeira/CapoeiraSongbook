@@ -39,6 +39,10 @@
     counter-reset: line-num;
 }
 
+.suggest-song .hide {
+    display: none;
+}
+
 .suggest-song .line{
     position: relative;
     padding-top: 20px;
@@ -81,6 +85,7 @@
 }
 
 /* change vw to something else, otehrwise whenever we resize screen everything moves */
+/* TODO probably better to use something like a flexbox? maybe not actually, screenreaders seems fine with it */
 .suggest-song #add-line {
     bottom: 4vw;
     right: 4vw;
@@ -88,6 +93,10 @@
 .suggest-song #send {
     bottom: 4vw;
     left: 4vw;
+}
+.suggest-song #swap-language {
+    bottom: 4vw;
+    left: 50vw;
 }
 
 .suggest-song #error-messages {

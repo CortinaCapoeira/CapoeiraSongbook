@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     onEvent(SELECT.form(), "submit", send)
 
+    onEvent(SELECT.changeLang(), "click", swapLanguages)
+
     addLine() // First line
 });
 
@@ -24,8 +26,12 @@ function send(e){
             en: getFormValueIn(enLinesEl[idx], 'enline'),
             bold: getFormValueIn(lineEl, 'chorus')
         })),
+        // TODO add author
+        // dryRun: true, // Used for development... will be removed in final version
     }
-    console.log(data)
+    // console.log(data)
+    // TODO fix styling for 2 types of translation
+
     // TODO validation!!!
     sendNewSong(data)
 }
@@ -38,7 +44,13 @@ function addLine(){
     SELECT.enLines().appendChild(newEnLine);
 }
 
+function swapLanguages(){
+    SELECT.brLines().classList.toggle('hide')
+    SELECT.enLines().classList.toggle('hide')
+}
+
 const sendNewSong = (data) => {
+    SELECT.message().textContent="Sending..." // TODO change it to a kind of spinner
     fetch(`${songbookContributorUrl}/song`, {
         method: "POST",
         body: JSON.stringify(data)
@@ -51,6 +63,7 @@ const sendNewSong = (data) => {
     }).catch(e => {
         console.log(e)
         SELECT.error().textContent = "Error while submitting the song"
+        SELECT.message().textContent=""
     }).finally(()=>{
         // TODO remove any spinner that might have been running
     });
@@ -90,6 +103,7 @@ const SELECT = [
     {id: "english-lines",               name: "enLines"},
     {id: "add-line",                    name: "addLine"},
     {id: "send",                        name: "send"},
+    {id: "swap-language",               name: "changeLang"},
     {selector: ".suggest-song form",    name: "form"}
 ].reduce((selectObj, elConfig) => {
     selectObj[elConfig.name] = elConfig.id?

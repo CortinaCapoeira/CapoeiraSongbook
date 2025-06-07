@@ -19,11 +19,13 @@ title: "Capoeira Songbook|Suggest Song"
                 <span><b>CH</b></span>
             </div>
             <div id="brazilian-lines"></div>
-            <div class="row separator-row"><h3>English</h3></div>
-            <div id="english-lines"></div>
+            {% comment %} <div class="row separator-row"><h3>English</h3></div> {% endcomment %}
+            <div id="english-lines" class="hide"></div>
         </div>
-        <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
         <button id="send" type="submit">{% include 'icon/send-filled.svg' %}</button>
+        {% comment %} TODO need to change icon to include EN or BR using inkscape {% endcomment %}
+        <button id="swap-language" type="button">{% include 'icon/swap.svg' %}</button>
+        <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
     </form>
 </div>
 
