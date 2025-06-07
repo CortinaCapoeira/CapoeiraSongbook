@@ -1,0 +1,7 @@
+{ "title": "test2",
+  "lines": [
+    { "br": "BR", "en": "EM" },
+    { "br": "bold", "en": "EN", "bold": true },
+    { "br": "BR", "en": "EN" }
+  ]
+}
