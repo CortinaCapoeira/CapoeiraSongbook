@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     onEvent(SELECT.form(), "submit", send)
 
+    onEvent(SELECT.changeLang(), "click", swapLanguages)
+
     addLine() // First line
 });
 
@@ -15,26 +17,40 @@ const songbookContributorUrl = 'https://api.capoeriasongbookcontributor.cc'
 function send(e){
     e.preventDefault();
 
+    const brLinesEl = Array.from(SELECT.brLines().children)
+    const enLinesEl = Array.from(SELECT.enLines().children)
     const data = {
         title: getFormValue("title"),
-        lines: getFormElements("line").map(lineEl => ({ br: lineEl.value, en: "" }))
-        //bold: 'bold' in lineEl.dataset (to access actual value ois lineEl.dataset.bold, but I don't think we need it)
+        lines: brLinesEl.map((lineEl, idx) => ({
+            br: getFormValueIn(lineEl, 'brline'),
+            en: getFormValueIn(enLinesEl[idx], 'enline'),
+            bold: getFormValueIn(lineEl, 'chorus')
+        })),
+        // TODO add author
+        // dryRun: true, // Used for development... will be removed in final version
     }
-    console.log(data)
+    // console.log(data)
+    // TODO fix styling for 2 types of translation
+
     // TODO validation!!!
     sendNewSong(data)
 }
 
 function addLine(){
-    const brLinesDiv = SELECT.brLines()
-    const template = SELECT.newLineTemplate()
+    const newBrLine = SELECT.newBrLineTemplate().content.cloneNode(true)
+    const newEnLine = SELECT.newEnLineTemplate().content.cloneNode(true)
 
-    const clone = template.content.cloneNode(true);
+    SELECT.brLines().appendChild(newBrLine);
+    SELECT.enLines().appendChild(newEnLine);
+}
 
-    brLinesDiv.appendChild(clone);
+function swapLanguages(){
+    SELECT.brLines().classList.toggle('hide')
+    SELECT.enLines().classList.toggle('hide')
 }
 
 const sendNewSong = (data) => {
+    SELECT.message().textContent="Sending..." // TODO change it to a kind of spinner
     fetch(`${songbookContributorUrl}/song`, {
         method: "POST",
         body: JSON.stringify(data)
@@ -47,6 +63,7 @@ const sendNewSong = (data) => {
     }).catch(e => {
         console.log(e)
         SELECT.error().textContent = "Error while submitting the song"
+        SELECT.message().textContent=""
     }).finally(()=>{
         // TODO remove any spinner that might have been running
     });
@@ -64,19 +81,29 @@ function checkTemplateSupport(){
 
 const getElId = (id) => document.getElementById(id)
 
-const getEl = (selector) => document.querySelector(selector)
+const getElOf = (parent, selector) => parent.querySelector(selector)
+// const getElsOf = (parent, selector) => parent.querySelectorAll(selector)
+
+const getEl = (selector) => getElOf(document,selector)
+// const getEls = (selector) => getElsOf(document,selector)
 
 const getFormElements = (name) => Array.from(SELECT.form().querySelectorAll(`[name="${name}"]`))
+const getFormElementIn = (parent, name) => parent.querySelector(`[name="${name}"]`)
 
-const getFormValue = (name) => getFormElements(name)[0].value
+const getElValue = (el) => el.type === 'checkbox'? el.checked : el.value
+const getFormValue = (name) => getElValue(getFormElements(name)[0])
+const getFormValueIn = (parent, name) => getElValue(getFormElementIn(parent, name))
 
 const SELECT = [
     {id: "error-messages",              name: 'error'},
     {id: "success-messages",            name: 'message'},
-    {id: "new-line",                    name: "newLineTemplate"},
+    {id: "new-line-br",                 name: "newBrLineTemplate"},
+    {id: "new-line-en",                 name: "newEnLineTemplate"},
     {id: "brazilian-lines",             name: "brLines"},
+    {id: "english-lines",               name: "enLines"},
     {id: "add-line",                    name: "addLine"},
     {id: "send",                        name: "send"},
+    {id: "swap-language",               name: "changeLang"},
     {selector: ".suggest-song form",    name: "form"}
 ].reduce((selectObj, elConfig) => {
     selectObj[elConfig.name] = elConfig.id?
@@ -86,5 +113,3 @@ const SELECT = [
 }, {})
 
 const onEvent = (el, ev, func) => el.addEventListener(ev, func)
-
-const onElEvent = (elementId, ev, func) => onEvent(getElId(elementId), ev, func)

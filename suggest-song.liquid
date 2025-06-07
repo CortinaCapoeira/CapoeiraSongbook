@@ -13,13 +13,30 @@ title: "Capoeira Songbook|Suggest Song"
     <form>
         <div id="error-messages"></div>
         <div id="success-messages"></div>
-        <div><span class="span-title"><input id="title" name="title" placeholder="New song title"></span></div>
-        <div id="brazilian-lines"></div>
-        <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
+        <div class="form-table">
+            <div class="row title-row">
+                <span><input id="title" name="title" placeholder="New song title"></span>
+                <span><b>CH</b></span>
+            </div>
+            <div id="brazilian-lines"></div>
+            {% comment %} <div class="row separator-row"><h3>English</h3></div> {% endcomment %}
+            <div id="english-lines" class="hide"></div>
+        </div>
         <button id="send" type="submit">{% include 'icon/send-filled.svg' %}</button>
+        {% comment %} TODO need to change icon to include EN or BR using inkscape {% endcomment %}
+        <button id="swap-language" type="button">{% include 'icon/swap.svg' %}</button>
+        <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
     </form>
 </div>
 
-<template id="new-line">
-    <div class="line"><span><input name="line"></span></div>
+<template id="new-line-br">
+    <div class="line row">
+        <span><input name="brline"></span>
+        <span><input name="chorus" type="checkbox" /></span>
+    </div>
+</template>
+<template id="new-line-en">
+    <div class="line row">
+        <span><input name="enline"></span>
+    </div>
 </template>

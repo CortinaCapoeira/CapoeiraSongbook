@@ -1,35 +1,58 @@
-
-
-.suggest-song .span-title{
-    display: block;
-    max-width: 30rem;
-}
-.suggest-song #title{
-    width: 100%;
-    box-sizing: border-box;
-    font-size: larger;
+.suggest-song {
+    --lines-width: 90%;
 }
 
 .suggest-song form{
+    width: 100%;
+    max-width: 33rem; /*Check if we want rem or something else*/
 }
+
+.suggest-song .form-table div.row > span:first-child {
+    display: inline-block;
+    width: var(--lines-width);
+}
+
+.suggest-song .title-row{
+    font-size: larger;
+}
+
+.suggest-song #title{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* TODO will need to rename separator-row or even delete the element completely */
+.suggest-song .separator-row h3 {
+    font-size: large;
+    color: var(--secondary);
+    margin: 2rem 0px 0px 0px; /* TODO Add consistency to all file about margines and em vs rem*/
+}
+
+/* .suggest-song .form-table {
+} */
 
 .suggest-song #brazilian-lines{
     counter-reset: line-num;
+}
+
+.suggest-song #english-lines{
+    counter-reset: line-num;
+}
+
+.suggest-song .hide {
+    display: none;
 }
 
 .suggest-song .line{
     position: relative;
     padding-top: 20px;
 }
-.suggest-song .line span{
-    display: block;
-    max-width: 30rem;
-}
-.suggest-song .line input{
+.suggest-song .line input:not([type]),.suggest-song .line input[type=""],.suggest-song .line input[type=text] {
     width: calc(100% - 0.4em); /* Ems subtracted from margin */
     margin-left: 0.4em;
     box-sizing: border-box;
 }
+
 .suggest-song .line::before{
     counter-increment: line-num;
     content: counter(line-num);
@@ -61,6 +84,8 @@
     width: 3rem;
 }
 
+/* change vw to something else, otehrwise whenever we resize screen everything moves */
+/* TODO probably better to use something like a flexbox? maybe not actually, screenreaders seems fine with it */
 .suggest-song #add-line {
     bottom: 4vw;
     right: 4vw;
@@ -68,6 +93,10 @@
 .suggest-song #send {
     bottom: 4vw;
     left: 4vw;
+}
+.suggest-song #swap-language {
+    bottom: 4vw;
+    left: 50vw;
 }
 
 .suggest-song #error-messages {
