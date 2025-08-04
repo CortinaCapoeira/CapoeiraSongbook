@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     addLine() // First line
 });
 
-// TODO extract to global parameter?
-const songbookContributorUrl = 'https://api.capoeriasongbookcontributor.cc'
+const SONGBOOK_CONTRIBUTOR_URL = 'https://api.capoeriasongbookcontributor.cc'
 
 function send(e){
     e.preventDefault();
@@ -50,8 +49,8 @@ function swapLanguages(){
 }
 
 const sendNewSong = (data) => {
-    SELECT.message().textContent="Sending..." // TODO change it to a kind of spinner
-    fetch(`${songbookContributorUrl}/song`, {
+    SELECT.spinner().classList.remove('hide')
+    fetch(`${SONGBOOK_CONTRIBUTOR_URL}/song`, {
         method: "POST",
         body: JSON.stringify(data)
     }).then(resp => {
@@ -60,12 +59,13 @@ const sendNewSong = (data) => {
         }
         // TODO perhaps redirect, or maybe clean form
         SELECT.message().textContent="Song successfully submitted"
+        SELECT.error().textContent=""
     }).catch(e => {
         console.log(e)
         SELECT.error().textContent = "Error while submitting the song"
         SELECT.message().textContent=""
     }).finally(()=>{
-        // TODO remove any spinner that might have been running
+        SELECT.spinner().classList.add('hide')
     });
 }
 
@@ -104,6 +104,7 @@ const SELECT = [
     {id: "add-line",                    name: "addLine"},
     {id: "send",                        name: "send"},
     {id: "swap-language",               name: "changeLang"},
+    {id: "spinner-container",           name: "spinner"},
     {selector: ".suggest-song form",    name: "form"}
 ].reduce((selectObj, elConfig) => {
     selectObj[elConfig.name] = elConfig.id?

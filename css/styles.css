@@ -1,8 +1,9 @@
 :root {
-    --base: #023047;
-    --primary: #8ECAE6;
-    --primary-light: #219EBC;
-    --secondary: #FB8500;
-    --secondary-light: #FFB703;
+    --base-rgb: 2, 48, 71;
+    --base: rgb(var(--base-rgb));
+    --primary: rgb(142, 202, 230);
+    --primary-light: rgb(33, 158, 188);
+    --secondary: rgb(251, 133, 0);
+    --secondary-light: rgb(255, 183, 3);
     --secondary-light-filters: invert(70%) sepia(81%) saturate(1248%) hue-rotate(351deg) brightness(86%) contrast(110%);
 }
