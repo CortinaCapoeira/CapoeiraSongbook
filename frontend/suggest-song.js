@@ -48,8 +48,14 @@ function swapLanguages(){
     SELECT.enLines().classList.toggle('hide')
 }
 
+function clearForm() {
+    const fields = getElsOf(SELECT.form(), 'input')
+    fields.forEach(f => f.value = '')
+}
+
 const sendNewSong = (data) => {
     SELECT.spinner().classList.remove('hide')
+
     fetch(`${SONGBOOK_CONTRIBUTOR_URL}/song`, {
         method: "POST",
         body: JSON.stringify(data)
@@ -57,7 +63,8 @@ const sendNewSong = (data) => {
         if (!resp.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
-        // TODO perhaps redirect, or maybe clean form
+
+        clearForm()
         SELECT.message().textContent="Song successfully submitted"
         SELECT.error().textContent=""
     }).catch(e => {
@@ -82,7 +89,7 @@ function checkTemplateSupport(){
 const getElId = (id) => document.getElementById(id)
 
 const getElOf = (parent, selector) => parent.querySelector(selector)
-// const getElsOf = (parent, selector) => parent.querySelectorAll(selector)
+const getElsOf = (parent, selector) => parent.querySelectorAll(selector)
 
 const getEl = (selector) => getElOf(document,selector)
 // const getEls = (selector) => getElsOf(document,selector)
