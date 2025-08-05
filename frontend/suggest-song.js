@@ -46,6 +46,7 @@ function addLine(){
 function swapLanguages(){
     SELECT.brLines().classList.toggle('hide')
     SELECT.enLines().classList.toggle('hide')
+    SELECT.enTitleEnding().classList.toggle('hide')
 }
 
 function clearForm() {
@@ -112,6 +113,7 @@ const SELECT = [
     {id: "send",                        name: "send"},
     {id: "swap-language",               name: "changeLang"},
     {id: "spinner-container",           name: "spinner"},
+    {selector: "h2 > .en-title-ending", name: "enTitleEnding"},
     {selector: ".suggest-song form",    name: "form"}
 ].reduce((selectObj, elConfig) => {
     selectObj[elConfig.name] = elConfig.id?

@@ -5,7 +5,7 @@ title: "Capoeira Songbook|Suggest Song"
 <script type="text/javascript" defer src="{{ '/frontend/suggest-song.js' | url }}"></script>
 
 <h2>
-    Suggest new song
+    Suggest new song<span class="en-title-ending hide"> (EN)</span>
 </h2>
 
 
@@ -19,11 +19,9 @@ title: "Capoeira Songbook|Suggest Song"
                 <span><b>CH</b></span>
             </div>
             <div id="brazilian-lines"></div>
-            {% comment %} <div class="row separator-row"><h3>English</h3></div> {% endcomment %}
             <div id="english-lines" class="hide"></div>
         </div>
         <button id="send" type="submit">{% include 'icon/send-filled.svg' %}</button>
-        {% comment %} TODO need to change icon to include EN or BR using inkscape {% endcomment %}
         <button id="swap-language" type="button">{% include 'icon/swap.svg' %}</button>
         <button id="add-line" type="button">{% include 'icon/plus-square-icon.svg' %}</button>
     </form>

@@ -41,6 +41,10 @@ li a:hover {
     color: var(--base);
 }
 
+.hide {
+    display: none;
+}
+
 /* Used in multiple pages! */
 .NavigationButton {
     float: right;

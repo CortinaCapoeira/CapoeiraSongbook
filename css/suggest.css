@@ -39,10 +39,6 @@
     counter-reset: line-num;
 }
 
-.suggest-song .hide {
-    display: none;
-}
-
 .suggest-song .line{
     position: relative;
     padding-top: 20px;
