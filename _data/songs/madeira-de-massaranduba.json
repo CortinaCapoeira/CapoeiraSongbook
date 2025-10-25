@@ -1,0 +1,20 @@
+{ "title": "Madeira de Massaranduba",
+  "lines": [
+    { "br": "Madeira de massaranduba", "en": "Wood of massaranda tree" },
+    { "br": "Madeira de jacaranda", "en": "Wood of jacaranda tree" },
+    { "br": "Madeira de massaranduba", "en": "Wood of massaranda tree", "bold": true },
+    { "br": "Madeira de jacaranda", "en": "Wood of jacaranda tree", "bold": true },
+    { "br": "", "en": "" },
+    { "br": "Beriba é pau pereira", "en": "" },
+    { "br": "Beriba é pra tocar", "en": "", "bold": true },
+    { "br": "", "en": "" },
+    { "br": "Beriba é pau madeira", "en": "" },
+    { "br": "Beriba é pra tocar", "en": "", "bold": true },
+    { "br": "", "en": "" },
+    { "br": "Le le le le le le le", "en": "" },
+    { "br": "La la la la la la la", "en": "" },
+    { "br": "", "en": "" },
+    { "br": "Le le le le le le le", "en": "", "bold": true },
+    { "br": "La la la la la la la", "en": "", "bold": true }
+  ]
+}
