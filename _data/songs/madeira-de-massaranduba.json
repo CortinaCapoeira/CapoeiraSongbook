@@ -1,8 +1,8 @@
 { "title": "Madeira de Massaranduba",
   "lines": [
-    { "br": "Madeira de massaranduba", "en": "Wood of massaranda tree" },
+    { "br": "Madeira de maçaranduba", "en": "Wood of massaranda tree" },
     { "br": "Madeira de jacaranda", "en": "Wood of jacaranda tree" },
-    { "br": "Madeira de massaranduba", "en": "Wood of massaranda tree", "bold": true },
+    { "br": "Madeira de maçaranduba", "en": "Wood of massaranda tree", "bold": true },
     { "br": "Madeira de jacaranda", "en": "Wood of jacaranda tree", "bold": true },
     { "br": "", "en": "" },
     { "br": "Beriba é pau pereira", "en": "" },
