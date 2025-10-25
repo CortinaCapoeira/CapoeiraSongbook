@@ -1,0 +1,26 @@
+{ "title": "Maré cheia",
+  "author":"Mestre Amen Santo",
+  "lines": [
+    { "br": "Maré maré, maré cheia", "en": "Tide, tide, high tide" },
+    { "br": "A maré tá cheia, cuidado menino", "en": "The tide is high, be careful boy," },
+    { "br": "Pra não se afogar", "en": "Not to drown" },
+    { "br": "", "en": "" },
+    { "br": "Maré maré, maré cheia", "en": "Tide, tide, high tide", "bold": true },
+    { "br": "A maré tá cheia, cuidado menino", "en": "The tide is high, be careful boy,", "bold": true },
+    { "br": "Pra não se afogar", "en": "Not to drown", "bold": true },
+    { "br": "", "en": "" },
+    { "br": "Meu mestre falou pra ser um bom Capoeira", "en": "My master said to be a good Capoeirista" },
+    { "br": "Tem que ir pra Bahia pedir a benção a Rainha do Mar", "en": "You have to go to Bahia and ask the Queen of the Sea for her blessing" },
+    { "br": "", "en": "" },
+    { "br": "Maré maré, maré cheia", "en": "Tide, tide, high tide", "bold": true },
+    { "br": "A maré tá cheia, cuidado menino", "en": "The tide is high, be careful boy,", "bold": true },
+    { "br": "Pra não se afogar", "en": "Not to drown", "bold": true },
+    { "br": "", "en": "" },
+    { "br": "Meu mestre falou pra ser um bom Capoeira", "en": "My master said to be a good Capoeirista" },
+    { "br": "Tem que ter fundamento, molejo e mandinga e saber vadiar", "en": "You have to have foundation, flexibility, and mandinga, and know how to play" },
+    { "br": "", "en": "" },
+    { "br": "Maré maré, maré cheia", "en": "Tide, tide, high tide", "bold": true },
+    { "br": "A maré tá cheia, cuidado menino", "en": "The tide is high, be careful boy,", "bold": true },
+    { "br": "Pra não se afogar", "en": "Not to drown", "bold": true }
+  ]
+}
