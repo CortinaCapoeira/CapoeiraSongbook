@@ -1,20 +1,20 @@
 {
   "title": "Chego Na Bahia",
   "lines": [
-    { "br": "Chego na Bahia como acarajé", "en": "  " },
-    { "br": "Como camarão, como vatapá", "en": " " },
+    { "br": "Chego na Bahia como acarajé", "en": "I arrive in Bahia, I eat acarajé" },
+    { "br": "Como camarão, como vatapá", "en": " I eat shrimp, I eat vatapá" },
     { "br": "Cosme e Damião com seu caruru", "en": " " },
-    { "br": "Capoeira no domingo é la na Humaitá", "en": " " },
-    { "br": "Subo o Curuzu só pra ver ilê", "en": " " },
-    { "br": "Peço proteção as meus orixás", "en": " " },
-    { "br": "Praça Cayru na boca da noite", "en": " " },
-    { "br": "Elevador Lacerda vem iluminar", "en": " " },
+    { "br": "Capoeira no domingo é la na Humaitá", "en": "Capoeira on Sunday is there in Humaitá" },
+    { "br": "Subo o Curuzu só pra ver ilê", "en": "I climb Curuzu, just to see ilê " },
+    { "br": "Peço proteção as meus orixás", "en": "I ask for protection from my orixás " },
+    { "br": "Praça Cayru na boca da noite", "en": "Cayru Square in the night " },
+    { "br": "Elevador Lacerda vem iluminar", "en": "Elevador Lacerda is illuminated " },
     { "br": "", "en": "" },
-    { "br": "Chega na Bahia Mercado Modelo", "en": " " },
+    { "br": "Chega na Bahia Mercado Modelo", "en": "Arrive in Bahia, Mercado Modelo " },
     { "br": "oioh ia ah", "en": " ", "bold": true },
-    { "br": "Chego na Bahia roda de terreiro", "en": " " },
+    { "br": "Chego na Bahia roda de terreiro", "en": "Arrive in Bahia, Roda of the ground " },
     { "br": "oioh ia ah", "en": " ", "bold": true },
-    { "br": "Chego na Bahia roda o ano inteiro", "en": " " },
+    { "br": "Chego na Bahia roda o ano inteiro", "en": "Arrive in Bahia, roda the whole year round" },
     { "br": "oioh ia ah", "en": " ", "bold": true }
   ],
   "details":[
@@ -23,6 +23,7 @@
     {"key":"orixás", "desc":"Gods of the candomblé religion which first arose in the slave population of Brazil"},
     {"key":"Elevador Lacerda", "desc":"A lift in Salvador, Bahia that links the low city and the high city"},
     {"key":"Mercado Modelo", "desc":"A famous artisan market in Salvador, Bahia"},
-    {"key":"Praça Cairu", "desc":"The square outside the Mercado Modelo in Salvador"}
+    {"key":"Praça Cairu", "desc":"The square outside the Mercado Modelo in Salvador"},
+    {"key":"Cosme e Damião", "desc":"Cosmas and Damian were two Arab physicians and early Christian martyrs, they are the saints of doctors and pharmacists"}
   ]
 }
